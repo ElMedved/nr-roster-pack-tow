@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="6aa172e3-070a-508c-b144-5cd51fba587c" name="Warhammer: The Old World" revision="1" battleScribeVersion="2.03" authorName="The Old World Dataset Generator">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="6aa172e3-070a-508c-b144-5cd51fba587c" name="Warhammer: The Old World" revision="2" battleScribeVersion="2.03" authorName="The Old World Dataset Generator">
   <publications>
     <publication id="dd4518bb-04a3-5795-9588-d70c862858e7" name="Warhammer: The Old World"/>
   </publications>
@@ -57,15 +57,1876 @@
     <forceEntry id="e944e82f-00d6-5772-91f9-3d77b1405ac4" name="Grand Army" hidden="false">
       <categoryLinks>
         <categoryLink id="2889c422-3a3a-567f-a5ff-ccfc96caceb2" name="Configuration" hidden="false" targetId="d41730ae-bf97-53b9-8e9b-899ad11cc65e" primary="false"/>
-        <categoryLink id="af721d7c-46f6-5760-9c55-1b8f34252a7c" name="Characters" hidden="false" targetId="9af06238-d538-5ab3-bd34-0a00aa3ff07c" primary="false"/>
-        <categoryLink id="ce505b94-2da6-5b66-bb2f-9080a0f54693" name="Core" hidden="false" targetId="6d64d019-9a7a-590e-83c9-5f2fd4cd1f1e" primary="false"/>
-        <categoryLink id="4f2e47ba-f8e7-53d9-b01f-63bdd4b48756" name="Special" hidden="false" targetId="105229fe-dc8d-5727-ab34-1f1ae49d7cd9" primary="false"/>
-        <categoryLink id="ea0d6a7e-64af-503a-9625-38567dbbf152" name="Rare" hidden="false" targetId="0754a6d9-05ab-5cb4-8b23-a4e761d7bd8a" primary="false"/>
-        <categoryLink id="23838421-74ac-5362-9fe6-8821840640bf" name="Mercenaries" hidden="false" targetId="9b3779ce-9731-57ed-b1d0-8fc6d404296c" primary="false"/>
-        <categoryLink id="9ef0b621-2e99-5fb0-9db8-2f7b15b47be9" name="Allies" hidden="false" targetId="b0b54458-202d-5d9b-97e2-d9ad9b5352ed" primary="false"/>
+        <categoryLink id="af721d7c-46f6-5760-9c55-1b8f34252a7c" name="Characters" hidden="false" targetId="9af06238-d538-5ab3-bd34-0a00aa3ff07c" primary="false">
+          <constraints>
+            <constraint field="points" scope="force" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="e018fe57-7fe1-50d5-9833-2b739cddd46f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ce505b94-2da6-5b66-bb2f-9080a0f54693" name="Core" hidden="false" targetId="6d64d019-9a7a-590e-83c9-5f2fd4cd1f1e" primary="false">
+          <constraints>
+            <constraint field="points" scope="force" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="f3db7105-4e06-5f4a-984b-d932ce19b546" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4f2e47ba-f8e7-53d9-b01f-63bdd4b48756" name="Special" hidden="false" targetId="105229fe-dc8d-5727-ab34-1f1ae49d7cd9" primary="false">
+          <constraints>
+            <constraint field="points" scope="force" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="6426ee13-a35b-5ac6-a9a7-eb28a18487ba" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ea0d6a7e-64af-503a-9625-38567dbbf152" name="Rare" hidden="false" targetId="0754a6d9-05ab-5cb4-8b23-a4e761d7bd8a" primary="false">
+          <constraints>
+            <constraint field="points" scope="force" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="008121a8-fbf5-5a34-8fb7-0b0f54f2b2d7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="23838421-74ac-5362-9fe6-8821840640bf" name="Mercenaries" hidden="false" targetId="9b3779ce-9731-57ed-b1d0-8fc6d404296c" primary="false">
+          <constraints>
+            <constraint field="points" scope="force" value="20.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="dcb1f1a1-7e4f-59eb-a0f0-d43d66e30e39" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9ef0b621-2e99-5fb0-9db8-2f7b15b47be9" name="Allies" hidden="false" targetId="b0b54458-202d-5d9b-97e2-d9ad9b5352ed" primary="false">
+          <constraints>
+            <constraint field="points" scope="force" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="9bccb81d-d2d1-581e-b1db-eb9c8b815e4f" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
+      <forceEntries>
+        <forceEntry id="7457a4e3-b0e4-5998-b440-fe55220f5537" name="Allied Contingent" hidden="false">
+          <categoryLinks>
+            <categoryLink id="d3812df1-f3e1-5cb4-aae4-bed82a7735a9" name="Configuration" hidden="false" targetId="d41730ae-bf97-53b9-8e9b-899ad11cc65e" primary="false"/>
+            <categoryLink id="83bdcf0f-7520-5b18-a68c-b5033910f04f" name="Characters" hidden="false" targetId="9af06238-d538-5ab3-bd34-0a00aa3ff07c" primary="false">
+              <constraints>
+                <constraint field="points" scope="force" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="9e577833-d9e6-5333-9251-71ea170fc458" type="max"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink id="5233cca4-e886-5e3a-ada6-8a3e1e7dbf8f" name="Core" hidden="false" targetId="6d64d019-9a7a-590e-83c9-5f2fd4cd1f1e" primary="false">
+              <constraints>
+                <constraint field="points" scope="force" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="672d3827-3ecd-58c1-a832-f3348e7a54c4" type="min"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink id="1226342b-e4dc-5ecd-91b1-2928067b5e4f" name="Special" hidden="false" targetId="105229fe-dc8d-5727-ab34-1f1ae49d7cd9" primary="false">
+              <constraints>
+                <constraint field="points" scope="force" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="8a7c0343-4586-59fa-930f-495b2297da59" type="max"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink id="a55ebb8b-b42f-5ba7-bb7c-cd35aee48b4b" name="Rare" hidden="false" targetId="0754a6d9-05ab-5cb4-8b23-a4e761d7bd8a" primary="false">
+              <constraints>
+                <constraint field="points" scope="force" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="565843d3-6429-5506-b556-4503760c7f2a" type="max"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
     </forceEntry>
   </forceEntries>
+  <sharedProfiles>
+    <profile id="ec213f51-8f40-5220-9c13-b24baf560929" name="Acidic Vomit" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="106" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5c0b5c55-e285-5499-9a61-5b0568fab242" name="Asrai Longbow" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="147" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">32"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Volley Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="75c98ad4-cb70-5386-a651-5f4b78de4d7a" name="Asrai Spear" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="129" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Fight in Extra Rank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b6c14517-7854-5092-a371-c68f929ddbc5" name="Baleful Torrent" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="26" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Column of Fire, Cumbersome</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="25135f5f-a9fc-52ca-b156-65797514654e" name="Ball &amp; Chain" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="40" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Requires Two Hands, Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c1a03f09-d311-554b-ad8e-8b506b622a81" name="Bilesword" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="054106bb-0a3a-5b9a-8785-343f5b75844e" name="Billowing Death" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="16" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Magical Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d022fd7c-51d2-53d6-b430-f672be87f823" name="Blackbriar Javelin" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="135" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Move &amp; Shoot, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="df91dbc2-95e9-55e0-bc7f-4fa730359b66" name="Blasting Charges" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="26" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">6"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Flaming Attacks, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="709ad9aa-d31a-54cf-9308-f4a4ac53879f" name="Blood Vulture" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="15" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Ignores Cover, Move &amp; Shoot, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9aafa994-9cbd-5299-8a5e-283053971890" name="Bloodflail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="3" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0e8411b0-69a1-5d56-9302-03270ea2540d" name="Blowpipe" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="4" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Shots (2), Poisoned Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c0434820-076b-57c9-8805-19023182a727" name="Blunderbuss" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="44" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Shots (D3), Volley Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6a73a2d0-51f2-5278-8d7c-8a06562d5e5b" name="Bolt Thrower" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="223" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">6</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cumbersome, Move or Shoot, Multiple Wounds (2), Through &amp; Through</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="939198f4-6608-5202-b128-7561c30c2cb5" name="Bombard" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="45" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">8</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Cannon Fire, Cumbersome, Move or Shoot, Multiple Wounds (D3+1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d1d81ab1-e774-54d8-99df-30f433ab1508" name="Bonegrinder Giant's Club" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="42" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">*</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">*</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c4fdc799-7aee-5624-aeb0-c737576bf271" name="Bow of Avelorn" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="187" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">30"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Magical Attacks, Volley Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a88d1751-7181-5b9f-917a-cc07bdd3d85d" name="Brace of Drakefire Pistols Ranged" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="24" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Dwarf Crafted, Flaming Attacks, Multiple Shots (2), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba9ae71c-50de-5da4-89cc-e46546d27396" name="Brace of Ogre Pistols Ranged" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="26" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multiple Shots (2), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="85914ee7-1fb0-5418-a5ae-0c7ae9f71002" name="Brace of Pistols Ranged" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="217" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multiple Shots (2), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="787ba402-1c6a-5a27-a227-eefc4b3e4e30" name="Brace of Repeater Handbows" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="218" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Shots (4), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f67a797f-3ec8-5ca8-8a18-af890a82bc43" name="Brass Bound Hooves" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="4" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2530579d-a579-556c-92a8-bc1ad92b8565" name="Breath of Desiccation" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="142" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Magical Attacks, Multiple Wounds (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a6024ab1-6373-536d-a9e0-9fee0ca9d582" name="Brimstone Gun" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="28" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Dwarf Crafted, Flaming Attacks, Multiple Shots (D3+1), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="efcf6fa8-21b3-5fdd-a82c-53eb25784a3b" name="Briny Breath" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="45" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b8c25bc3-bfcb-50bb-b97b-5622c8b3b596" name="Cannon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="226" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">8</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Cannon Fire, Cumbersome, Move or Shoot, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b7132bf8-6744-5ccc-9481-90e9df5d282f" name="Cannon of Khorne Solid Shot" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="8" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">8</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Cannon Fire, Cumbersome, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e87b8f46-75e0-51bc-b909-d6e0d673ef25" name="Cannon of the Sky-Titans Solid Shot" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="13" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">10</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Cannon Fire, Cumbersome, Multiple Wounds (D3+1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d3a55faa-9b51-52a4-9c62-e84cb1ed1471" name="Cathayan Lance Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="48" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Fight in Extra Rank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="61ca5cd1-36cc-5f4b-95f8-487d285ca0c5" name="Cavalry Spear" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="215" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Fight In Extra Rank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a9602c52-59ee-57ed-85c6-efc5dccb9244" name="Cavernous Maw" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="21" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Killing Blow</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d7f71057-0dc9-5b28-9c87-5c15742324fb" name="Celestial Blade Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="48" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c7528a76-2115-530c-8ee2-8f8060bd4057" name="Ceremonial Halberd" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="187" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Fight in Extra Rank, Magical Attacks, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fdfda90c-60ca-5616-9acc-b38878513a32" name="Chaintrap" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="15" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="46ed5bee-d8fe-5e36-a355-00a0a8b84451" name="Chill Breath" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="7" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2a108ca1-143b-5e03-9e86-674350a03c2d" name="Chracian Great Blade" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="187" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Requires Two Hands, Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="71193967-72bf-5268-8d24-a17d9d8828a0" name="Cinderblast Bombs" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="25" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">8"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="627bf992-b090-5da4-a375-e264336e3dfb" name="Clattergun" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="28" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Dwarf Crafted, Move &amp; Shoot, Multiple Shots (D6), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b963c75d-0af3-52e7-9ba8-e6e060be6526" name="Cleaver-limbs" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="110" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow, Monster Slayer</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c7714009-93e5-59ca-b2f0-12bd63825609" name="Cleaving Blades" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="146" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e420968c-2107-52f5-adf9-ae93c3e8a9a1" name="Colossal Fang-filled Gob" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="37" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="032bc14a-dbf7-5195-90de-79140ea6a6eb" name="Crane Gun Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="46" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">6</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Cumbersome, Move or Shoot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c0730f88-8014-5e8e-950d-cc54481bacdb" name="Crossbow" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="218" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">30"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Ponderous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4b06b92c-fa54-5bf5-bd28-aa6ffb449715" name="Crown of Horns (Grand Cathay) Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="29" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="75c0d2b8-d857-561a-8495-49816738f902" name="Daemonic Talons" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="25" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a5bfd356-8724-5c51-87a3-3e30bf4e3335" name="Dark Fire of Chaos" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="74" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Flaming Attacks, Magical Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a43809fc-2f80-5a14-ade9-e433a77bbdcd" name="Death's Heads" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Move &amp; Shoot, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="606e928e-8d4c-5793-9d32-e37f6a0edb5d" name="Decapitating Claws" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="144" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow, Monster Slayer</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a5e10447-f12c-5112-a2fe-c25c08367693" name="Decapitating Strike" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="146" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-4</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow, Monster Slayer, Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2f4dc959-8e1d-53ac-bddc-e885fca49313" name="Demolition Rockets" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="14" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3(6)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-(-3)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Bombardment, Cumbersome, Move or Shoot, Multiple Wounds (D6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="745bd449-6134-527e-a853-d45faa9cc51b" name="Demolition Rockets (Renegade)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4(8)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1(-3)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Bombardment, Cumbersome, Move or Shoot, Multiple Wounds (D6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="060c4df0-9af9-515d-a04b-b1ba0ca63c45" name="Distensible Jaw" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="19" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aa592ef9-979b-5ab2-acd7-5b24438e0471" name="Doom-Flayer" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Counter Charge, Extra Attacks (+D6), Impact Hits (D6+1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fa1118a5-c277-5bd2-88db-74150d82f158" name="Doomfire" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="76" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-60"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5(10)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2(-5)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Bombardment, Cumbersome, Move or Shoot, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a9015469-fb30-58db-86b5-aad7e09a8508" name="Dragon Fire" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="158" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Flaming Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c299e84-0575-5425-97aa-58e3a45f5aa0" name="Dragon Fire Bombs Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="48" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">9"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Flaming Attacks, Move &amp; Shoot, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="201074f9-901a-52d6-a176-89178acc1c91" name="Dragon Fire Pistol Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="48" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks, Multiple Shots (2), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="159492d1-062b-5927-a26e-05c04d61b545" name="Drakegun" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="24" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Dwarf Crafted, Flaming Attacks, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="afcbd7d2-deaf-51f9-96b6-1122e4bad1ea" name="Dread Halberd" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="10" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Fight in Extra Rank, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d35a97d4-8a93-5854-9dbb-22cec07601bc" name="Eagle-eye Bolt Thrower" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="172" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cumbersome, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fce7871f-f990-5e32-9c6e-558efc0c46cd" name="Ensorcelled Weapon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="24" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8bf33023-7a52-59e2-8f0d-d1b342e5e089" name="Envenomed Sting" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="143" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Poisoned Attacks, Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eee019e2-9f01-553c-abe6-f4401ed551e8" name="Fiend Tail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="75" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Extra Attacks (+D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7b889647-c793-55c8-b610-8edfbb5eb756" name="Fiery Breath (Dark Elves)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="20" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">*</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Flaming Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="398b63ca-6a4b-5779-893c-e9746356f29a" name="Fiery Breath (Lizardmen)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Flaming Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9a808f7b-15a1-51f8-b636-82f07ec588a4" name="Fiery Roar" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="143" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Flaming Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2375a751-2817-53e3-9118-5561783d28e5" name="Filth-Encrusted Claws" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="11" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Poisoned Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c29d0ae-3cb0-567a-af18-c2fcafb00d68" name="Filth-Encrusted Talons" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="21" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Poisoned Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c911cc21-c8ac-55b8-a950-47ffb8b04b0e" name="Bastion Rockets Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="39" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4(5)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1(-3)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Bombardment, Cumbersome, Move or Shoot, Multiple Wounds (D6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="53bcb334-64b2-50e8-b88b-3eadc86598f1" name="Fire Thrower" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="229" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Column of Fire, Cumbersome, Flaming Attacks, Move or Shoot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fea3223f-9e66-5da4-b76b-492f6ceb7c88" name="Fireglaive Ranged" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="22" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="44d293da-351f-53ca-905b-98be02a3be4d" name="Fireleech Bolas" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="10" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">6"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks, Move &amp; Shoot, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d8cb223b-70ee-5d40-9664-040b869b1e14" name="Flail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="214" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f8381d20-7fd2-57da-96f2-8b544513ee38" name="Flames of Tzeentch" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks, Multiple Shots (2), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a69f75fa-44e9-574f-a9f5-af2dfb7dcdd5" name="Flaming Breath (Ogre Kingdoms)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="6" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Flaming Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0cf93511-d971-5d00-92d0-cf7f006f60db" name="Flaming Breath (Warriors of Chaos)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="75" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Flaming Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e076707e-4bce-5fb4-bb7a-0b5a853beec5" name="Fumes of Contagion" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="74" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Magical Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="07ddcf0d-6a44-53f9-a3ac-08c32017cdb7" name="Furnace Hammer" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="39" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">*</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7e560f38-f905-5478-a19e-af6faaebca83" name="Giant Blowpipes" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="13" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cumbersome, Multiple Shots (2D6), Poisoned Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="91340b6f-798b-5a50-ad50-671955ac2612" name="Giant Bow" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="13" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Wounds (D3), Poisoned Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0fe0333c-7875-5cd0-abef-4653ec7ea618" name="Giant's Club" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="39" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">*</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">*</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bc290c18-60e3-5c28-8ce3-c0e3198e338d" name="Gnashing Maws" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="43" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0a07e47b-40ea-51b1-b8ba-203827bd5ad4" name="Goring Horns" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="12" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks, Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3bdfc2fb-f404-530f-9fb7-36461dbbaa20" name="Grand Cannon Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="40" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">10</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (3), Cannon Fire, Cumbersome, Move or Shoot, Multiple Wounds (D3+1), Thunderous Impact</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0679aa2b-b159-57f1-883c-d9c7c045e393" name="Great Axe" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="3" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Monster Slayer, Requires Two Hands, Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="096768aa-6973-5976-b620-3ecdf930af47" name="Scything Blow Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="36" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Extra Attacks (+2D3), Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c5837fce-6b1f-5dbd-a0f5-08f8b687b968" name="Great Hammer" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="23" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Magical Attacks, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d84477da-0a73-5444-a8b3-3bfd3c6b8947" name="Great Horns" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="13" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dd5f32b6-c814-5201-84c5-caf8ea0a3cda" name="Great Throwing Spears" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="5" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Move &amp; Shoot, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="24104399-1298-5516-b962-49a8bc6409bc" name="Great Tusks" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="7" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="97231c9a-7708-52a4-85aa-a6201a3c9d18" name="Great Weapon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="214" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Requires Two Hands, Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="327f1fd9-d9e4-54ee-b547-3c854d4f68af" name="Greatbow" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="135" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">30"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">6</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Multiple Wounds (2), Volley Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="41620053-9bc4-59cf-80e1-17459f65629c" name="Grenade Launching Blunderbuss" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="77" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cumbersome, Ponderous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ae2e8240-7c6f-5374-ab64-f4bcc4b8cbfd" name="Grimfrost Weapon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="11" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Magical Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6e125769-721c-529e-a4d1-ec8104f342fa" name="Gromril Great Axe" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="42" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Requires Two Hands, Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9fca9480-a6cf-51bb-bcb9-65157b1b9630" name="Gunpowder Bombs Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="48" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">9"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Move &amp; Shoot, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eefd7b64-95e6-556f-a232-356b997cfe6f" name="Hailshot Blunderbuss" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="22" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Shots (D3), Volley Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f3803ec9-3b2a-53b5-b40e-2235402c1b4d" name="Halberd" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="214" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1(-2)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d99858b2-0104-5395-9832-b472ef5bd787" name="Hand Weapon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="213" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="87a2c892-ef76-5dd8-87f0-ef09ec592136" name="Handgun" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="217" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Ponderous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1ee580f7-5568-57f1-93b2-a9cdf74adcc3" name="Handmaiden’s Spear" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="159" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6507a41f-7ac1-5d1a-9637-cf60ef1c25e9" name="Har Ganeth Greatsword" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="11" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cleaving Blow, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="977209f6-eafa-5d53-8578-bfef675bf11d" name="Harpoon Launcher" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="26" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">6</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Wounds (D3), Ponderous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="16fe2c8a-5a03-5632-9b4d-7b17c6d9b711" name="Harvester Cannon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="26" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cumbersome, Needs More Nails</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="626c8aae-f549-5228-9774-f402ee39f3f8" name="Hellblade" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cleaving Blow</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c04d2a30-2a36-5eea-b545-d39a341dee93" name="Hochland Long Rifle" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="77" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Cumbersome, Ponderous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="14a35902-adfc-5b7f-a7e9-55aae9343963" name="Hooked Halberd" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="40" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aaa9c470-2196-54af-82a9-78b9bd1287b8" name="Horns of Stone" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="7" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b6fb3672-1092-506c-ad23-bd724c63ab70" name="Huge Gob" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="27" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4fdaed58-af97-5f74-967a-84286e466868" name="Hunting Spear" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="136" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f1d27b40-d0e5-51ef-88bb-0f4f18534ea4" name="Hurl Attack" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="107" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4(8)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1(-3)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Bombardment, Cumbersome, Multiple Wounds (D3+1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c249fbc-573f-5771-a51f-354fe6aa286c" name="Impaling Claws" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="13" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow, Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d173b37a-0557-5071-92d8-8dbd0ad75c9b" name="Infernal Incendiaries" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="14" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3(3)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-(-)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Bombardment, Cumbersome, Flaming Attacks, Move or Shoot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="300501e1-9825-54be-b756-2f29c733d59b" name="Infernal Incendiaries (Renegade)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3(4)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1(-1)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Bombardment, Cumbersome, Flaming Attacks, Move or Shoot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cedde281-0e33-5c0a-9119-d701cda46d82" name="Iron Claw" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="26" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3acf1e6d-ddfe-51a8-a0a8-910a603404ca" name="Iron Hail Gun Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Move &amp; Shoot, Multiple Shots (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="63c5a520-b2b8-59ce-9c10-5e7543353376" name="Iron Talons Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="29" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bfeb06cd-e007-52f9-8f95-14c4c9d24385" name="Ironfist" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="26" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Extra Attacks (+1), Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e7905e36-9d48-5f8c-8872-e71e9b7d5493" name="Javelin" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="219" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Move &amp; Shoot, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4412f0e2-a28b-5b49-b80f-1178b5a67476" name="Lamprey's Bite" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="99d83477-79e9-50e0-98f0-c6fb3ea8c30d" name="Lance" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="215" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="54657084-7128-5ba6-aaf1-c0918fc141e3" name="Lash &amp; Buckler" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="12" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Fight in Extra Rank, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="828c7a0f-f4b1-51a4-b0d8-795e13392a40" name="Lash of Khorne" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="3" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="82d2184a-927c-5636-b394-e2a80347473f" name="Lashing Talons" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="45" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0559cd87-a49a-523b-8fb0-f708b735dd5d" name="Leadbelcher Gun Solid Shot" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Cumbersome, Multiple Wounds (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fcddb625-fe87-5744-a82d-1bab5e527a60" name="Light Cannon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="40" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f6b7c2b0-4824-5add-b379-45f40e429538" name="Long Rifle" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="40" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Cumbersome</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e950fb44-f11b-55dc-8a27-a5da3cd44c17" name="Long Spear Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="45" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Fight in Extra Rank, Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ea69210e-e8f8-522d-8aec-bd9010c25909" name="Longbow" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="216" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">30"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Volley Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="72a49679-e275-5a23-9cdf-f4a04de5e7e0" name="Mace Tail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="13" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="07d0bd9b-774b-5b5e-98af-4348122499ad" name="Man-Catcher" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="40" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="debecfad-99f0-549a-8437-67e830af55e1" name="Massive Gob" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="20" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Killing Blow</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="71573f2e-bbe4-5f11-9771-56f632f19860" name="Mighty Antlers" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="126" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="24e0685d-40f1-516c-ae6a-f3f6c89f71af" name="Monstrous Tusks" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="12" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="20009e22-6bdc-5334-9716-e50651022c12" name="Morning Star" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="214" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c770fdcc-cde9-51ad-b801-1c20af6a9001" name="Mortar" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="228" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2(6)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2(-3)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Bombardment, Cumbersome, Move or Shoot, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="15b74032-da3b-57a6-85b9-4513c51b17e7" name="Naptha Bombs" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="22" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">6"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks, Ponderous, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1c3f8a95-2d41-5ce2-88da-e052b22a3469" name="Naptha Bombs (Renegade)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">9"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Flaming Attacks, Move &amp; Shoot, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2fe69e33-bf07-5d90-94ee-bbfafd0d612e" name="Noxious Breath" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="18" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0f7196b5-de89-5b0d-96d3-d88cae9c9835" name="Oaken Fists" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="124" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="457c641a-61dc-59a7-8042-bf28806c9075" name="Ogre Pistol" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="40" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0bc3730c-2861-544e-a929-a80afa40a71d" name="Paired Great Khopeshes" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="145" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Killing Blow, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d0151726-aae9-5866-9b53-cc0541c25c4f" name="Pestilential Breath" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="20" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5b8b352f-fc29-5496-9f77-50b6c37fd43f" name="Petrifying Gaze" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="106" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Magical Attacks, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="01fe0b06-4920-5209-9f66-7021580322db" name="Piercing Claws" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Extra Attacks (+1), Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0274782a-85b5-53cc-8a6d-607943b4e4ab" name="Pistol" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="217" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4fbff06e-25e5-585f-886e-50c21faeddc5" name="Plague Censer" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="6" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Poisoned Attacks, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b37ce9bb-368e-5a41-8d72-6a9a7939bcf8" name="Plagueflail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5328a127-d9e3-5955-b28a-e1a3e10c2768" name="Plaguesword" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="43aae0cd-dfd1-5929-bc18-f8291e9d9213" name="Poisoned Wind Globes" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="10" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">9"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Move &amp; Shoot, Poisoned Wind, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0e410d41-55c8-5d15-bf53-9a1afd867470" name="Poisoned Wind Mortar" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">6-24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2(4)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Bombardment, Cumbersome, Move or Shoot, Poisoned Wind</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="79769b42-f133-571d-953f-b572c5353690" name="Poisonous Tail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="22" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Poisoned Attacks, Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ca9bead6-f5b4-5d34-ad9f-a0bd47946762" name="Polearm Single-Handed" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="92" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Fight in Extra Rank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d7be754a-3a18-5c39-8cbd-7f1d434ff7fb" name="Rancid Maw" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="21" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multiple Wounds (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cd44d9d0-a792-5504-95cd-ecdc4bf3e81b" name="Ranger’s Glaive" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="130" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="83956d6f-482b-5a31-ae51-1c01c0713c5d" name="Ratling Gun" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multi-Barrelled, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e8a15f7b-ae28-562a-a969-66c0ba10ad94" name="Ravager Harpoon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="16" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">6</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cumbersome, Multiple Wounds (D3), Ponderous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="512b2379-add3-5c35-b24b-fda35277f1ab" name="Razor Barbs" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Move &amp; Shoot, Multiple Shots (D3), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d321dff5-04e2-5ca4-80ec-5b16992a2031" name="Repeater Crossbow" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="218" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multiple Shots (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cb6505c6-86e3-58af-b03b-ba4968cb545c" name="Repeater Handbow" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="218" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Shots (2), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5947a300-9392-5411-bc30-0674ad978d3d" name="Repeater Handgun" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="217" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multiple Shots (3), Ponderous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f8d4d56f-04b2-5e4c-9d72-18781ae5138d" name="Repeater Pistol" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="217" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multiple Shots (3), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="17295cd8-b518-55ae-9705-135ca560df24" name="Repeating Rifle" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="40" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multiple Shots (3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6d024081-8913-589b-97b6-da099ddce6e0" name="Ritual Blade" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="135" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Requires Two Hands, Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d8ce0f43-316d-5cee-a4ff-f0e9a5b38778" name="Rivet Gun" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="39" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">10"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ed01d9aa-9335-57c5-b6b6-02a00fde217c" name="Sacrificial Dagger Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="44" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8bc674bc-db26-50a2-8689-0da4ac87b75a" name="Scraplauncher Catapult" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="14" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3(4)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-(-2)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Bombardment, Cumbersome, Multiple Wounds (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="339e1159-74f6-5385-821b-3dcd360dee64" name="Serpentine Tail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="45" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fc60f7e8-195c-5f4a-a383-483b6bac684a" name="Serrated Maw" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="18" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Multiple Wounds (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c70680a0-c81e-5425-91b1-28cf2f926095" name="Serrated Maws" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="20" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Multiple Wounds (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="798ff13d-04e2-5241-9967-b28861ba7bb1" name="Shortbow" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="216" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Quick Shot, Volley Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9c921531-e2ad-5c12-bec9-78a39fc935b4" name="Sky Lantern Crane Gun Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">6</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Cumbersome</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8417faf9-2897-58c4-8cb3-70b8c587b7ac" name="Slashing Talons (Lizardmen)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="12" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dc6e86b1-d4cd-5b62-b95c-e6602406640b" name="Slashing Talons" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="43" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="77e0d747-804f-5ee0-848d-d22e528e7442" name="Sling" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="219" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Shots (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="44650c2b-043d-527a-b31e-a5b25c38df57" name="Slythey Tongue" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="105" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Move &amp; Shoot, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9cb17037-9176-55d3-8980-cbf2e4d581c0" name="Soporific Breath" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="138" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c011343-32c4-5b12-99d7-cc2cafafec31" name="Sorcerous Exhalation" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="13" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon, Magical Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6479c414-1a59-5701-af95-6a74c2f69ef2" name="Spear of Loec" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="122" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Killing Blow</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dadb354a-6bc0-55a2-983b-9b85d5a3b85f" name="Spectral Scythe (Black Coach)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="19" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Magical Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1bb159d9-34e0-53f7-bc3d-a686387bc7e1" name="Spectral Scythe (Cairn Wraith)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="6" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Magical Attacks, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8d7b6b79-61ea-5ade-80c7-700bbb2cee0c" name="Spidersilk Lobber" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2(4)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-(-1)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Bombardment, Cumbersome</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4bf53e0c-bcb6-572d-82e2-0cdccc97a73c" name="Steam Cannon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="69" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">8</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (2), Cannon Fire, Cumbersome, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ea2179ec-074f-5777-a170-39385ea4904b" name="Steam Cannonade" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="11" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Cannonade, Cumbersome</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eb099d47-1c4b-5aed-8834-3124d4b472eb" name="Steam Drill" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="26" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Furious Charge, Requires Two Hands, Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ce52f9a0-efcf-509d-893d-8a6a4fa38373" name="Steam Gun (Dwarfs)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="28" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="17e452b2-7d07-5cab-a7b9-cf9b3f9bd7ca" name="Steam Gun (Empire)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="69" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c3061a46-5d68-54eb-8a70-98b9eaf9a3cd" name="Stone Thrower" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="224" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12-60"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4(8)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1(-3)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Bombardment, Cumbersome, Move or Shoot, Multiple Wounds (D3+1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="063b6446-3dd5-58ef-b1ea-354549a3b7ae" name="Strangleroots" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="124" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Shots (D6+1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="64dada58-d2bb-56fb-903b-7d5c5361e682" name="Swamp Breath" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="39" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ed4418ab-9f69-5379-afe7-a7d6422cfcaf" name="Swarming Mass" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="39" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="28c135fa-c965-59fe-85ac-c4901a2198df" name="Sword of Hoeth" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="187" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+2</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Magical Attacks, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f1f681cf-2b9d-5ce4-a45b-f58e04c92228" name="Things-catcher" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="11" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Fight in Extra Rank, Killing Blow, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1e4af841-be4e-596c-ad1b-be612ada5e6c" name="Throwing Axe" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="219" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">9"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ad51c694-b637-5c72-8392-5fb5c64b3df2" name="Throwing Spear" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="215" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Fight In Extra Rank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9a07ac1c-9d14-5822-9b9c-8c6af5f3c2d7" name="Throwing Weapon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="219" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">9"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Move &amp; Shoot, Multiple Shots (2), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="30dab5e3-8a9d-5f80-a032-85f70e76f40b" name="Thrusting Spear" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="215" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Fight In Extra Rank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e7d95d64-52ee-5928-816a-f7922831217d" name="Thunderous Bludgeon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="14" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Strike Last</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c6347768-f9d5-55a7-b19a-1f957f5c51be" name="Trampling Hooves" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="12" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6645bf89-f75f-5fdb-a4a6-75d06bd48da3" name="Trickster’s Blades" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="122" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Extra Attacks (+D3), Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1e759c8d-d95d-5006-903c-49bb039c7df7" name="Troll Vomit" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="28" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9a2a933a-ac33-518d-9e5b-5f2fd8788b8d" name="Trollhammer Torpedo" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="25" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cumbersome, Flaming Attacks, Multiple Wounds (D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2c5dd81d-4e95-5b9e-9514-23ad2d8a67f0" name="Twisted Antlers Profile" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="41" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="185df9d9-01a5-5d85-8d9a-c685d9acc93f" name="Two Hand Weapons/Additional Hand Weapon" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="213" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Extra Attacks (+1), Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="868f97ca-b58d-59dd-8428-b2ccaf63d994" name="Tzeentchian Wand" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="18" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks, Multiple Shots (D3+1), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d8c6713c-e489-5efa-90e7-c55b839bd050" name="Venom Spray" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="15" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">N/A</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">3</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Breath Weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8fddc05d-7151-56f6-b5c3-1b79155baa19" name="Venom Sting" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="12" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3220ecaf-0949-5f9f-8ffd-042279b403bf" name="Venom Surge" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Multiple Wounds (D6), Poisoned Attacks, Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="21f4986d-acb4-53c6-93b9-94fbcb41e693" name="Venomous Tail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="16" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Poisoned Attacks, Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="be2e0281-05fd-5954-80b3-37a6020b9373" name="Venomous Talons" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="15" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Poisoned Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8ec804d1-41f1-50d0-ad95-04775e60bed6" name="Warbow" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="216" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Volley Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2e59d500-7b1d-5ac8-84a6-094d4ad592db" name="Warp Gaze" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="26" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">48"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">6</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cumbersome, Multiple Wounds (2), Through &amp; Through</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4a0e9463-09ba-52f2-92b8-123dc9d7e0d1" name="Warp Grinder" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Ambushers, Killing Blow, Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4d62e8ab-a80d-5f79-a3ab-c038340dabb4" name="Warpfire Blast" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="45" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">6"-24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4(8)</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1(-3)</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Bombardment, Cumbersome, Flaming Attacks, Multiple Wounds (D3+1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="14b160dd-1524-53c9-9220-0714a82c6407" name="Warpfire Thrower" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="9" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">6"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Column of Fire, Cumbersome, Flaming Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2d679306-1d36-5dca-b277-7c2b98fd5ad6" name="Warpflame" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="23" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">18"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Flaming Attacks, Move &amp; Shoot, Multiple Shots (D3), Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8b48d258-1453-58dc-ad16-fae8ff1ffdb0" name="Warplock Jezzail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="10" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">36"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">6</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-3</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Cumbersome, Magical Attacks, Move or Shoot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b8e9d16c-c7b1-59d3-b24d-5313b1224614" name="Warplock Musket" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="4" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">24"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">5</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Magical Attacks, Ponderous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="939eb586-1aaf-5611-92cd-ba66deb00be3" name="Warplock Pistol" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="4" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">12"</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">4</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Magical Attacks, Quick Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0b0595f3-fd27-5139-ae02-83ccf312e8e4" name="Warpstone Claws" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="18" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1), Magical Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4395ea21-9e12-5755-9aef-86f125ed9d75" name="Whip" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="214" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Fight In Extra Rank, Strike First</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7c16e81c-4bf4-5f54-b5be-7bb61646ef7b" name="Wicked Claws" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="35" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d1846ceb-4c0c-57f1-8582-1b0d9fce67fc" name="Wolf Hammer" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="39" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S+1</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Requires Two Hands</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="270b0953-f1e5-5605-9e0e-934f758eb5b2" name="Writhing Tail" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="140" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Extra Attacks (+D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d5c58a3b-24db-5485-9821-828be7703020" name="Writhing Tentacles (Daemons of Chaos)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="11" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-1</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Armour Bane (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b74cc1bb-e331-53cf-9160-2f749e03126d" name="Writhing Tentacles (Dark Elves)" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="21" typeId="983d85ee-6204-515e-b480-6a0fd03c7d38" typeName="Weapon">
+      <characteristics>
+        <characteristic name="R" typeId="e284343d-8f99-59cc-998a-1681e577eb87">Combat</characteristic>
+        <characteristic name="S" typeId="45453586-68bd-5130-abdb-8084cd75a1d2">S</characteristic>
+        <characteristic name="AP" typeId="3c976c1c-5315-53b1-9c85-4c98b2adc848">-2</characteristic>
+        <characteristic name="Special Rules" typeId="b4cca352-8cdb-5383-80ad-069939450bef">Poisoned Attacks</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
   <sharedRules>
     <rule id="5e1fb3b9-4a00-518e-9a42-900caf3d315d" name="&quot;Dig In!&quot;" hidden="false" publicationId="dd4518bb-04a3-5795-9588-d70c862858e7" page="40">
       <description>A Sapper will direct the rapid construction of fieldworks and trenches that protect their comrades from the enemy.
@@ -3762,13 +5623,16 @@ If a 'Misfire' is rolled when rolling to determine the Strength of a template, t
   </sharedRules>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="097026c5-f97b-5c87-8b81-ab3dcf02feac" name="Common Magic Weapons" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a7277c5-5a5c-534e-8073-8dd5bad1fd51" type="max"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="1e134835-bfb2-5556-83b6-96eb5ffc6d5b" name="Ogre Blade" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="points" value="75"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e6ef27e8-2326-5e88-9c9f-2d67c9d1e6d6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e6ef27e8-2326-5e88-9c9f-2d67c9d1e6d6" type="max"/>
           </constraints>
           <profiles>
             <profile id="88c5e9d6-faf5-5701-bb76-e3cbc0782832" name="Ogre Blade" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3784,7 +5648,7 @@ If a 'Misfire' is rolled when rolling to determine the Strength of a template, t
             <cost name="pts" typeId="points" value="65"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="45778a11-c057-553e-95f4-56844d0c276d" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="45778a11-c057-553e-95f4-56844d0c276d" type="max"/>
           </constraints>
           <profiles>
             <profile id="d63cb498-25e4-5e46-af2c-5b534463ecdf" name="Cackling Blade" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3802,7 +5666,7 @@ Notes: If a natural 6 is rolled for the Extra Attacks (+D6) special rule, the wi
             <cost name="pts" typeId="points" value="60"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9fc799a2-50cd-5441-a89a-b11c70bf1a6a" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9fc799a2-50cd-5441-a89a-b11c70bf1a6a" type="max"/>
           </constraints>
           <profiles>
             <profile id="801a8dec-9324-5c0a-bbc8-5d2431d25c33" name="Sword of Battle" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3818,7 +5682,7 @@ Notes: If a natural 6 is rolled for the Extra Attacks (+D6) special rule, the wi
             <cost name="pts" typeId="points" value="55"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f57af6b9-2b30-527e-926e-f7db63fa2bcd" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f57af6b9-2b30-527e-926e-f7db63fa2bcd" type="max"/>
           </constraints>
           <profiles>
             <profile id="17c0a1d3-a21a-595c-a2bd-14c94975bffe" name="Duellist's Blades" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3834,7 +5698,7 @@ Notes: If a natural 6 is rolled for the Extra Attacks (+D6) special rule, the wi
             <cost name="pts" typeId="points" value="50"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7ad11e1c-7732-5829-a2ce-2bd106c70c99" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ad11e1c-7732-5829-a2ce-2bd106c70c99" type="max"/>
           </constraints>
           <profiles>
             <profile id="b4a33274-aba1-5ce2-bd0c-9b72ba19f04b" name="Dragon Slaying Sword" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3850,7 +5714,7 @@ Notes: If a natural 6 is rolled for the Extra Attacks (+D6) special rule, the wi
             <cost name="pts" typeId="points" value="50"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c9c8cb7f-2106-58fc-a299-0cc2fe851070" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9c8cb7f-2106-58fc-a299-0cc2fe851070" type="max"/>
           </constraints>
           <profiles>
             <profile id="ebf2247c-3a54-5cb0-9a4d-8b1b5c34d9e8" name="Meteor Hammer" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3868,7 +5732,7 @@ Notes: When making a roll To Wound with this weapon, a roll of a 3+ is always a 
             <cost name="pts" typeId="points" value="50"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0f73d3a4-d3d7-52a2-8ceb-40e8eddc5630" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0f73d3a4-d3d7-52a2-8ceb-40e8eddc5630" type="max"/>
           </constraints>
           <profiles>
             <profile id="f6587eef-ae66-543d-9568-45b37a29bf72" name="Sword of Reaving" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3886,7 +5750,7 @@ Notes: If, after making their attacks, the wielder of this weapon has failed to 
             <cost name="pts" typeId="points" value="45"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1dc4630c-013f-5d56-89a5-2c047db4e34f" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1dc4630c-013f-5d56-89a5-2c047db4e34f" type="max"/>
           </constraints>
           <profiles>
             <profile id="9965083f-bddf-5ec8-8f01-ebde85ca9614" name="Headsman's Axe" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3902,7 +5766,7 @@ Notes: If, after making their attacks, the wielder of this weapon has failed to 
             <cost name="pts" typeId="points" value="45"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3c709280-26d3-5e05-9546-9e628d334c7c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c709280-26d3-5e05-9546-9e628d334c7c" type="max"/>
           </constraints>
           <profiles>
             <profile id="64fc1a33-b187-503e-8388-545016a0d9d8" name="Flail of Wrecks" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3920,7 +5784,7 @@ Notes: The Strength modifier and Armour Bane (1) special rule apply only against
             <cost name="pts" typeId="points" value="40"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d62b465a-b8a0-58c9-a30f-e70ed06bda74" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d62b465a-b8a0-58c9-a30f-e70ed06bda74" type="max"/>
           </constraints>
           <profiles>
             <profile id="00592fa8-1f01-5af1-a42c-be5de20ef96d" name="Grim Verdict" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3938,7 +5802,7 @@ Notes: Should the wielder lose a round of combat, they suffer a single wound wit
             <cost name="pts" typeId="points" value="40"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="769ceeb7-e9d7-56a2-b015-e4233babcb01" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="769ceeb7-e9d7-56a2-b015-e4233babcb01" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="ab5b85ef-3b0c-54db-b7ba-35ffd0308ab7" name="Spelleater Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3946,7 +5810,7 @@ Notes: Should the wielder lose a round of combat, they suffer a single wound wit
             <cost name="pts" typeId="points" value="35"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="554459c9-7cb9-5eca-9e17-7ea42b80e274" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="554459c9-7cb9-5eca-9e17-7ea42b80e274" type="max"/>
           </constraints>
           <profiles>
             <profile id="2576f949-b11f-5af3-a259-d9deb81be2b0" name="Spelleater Axe" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3962,7 +5826,7 @@ Notes: Should the wielder lose a round of combat, they suffer a single wound wit
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e3f6f953-9fdd-5eb3-a2a6-e6eb9f58c4f8" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3f6f953-9fdd-5eb3-a2a6-e6eb9f58c4f8" type="max"/>
           </constraints>
           <profiles>
             <profile id="47edb69a-348f-5f8c-b00f-8e9cec2e8b37" name="Giant Blade" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3978,7 +5842,7 @@ Notes: Should the wielder lose a round of combat, they suffer a single wound wit
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7d6a8e96-e8fe-52c1-b87d-03b75902437a" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7d6a8e96-e8fe-52c1-b87d-03b75902437a" type="max"/>
           </constraints>
           <profiles>
             <profile id="d98f9bd0-29fb-5ca2-949c-37bae9a64947" name="Hell-Forged Axe" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -3994,7 +5858,7 @@ Notes: Should the wielder lose a round of combat, they suffer a single wound wit
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7dd9cc1e-4c73-5cf9-b727-db8d538a5ae2" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7dd9cc1e-4c73-5cf9-b727-db8d538a5ae2" type="max"/>
           </constraints>
           <profiles>
             <profile id="312bb3ac-653b-59a0-9412-e03f8cf17472" name="Sword of Sorrow" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4012,7 +5876,7 @@ Notes: The Sword of Sorrow is a missile weapon; it cannot be used in combat. No 
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6ff359f0-5620-5ecc-ae72-5853d34e6e69" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ff359f0-5620-5ecc-ae72-5853d34e6e69" type="max"/>
           </constraints>
           <profiles>
             <profile id="5f5c7fd7-8f2a-53ff-9ddb-9f1686200711" name="Sword of Swiftness" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4028,7 +5892,7 @@ Notes: The Sword of Sorrow is a missile weapon; it cannot be used in combat. No 
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d60f1a79-e60a-5618-bf32-72d9878c0ddb" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d60f1a79-e60a-5618-bf32-72d9878c0ddb" type="max"/>
           </constraints>
           <profiles>
             <profile id="6988f629-bc4c-549d-9d8a-8bcf8b471fb6" name="Skirmisher's Blade" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4046,7 +5910,7 @@ Notes: If the wielder of this weapon is engaged with an enemy units flank or rea
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="10137c85-8d88-5ce9-b554-896336d68b2e" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="10137c85-8d88-5ce9-b554-896336d68b2e" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="5d4f7ffa-5bb3-531e-86d5-a8d7b44ab3c3" name="The Flaming Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -4054,7 +5918,7 @@ Notes: If the wielder of this weapon is engaged with an enemy units flank or rea
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2d94e7d0-1ae1-5202-9941-0b7c4e453e9c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2d94e7d0-1ae1-5202-9941-0b7c4e453e9c" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="11d0b0b7-f6b8-552c-af5d-490ed1b6e633" name="Berserker Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -4062,7 +5926,7 @@ Notes: If the wielder of this weapon is engaged with an enemy units flank or rea
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="afc5c22e-2e25-5f42-9e71-a4848ce7a179" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="afc5c22e-2e25-5f42-9e71-a4848ce7a179" type="max"/>
           </constraints>
           <profiles>
             <profile id="3807f995-2d6d-5462-9540-467be3b84f56" name="Berserker Blade" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4085,7 +5949,7 @@ Notes: The wielder of the Berserker Blade is Impetuous.</characteristic>
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f892a6db-23f1-5e87-aa2a-1980baab5e81" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f892a6db-23f1-5e87-aa2a-1980baab5e81" type="max"/>
           </constraints>
           <profiles>
             <profile id="97c555c2-4cc5-5d07-82b7-d18029b55420" name="Thornspitter Stave" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4105,7 +5969,7 @@ Notes: The Thornspitter Stave has two profiles, representing how it is used at r
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6c31c907-9a2f-531c-ba51-71f23d2334d9" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c31c907-9a2f-531c-ba51-71f23d2334d9" type="max"/>
           </constraints>
           <profiles>
             <profile id="4fdd8921-6d6f-587e-a312-759098e48b37" name="Hunter's Scorn" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4123,7 +5987,7 @@ Notes: Should an enemy model with a Wounds characteristic of 2 or more suffer on
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2c4d2766-5f21-562f-8cee-f8bed3263537" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c4d2766-5f21-562f-8cee-f8bed3263537" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="05233b96-0141-5fb4-9cb8-e2ad294a98cf" name="Biting Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -4131,7 +5995,7 @@ Notes: Should an enemy model with a Wounds characteristic of 2 or more suffer on
             <cost name="pts" typeId="points" value="15"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="024e6e30-8c92-5a9c-8413-709cdf5b272c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="024e6e30-8c92-5a9c-8413-709cdf5b272c" type="max"/>
           </constraints>
           <profiles>
             <profile id="a80c9444-7a6b-55b6-bca1-332ff1e64e34" name="Biting Blade" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4152,7 +6016,7 @@ Notes: Should an enemy model with a Wounds characteristic of 2 or more suffer on
             <cost name="pts" typeId="points" value="15"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c3e3aa5f-7b16-5745-8918-919a711d12b2" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3e3aa5f-7b16-5745-8918-919a711d12b2" type="max"/>
           </constraints>
           <profiles>
             <profile id="0160538f-f107-5259-a961-cf4c5cdae839" name="Trailblazer's Hatchet" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4170,7 +6034,7 @@ Notes: Models whose troop type is infantry only. Once per game, during their Sta
             <cost name="pts" typeId="points" value="10"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d9dea365-57cd-5522-b024-a1746cbaac1b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9dea365-57cd-5522-b024-a1746cbaac1b" type="max"/>
           </constraints>
           <profiles>
             <profile id="f1b61afb-1dd1-56e8-9ef3-4f7df858a396" name="Diestro's Blade" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4191,13 +6055,16 @@ Notes: The wielder of this weapon has a +1 modifier to their Initiative characte
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="3430b077-0da3-5478-8d6e-078fde9fd4ff" name="Common Magic Armour" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac2acb25-1e13-5675-8740-710962272d27" type="max"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="3a852158-d7b9-5abf-a7de-31adf6727ba4" name="Armour of Destiny" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="points" value="70"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2cc52c77-3977-5d40-9d3a-3f774f066dd9" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2cc52c77-3977-5d40-9d3a-3f774f066dd9" type="max"/>
           </constraints>
           <profiles>
             <profile id="ab41ee66-0d0d-5017-a47b-b0b0d1cb923a" name="Armour of Destiny" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4215,7 +6082,7 @@ The Armour of Destiny is a suit of heavy armour. In addition, its wearer has a 4
             <cost name="pts" typeId="points" value="60"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="746a54fe-3feb-5110-a3f9-ab46d723a010" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="746a54fe-3feb-5110-a3f9-ab46d723a010" type="max"/>
           </constraints>
           <profiles>
             <profile id="37499100-0d9a-514e-a614-75b6a25185f0" name="Bedazzling Helm" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4233,7 +6100,7 @@ Models whose troop type is infantry or cavalry only. May be worn with other armo
             <cost name="pts" typeId="points" value="45"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6b896582-4b26-5ad2-aeb7-b34bb4049261" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b896582-4b26-5ad2-aeb7-b34bb4049261" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="87f924fc-d16c-5635-9ab2-2135a0b87b39" name="Armour of Silvered Steel" hidden="false" collective="false" import="true" type="upgrade">
@@ -4241,7 +6108,7 @@ Models whose troop type is infantry or cavalry only. May be worn with other armo
             <cost name="pts" typeId="points" value="40"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8cbf7e4b-9c88-5b49-928a-6d999db9191d" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8cbf7e4b-9c88-5b49-928a-6d999db9191d" type="max"/>
           </constraints>
           <profiles>
             <profile id="e0712b37-aa31-5818-b168-14cd38099301" name="Armour of Silvered Steel" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4259,7 +6126,7 @@ The Armour of Silvered Steel is a suit of armour that gives its wearer an armour
             <cost name="pts" typeId="points" value="40"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0d55af81-acac-5cac-bebd-76ea3eaa769f" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d55af81-acac-5cac-bebd-76ea3eaa769f" type="max"/>
           </constraints>
           <profiles>
             <profile id="1ff2dacb-585a-5432-8f2f-81a6b1ad6e71" name="Armour of Dark Faith" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4277,7 +6144,7 @@ Models whose troop type is infantry or cavalry only. The Armour of Dark Faith is
             <cost name="pts" typeId="points" value="35"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d2946aa7-7b8a-5ece-a77a-05638b92d8f6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d2946aa7-7b8a-5ece-a77a-05638b92d8f6" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="dc263234-8131-525c-a568-41962f5492b5" name="Glittering Scales" hidden="false" collective="false" import="true" type="upgrade">
@@ -4285,7 +6152,7 @@ Models whose troop type is infantry or cavalry only. The Armour of Dark Faith is
             <cost name="pts" typeId="points" value="35"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e1aa9bc3-aafd-5501-88e9-ed22882abbe9" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e1aa9bc3-aafd-5501-88e9-ed22882abbe9" type="max"/>
           </constraints>
           <profiles>
             <profile id="96bbe46b-2b2f-5406-86dc-2d85e897f6d1" name="Glittering Scales" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4303,7 +6170,7 @@ The Glittering Scales is a suit of light armour. In addition, once per turn, you
             <cost name="pts" typeId="points" value="35"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cf304afc-ba3a-543f-9b27-2c17ed88d883" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cf304afc-ba3a-543f-9b27-2c17ed88d883" type="max"/>
           </constraints>
           <profiles>
             <profile id="d41610af-563f-5350-9f35-5dd36727f933" name="Scale of False Promise" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4321,7 +6188,7 @@ Models whose troop type is infantry or cavalry only. The Scale of False Promise 
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ca776d23-b94f-5af7-9a96-87e4377bd925" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca776d23-b94f-5af7-9a96-87e4377bd925" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="b17bf969-6d13-5a4c-aec6-c6eb02b2977d" name="Shield of the Warrior True" hidden="false" collective="false" import="true" type="upgrade">
@@ -4329,7 +6196,7 @@ Models whose troop type is infantry or cavalry only. The Scale of False Promise 
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="eb3d3fb0-d0df-59f3-a7f1-28ad36bebbb1" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eb3d3fb0-d0df-59f3-a7f1-28ad36bebbb1" type="max"/>
           </constraints>
           <profiles>
             <profile id="d0a19c1f-a54c-5852-939e-5edd02ca31b6" name="Shield of the Warrior True" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4347,7 +6214,7 @@ The Shield of the Warrior True is a shield. In addition, its bearer has a 5+ War
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1521cfa5-9f06-58ed-9d90-184af9e248c4" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1521cfa5-9f06-58ed-9d90-184af9e248c4" type="max"/>
           </constraints>
           <profiles>
             <profile id="669430bd-b869-519f-9677-8c35e60ae7cd" name="Levitating Shield" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4370,7 +6237,7 @@ Models whose troop type is infantry only. The Levitating Shield is a shield. In 
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ad4d661d-cd35-50c2-8a99-a0bae69460f3" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad4d661d-cd35-50c2-8a99-a0bae69460f3" type="max"/>
           </constraints>
           <profiles>
             <profile id="6698d1a6-8541-5c75-bba9-afc7ea5daf5d" name="Helm of Courage" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4388,7 +6255,7 @@ May be worn with other armour. The wearer of the Helm of Courage improves their 
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3e0c2121-ba6c-5409-b4f8-bd5472199060" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e0c2121-ba6c-5409-b4f8-bd5472199060" type="max"/>
           </constraints>
           <profiles>
             <profile id="3f7aca8f-6171-5350-ad22-ef9456b7537f" name="Armour of Meteoric Iron" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4406,7 +6273,7 @@ The Armour of Meteoric Iron gives its wearer an armour value of 5+, which cannot
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5ed6ea2d-a684-5ade-8f95-7e311f61cb09" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5ed6ea2d-a684-5ade-8f95-7e311f61cb09" type="max"/>
           </constraints>
           <profiles>
             <profile id="482cb8d4-9e7e-593e-984f-a864565c21f2" name="Trailblazer's Hauberk" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4424,7 +6291,7 @@ Models whose troop type is infantry only. The Trailblazer's Hauberk is a suit of
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c6400f7b-ff6f-5da4-8ef1-ca8565cce52b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c6400f7b-ff6f-5da4-8ef1-ca8565cce52b" type="max"/>
           </constraints>
           <profiles>
             <profile id="2fb86f93-0cc0-5493-816a-9222b41c9417" name="Padded Hauberk" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4442,7 +6309,7 @@ The Padded Hauberk is a suit of heavy armour. In addition, the wearer improves t
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8dbc5a7e-c31c-5a3b-80e6-accb4bd2c44a" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8dbc5a7e-c31c-5a3b-80e6-accb4bd2c44a" type="max"/>
           </constraints>
           <profiles>
             <profile id="09c44037-f468-5254-b2a1-749db29ea0b7" name="Mantle of Drifting Shadow" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4460,7 +6327,7 @@ Models whose troop type is infantry only. The Mantle of Drifting Shadow is a sui
             <cost name="pts" typeId="points" value="15"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ed88475f-c692-5336-9014-2afe6b66c5e6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ed88475f-c692-5336-9014-2afe6b66c5e6" type="max"/>
           </constraints>
           <profiles>
             <profile id="ee37733c-446a-5d69-b2b4-d0c47e4d4062" name="Iron-rimmed Shield" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4483,7 +6350,7 @@ The Iron-rimmed Shield is a shield. The bearer (but not their mount, should they
             <cost name="pts" typeId="points" value="10"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6d924c32-23c0-59f2-b08c-8f71c8de3875" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d924c32-23c0-59f2-b08c-8f71c8de3875" type="max"/>
           </constraints>
           <profiles>
             <profile id="b1be9b57-54cd-562b-aff4-775bfec70ee3" name="Shadowed Mantle" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4503,14 +6370,29 @@ Models whose troop type is infantry only. The Shadowed Mantle is a suit of light
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="de257641-359e-522d-a248-c5ca6bb88778" name="Common Magic Armour (Wizards)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb56c734-e114-5126-8ff8-a97243d21247" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="2ad262ca-73bf-5328-b8d5-59aca7c5bcd6" name="The Armour of Jet*" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
     <selectionEntryGroup id="a4ad4b97-b13d-585f-a194-bae3ff693858" name="Common Talismans" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e90cbd55-fd04-5345-bcd5-74171f55ba2b" type="max"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="c918a96c-5592-5074-b60f-48d291d4cb1c" name="Dawnstone" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="points" value="35"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="38c79c1f-82b9-5717-96a6-3838274a6672" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38c79c1f-82b9-5717-96a6-3838274a6672" type="max"/>
           </constraints>
           <profiles>
             <profile id="5af80f8e-0ae5-5295-9da5-7bd0bad77853" name="Dawnstone" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4528,7 +6410,7 @@ The bearer of the Dawnstone may re-roll any Armour Save roll of a natural 1.</ch
             <cost name="pts" typeId="points" value="35"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="462926e6-ee93-5060-891f-af7ce698dda1" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="462926e6-ee93-5060-891f-af7ce698dda1" type="max"/>
           </constraints>
           <profiles>
             <profile id="6bbe55af-bef1-5c9c-b1cd-469506ed16b4" name="Icon of Fortitude" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4546,7 +6428,7 @@ Models whose troop type is infantry or cavalry only. The bearer is immune to the
             <cost name="pts" typeId="points" value="35"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4de6b035-a69c-5619-8ffc-9a92e248b324" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4de6b035-a69c-5619-8ffc-9a92e248b324" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="d38df023-f7bc-58ae-a1e6-c1c4adeb643f" name="Ironhide Talisman" hidden="false" collective="false" import="true" type="upgrade">
@@ -4554,7 +6436,7 @@ Models whose troop type is infantry or cavalry only. The bearer is immune to the
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4f785225-ad57-5f63-b887-424bec6a3f50" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4f785225-ad57-5f63-b887-424bec6a3f50" type="max"/>
           </constraints>
           <profiles>
             <profile id="3b46308d-b91f-5be8-a245-fc99f630c4d1" name="Ironhide Talisman" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4573,7 +6455,7 @@ Note that this magic item does not work against attacks that hit automatically.<
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c867068f-e162-5107-84fa-c7637413fbda" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c867068f-e162-5107-84fa-c7637413fbda" type="max"/>
           </constraints>
           <profiles>
             <profile id="12efa4b8-0460-5cae-900f-58af21dd24d9" name="Talisman of Protection" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4591,7 +6473,7 @@ The Talisman of Protection gives its bearer a 5+ Ward save against any wounds su
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="be98a654-203d-5f31-a9de-e751ad20b427" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be98a654-203d-5f31-a9de-e751ad20b427" type="max"/>
           </constraints>
           <profiles>
             <profile id="b10d0b38-6a2d-5ea2-b00d-8d4ccee26b1e" name="Talisman of Authority" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4614,7 +6496,7 @@ Single use. Enemy models that wish to direct their attacks against the bearer of
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1bce6866-89dc-50b3-8f32-64e1609c3d43" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1bce6866-89dc-50b3-8f32-64e1609c3d43" type="max"/>
           </constraints>
           <profiles>
             <profile id="8ddc1858-e4b7-54d9-85d3-c6544b041ab1" name="Amulet of Spell Attraction" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4637,7 +6519,7 @@ Once per turn, when a friendly unit within the bearer's Command range is targete
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bc7fe7c0-6fe8-5c62-8d7b-af0549a4526b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bc7fe7c0-6fe8-5c62-8d7b-af0549a4526b" type="max"/>
           </constraints>
           <profiles>
             <profile id="b1b57999-95d4-55ea-b5a1-686cf79e10f8" name="Periapt of Soul Exchange" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4655,7 +6537,7 @@ Single use. During the Command sub-phase of their turn, the bearer of the Periap
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ed5db210-af2b-56f6-85b5-7fd1681ae93f" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ed5db210-af2b-56f6-85b5-7fd1681ae93f" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="7f7ae78e-4a10-5f61-8684-7a16f68f01cf" name="Luckstone*" hidden="false" collective="false" import="true" type="upgrade">
@@ -4668,7 +6550,7 @@ Single use. During the Command sub-phase of their turn, the bearer of the Periap
             <cost name="pts" typeId="points" value="15"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bdda8d27-e4a2-5ddf-b355-a2f3a14ffde8" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bdda8d27-e4a2-5ddf-b355-a2f3a14ffde8" type="max"/>
           </constraints>
           <profiles>
             <profile id="c41e7944-6f35-50a3-a0c1-35145a236e2f" name="The Warding Talisman" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4684,13 +6566,16 @@ The Warding Talisman gives its bearer a 6+ Ward save against any wounds suffered
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="a59d8877-a8ae-5b1c-828c-33639f058c73" name="Common Enchanted Items" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="506a2cde-5b6e-5108-bcef-158504639fb1" type="max"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="5a87d4bf-9e86-5dad-a04c-b8a4db27b07e" name="Robes of Phakth" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="points" value="50"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="80064709-f643-5091-a42f-46258aaa0cc5" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="80064709-f643-5091-a42f-46258aaa0cc5" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="1638642d-70d3-5f89-8553-98c988a0ffec" name="Wizarding Hat" hidden="false" collective="false" import="true" type="upgrade">
@@ -4698,7 +6583,7 @@ The Warding Talisman gives its bearer a 6+ Ward save against any wounds suffered
             <cost name="pts" typeId="points" value="45"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4c8972d8-d33c-570c-a465-444b57aafc81" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c8972d8-d33c-570c-a465-444b57aafc81" type="max"/>
           </constraints>
           <profiles>
             <profile id="dd11c9da-c0fc-5f70-bbb3-df17c54b16b9" name="Wizarding Hat" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4716,7 +6601,7 @@ The wearer is a Level 1 Wizard and knows one randomly generated spell from a Lor
             <cost name="pts" typeId="points" value="40"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c20d3dcc-4bfb-5c50-b989-48a9964a3f37" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c20d3dcc-4bfb-5c50-b989-48a9964a3f37" type="max"/>
           </constraints>
           <profiles>
             <profile id="fdea4608-d0d8-5ead-9528-0b37fbb79897" name="Arch-Lightning Rod" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4734,7 +6619,7 @@ Single use. During the Command sub-phase of their turn, if they are not engaged 
             <cost name="pts" typeId="points" value="40"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2f645c22-cae3-53ba-b577-3264118bb347" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f645c22-cae3-53ba-b577-3264118bb347" type="max"/>
           </constraints>
           <profiles>
             <profile id="bb0d915b-6b2f-5cd0-9a5d-0a12d5e7269a" name="Flying Carpet" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4757,7 +6642,7 @@ Models whose troop type is regular infantry or heavy infantry only. The bearer o
             <cost name="pts" typeId="points" value="35"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8848eae4-83b1-5521-8225-ce865b185b58" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8848eae4-83b1-5521-8225-ce865b185b58" type="max"/>
           </constraints>
           <profiles>
             <profile id="9d4a2469-0472-5a83-aa85-3cc3223e0b23" name="Ruby Ring of Ruin" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4775,7 +6660,7 @@ The wielder of the Ruby Ring of Ruin can cast the Fireball spell from the Lore o
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="776deac3-f1b6-55a5-9096-4b6a005ac44f" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="776deac3-f1b6-55a5-9096-4b6a005ac44f" type="max"/>
           </constraints>
           <profiles>
             <profile id="600f29ea-cc84-5cea-ae7c-da0ec296413a" name="Potion of Fervour" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4799,7 +6684,7 @@ Note that a model can only consume a single potion (of any type) per Command pha
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5820e9bc-b3a8-5879-8d66-801f15a64eb4" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5820e9bc-b3a8-5879-8d66-801f15a64eb4" type="max"/>
           </constraints>
           <profiles>
             <profile id="0e14f91a-29b3-5f57-bc16-9e6b4e04ed39" name="Ring of Doom" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4822,7 +6707,7 @@ The bearer of the Ring of Doom can cast the Doombolt spell from the Lore of Dark
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fdac9e2d-ca42-5834-9428-5b7f30333fcd" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fdac9e2d-ca42-5834-9428-5b7f30333fcd" type="max"/>
           </constraints>
           <profiles>
             <profile id="7c2dfeee-8f8f-5508-b240-97dda9f74a52" name="Becalming Orb" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4847,7 +6732,7 @@ Until your next Start of Turn sub-phase, enemy Wizards that are within 15" of th
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3dda5b2c-3ae8-5717-a9e2-3f30a95c68a0" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3dda5b2c-3ae8-5717-a9e2-3f30a95c68a0" type="max"/>
           </constraints>
           <profiles>
             <profile id="b0ef6afd-3f13-5376-9a81-7d68e9e23872" name="The Ranger's Glass" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4865,7 +6750,7 @@ If your General is equipped with the Ranger's Glass, you add +1 to your roll whe
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a951a6d9-d548-515c-9de4-e2a99f5175e5" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a951a6d9-d548-515c-9de4-e2a99f5175e5" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="0d960680-7f99-53ce-aaa5-5b26d247a7c7" name="The Crown of Fury" hidden="false" collective="false" import="true" type="upgrade">
@@ -4873,7 +6758,7 @@ If your General is equipped with the Ranger's Glass, you add +1 to your roll whe
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="64de51f1-02d7-500d-a19a-b3b42d1660a2" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="64de51f1-02d7-500d-a19a-b3b42d1660a2" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="0d9615c5-4896-5764-b6b6-46f78dcbab3a" name="The All-Seeing Eye of Numas" hidden="false" collective="false" import="true" type="upgrade">
@@ -4881,7 +6766,7 @@ If your General is equipped with the Ranger's Glass, you add +1 to your roll whe
             <cost name="pts" typeId="points" value="15"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b9ae6fa3-7817-544b-8fb4-8ad8646475eb" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b9ae6fa3-7817-544b-8fb4-8ad8646475eb" type="max"/>
           </constraints>
           <profiles>
             <profile id="4abb0888-926c-5bf2-9791-dd0cebb5f7bd" name="The All-Seeing Eye of Numas" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4899,7 +6784,7 @@ The bearer of the All-Seeing Eye of Numas ignores modifiers for full and partial
             <cost name="pts" typeId="points" value="15"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9756660c-f8fa-5619-b40e-b756dfd88e5b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9756660c-f8fa-5619-b40e-b756dfd88e5b" type="max"/>
           </constraints>
           <profiles>
             <profile id="8a9dc608-2489-5e93-8b21-f0e51996f7a5" name="Daemon-Blooded Steed" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4917,7 +6802,7 @@ Models whose troop type is cavalry only. The bearer's mount improves its Movemen
             <cost name="pts" typeId="points" value="15"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4f72b0b5-f348-59e9-934e-d0d66f0bb92c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4f72b0b5-f348-59e9-934e-d0d66f0bb92c" type="max"/>
           </constraints>
           <profiles>
             <profile id="c9930ac6-7eb2-53f2-b1bc-8051373b8155" name="Elixir of Power" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4950,7 +6835,7 @@ Single use. During the Command sub-phase of their turn, the bearer of an Elixir 
             <cost name="pts" typeId="points" value="5"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bf0180f7-7a19-5aa7-8f25-225ec9e63ccb" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf0180f7-7a19-5aa7-8f25-225ec9e63ccb" type="max"/>
           </constraints>
           <profiles>
             <profile id="ef3170e6-19b3-5d1f-850e-bfd54e31d844" name="Enchanted Almanack" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4966,13 +6851,16 @@ If a character in your army bears the Enchanted Almanack, you may re-roll your D
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="117ea5dd-b564-5158-93a8-df637aceca91" name="Common Arcane Items" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d59567d-e3c8-5527-9400-1b7b59b456d2" type="max"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="775d5982-48c0-5e2f-a988-1813bccc7aa0" name="Feedback Scroll" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="points" value="60"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bae76e4b-2f6d-5134-91a8-51e0c578ee62" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bae76e4b-2f6d-5134-91a8-51e0c578ee62" type="max"/>
           </constraints>
           <profiles>
             <profile id="ca84447b-17fb-57aa-b175-8a136401f579" name="Feedback Scroll" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -4995,7 +6883,7 @@ Single use. The bearer may use this scroll instead of making a Wizardly dispel a
             <cost name="pts" typeId="points" value="50"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="420524c1-17a1-55d2-8e00-f6b26e2c7e78" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="420524c1-17a1-55d2-8e00-f6b26e2c7e78" type="max"/>
           </constraints>
           <profiles>
             <profile id="1e21b6ff-def3-5574-a76d-44a6b9b80be2" name="Rod of Might" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5013,7 +6901,7 @@ The bearer of the Rod of Might may apply a +1 modifier to any of their casting r
             <cost name="pts" typeId="points" value="45"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7560577e-476b-5d0d-8c41-dc622193b125" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7560577e-476b-5d0d-8c41-dc622193b125" type="max"/>
           </constraints>
           <profiles>
             <profile id="076ab79e-8fc7-5739-988c-ec03b0d2445a" name="Wand of Jet" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5032,7 +6920,7 @@ Note that this is a modifier to the result of a roll – it does not negate a ro
             <cost name="pts" typeId="points" value="40"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2fd8612b-3eda-5785-b244-9a25c34ff293" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fd8612b-3eda-5785-b244-9a25c34ff293" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="563700fc-578a-5856-81b2-7884bc633459" name="Staff of Quietude" hidden="false" collective="false" import="true" type="upgrade">
@@ -5040,7 +6928,7 @@ Note that this is a modifier to the result of a roll – it does not negate a ro
             <cost name="pts" typeId="points" value="35"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5569ed05-05ca-5625-a855-19ae5a8fe4c1" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5569ed05-05ca-5625-a855-19ae5a8fe4c1" type="max"/>
           </constraints>
           <profiles>
             <profile id="f3d18e3e-0605-58c6-a793-811858bdd2a9" name="Staff of Quietude" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5058,7 +6946,7 @@ During the Command sub-phase of their turn, the bearer of the Staff of Quietude 
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4bdc79af-2fe4-51c8-bcc7-8e789bd485ab" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4bdc79af-2fe4-51c8-bcc7-8e789bd485ab" type="max"/>
           </constraints>
           <profiles>
             <profile id="e2383be5-5bec-5df5-b5c9-2828a1cd56db" name="Scroll of Disruption" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5077,7 +6965,7 @@ Once per turn, the bearer of the Scroll of Disruption may re-roll a Dispel roll.
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9e5fece1-e8d3-55dd-8ba6-c42a698b7139" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e5fece1-e8d3-55dd-8ba6-c42a698b7139" type="max"/>
           </constraints>
           <profiles>
             <profile id="71848752-878c-5b36-a8af-bc5b8fda5605" name="Tome of Spellcraft" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5096,7 +6984,7 @@ Once per turn, the bearer of the Tome of Spellcraft may re-roll a Casting roll.
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f5333201-f3e2-5763-ba6c-787adc5238e4" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f5333201-f3e2-5763-ba6c-787adc5238e4" type="max"/>
           </constraints>
           <profiles>
             <profile id="904bbf74-9d32-5eff-8db3-64caf2f1ea8a" name="Lore Familiar" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5124,7 +7012,7 @@ The owner of a Lore Familiar does not randomly generate their spells. Instead, t
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6a139094-db0a-5f05-9d62-eff0e6415142" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a139094-db0a-5f05-9d62-eff0e6415142" type="max"/>
           </constraints>
           <profiles>
             <profile id="d9e1ea42-5f1f-589b-917e-0d42b7783f06" name="Infernal Familiar" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5142,7 +7030,7 @@ The owner of an Infernal Familiar may select either Doombolt or Winds of Chaos a
             <cost name="pts" typeId="points" value="25"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="51f312d0-8bec-578d-893b-21f7c844cf16" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="51f312d0-8bec-578d-893b-21f7c844cf16" type="max"/>
           </constraints>
         </selectionEntry>
         <selectionEntry id="5b8e0017-a83f-5236-b78a-55e2b59885ee" name="Power Scroll*" hidden="false" collective="false" import="true" type="upgrade">
@@ -5160,7 +7048,7 @@ The owner of an Infernal Familiar may select either Doombolt or Winds of Chaos a
             <cost name="pts" typeId="points" value="15"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3b5d01bf-60e1-552f-b14a-131ef1a24cc8" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b5d01bf-60e1-552f-b14a-131ef1a24cc8" type="max"/>
           </constraints>
           <profiles>
             <profile id="50558810-304c-5b9f-9148-79ef47f43285" name="Arcane Familiar" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5188,7 +7076,7 @@ The owner of an Arcane Familiar knows spells from two Lores of Magic, rather tha
             <cost name="pts" typeId="points" value="10"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2e907f4e-5d38-5c36-8609-48ceadfc8763" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2e907f4e-5d38-5c36-8609-48ceadfc8763" type="max"/>
           </constraints>
           <profiles>
             <profile id="17e8dc2c-f2dc-5169-b5dc-ae986f25880b" name="Wyrdstone Shard" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5206,7 +7094,7 @@ Single use. Immediately before the bearer of the Wyrdstone Shard makes either a 
             <cost name="pts" typeId="points" value="5"/>
           </costs>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dd45c043-fd77-5903-8350-e061a994629c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dd45c043-fd77-5903-8350-e061a994629c" type="max"/>
           </constraints>
           <profiles>
             <profile id="657be494-499e-5124-8334-093999e59670" name="Earthing Rod" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
@@ -5226,21 +7114,307 @@ Single use. Should they miscast a spell, a Wizard can use the Earthing Rod to re
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="6e60aa17-f7e3-5707-be14-e6a0a51adfe4" name="Common Magic Standards" hidden="false" collective="false" import="true">
-      <selectionEntries/>
+    <selectionEntryGroup id="5dec5be3-1fda-58b0-bd65-53a3e9bcc86a" name="Common Magic Standards" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3635233f-9736-539e-8975-43c417f8542e" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b71c16cc-9f9f-542b-9cdd-8ec94fe6c41a" name="Banner of Iron Resolve" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7c15c7b0-c451-56b5-8feb-ca1fa9a5571c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1ed4a467-a755-5d38-a609-e7dcaac37f29" name="Banner of Iron Resolve" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">No regiment that stands beneath the Banner of Iron Resolve has ever fled from the foe.
+
+A unit carrying the Banner of Iron Resolve gains the Stubborn special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="d2a12112-e875-5144-aa7d-0a039e8fbe08" name="Banner of the Steadfast" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c96f76f0-bc14-52cf-983e-3e4fc92c1b83" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2711f1e3-9fa2-5eba-8022-d375316aea65" name="Banner of the Steadfast" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">Woven into the bright fabric of this banner is a scene of unimaginable gallantry, a scene that serves to inspire those who fight in its shadow to hold their ground no matter the odds.
+
+Models whose troop type is infantry only. Should a unit carrying the Banner of the Steadfast belong to the losing side of a Combat, it can Fall Back in Good Order even if the Unit Strength of the winning side is more than twice that of its own side.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="847fb6be-754c-5496-814a-2a3b8eb32e2a" name="Totem of Wrath" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d741e09-d9e8-5be7-bbcd-ebbffea008d1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ba9e229d-9ed1-5d1f-89f9-7e69b1343cb8" name="Totem of Wrath" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">Cruel runes etched into the surface of this icon tremble with power, causing those around it to succumb to an animalistic ferocity.
+
+During a turn in which it charged, models within a unit carrying the Totem of Wrath improve the Armour Piercing characteristic of their weapons by 1, and may re-roll any rolls To Wound of a natural 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="d2dd281f-c9bc-5028-8a78-a9547b865ef5" name="The Banner of The Dark Heart" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="12d6c5d1-986b-5c53-b75c-06de1b471674" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5b3e1909-1dba-5f62-8008-333375e217b6" name="The Banner of The Dark Heart" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">Though it bestows stoicism and bravery, this standard breeds contempt toward those not fighting in its shadow.
+
+When required to make a Fear, Panic or Terror test, a unit carrying this standard may roll an extra D6 and discard the highest result. However, a unit carrying this banner cannot benefit from the General's Inspiring Presence special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="6b60b977-fa30-52d3-b484-010fe3870360" name="Razor Standard" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="39bd9c0d-ad05-5322-b637-c4a91c27609d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="123cbc1a-e942-595c-9fda-9b09c44fc800" name="Razor Standard" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">Hung with hundreds of wickedly sharp blades, an air of sharpness radiates outwards from the Razor Standard.
+
+A unit carrying the Razor Standard gains the Armour Bane (2) special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="6ddc8da0-175c-59a7-b6db-b44ac002b46c" name="Rampaging Banner" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="30"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="754b9240-07d7-5e1e-9b1c-ac8f54292c6d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="73bb1afb-4289-5b84-9979-a4afffb8f6be" name="Rampaging Banner" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">As a matter of honour, those that fight beneath the Rampaging Banner are always first into the fray.
+
+When a unit carrying the Rampaging Banner declares a charge, it may re-roll its Charge roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="818c5572-42ae-552e-8172-25e5911f61a8" name="Banner of Swirling Wind" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="30"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75a99252-97a1-5238-8329-b0a69e063143" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="22a7b883-a363-5d92-8eb3-b05a344da9e8" name="Banner of Swirling Wind" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">Gale-force winds surge around this standard so fiercely that arrows and shot are blown forcefully away from their target.
+
+Any enemy model that shoots at a unit carrying the Banner of Swirling Wind suffers an additional -1 To Hit modifier.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="e6528f26-46bd-5495-9ea8-7f03e5308428" name="Monster Hunter's Tapestry" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fc76c005-1670-507c-85a6-a1bc968bac8f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2904f21c-2ad9-5138-9f37-126caacc844b" name="Monster Hunter's Tapestry" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">Those who have earned the right to fight under this standard have battled some of the Old World's most dangerous beasts and lived to tell the tale.
+
+Enemy units may not make Stomp Attacks against a unit carrying the Monster Hunter's Tapestry.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="588f94e3-0e5c-5639-a07a-0b26228824f8" name="The Blazing Banner" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1963ba2c-320e-5daa-b651-943c5f51ae47" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fe6cef99-9d5d-5855-b094-a2597720f5d1" name="The Blazing Banner" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">An eternal flame flickers about the weapons of those that march beneath the Blazing Banner.
+
+A unit carrying the Blazing Banner gains the Flaming Attacks special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="ea239be7-6da6-5082-a9b8-45486d8ced75" name="The Mouldering Banner" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2e866d83-876d-5ce5-bada-03b25de3eab8" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="c79a8832-9f9d-55a6-8988-289dc3f1bcab" name="War Banner" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f9d0f65-51c1-5ae4-9931-90af56a58d4f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bcf6047a-b4d2-5325-962c-57133a122e38" name="War Banner" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">A proud banner of great age. Those that march beneath the War Banner fight with grim resolve.
+
+When calculating its combat result, a unit carrying the War Banner may claim an additional bonus of +1 combat result point.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="2f0a6060-a29f-529f-a51c-050abeba2a60" name="Banner of Renown" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="82a9c7bb-d767-5827-ba96-59f3eb833ea1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="95d7ac7b-6dcc-54fa-a0aa-cad65f9ec94e" name="Banner of Renown" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">The mere sight of an infamous regiment's banner can fill the enemy with dread and tip the outcome of battle.
+
+Single use. When calculating its combat result, a unit carrying the Banner of Renown may claim an additional bonus of +1 combat result point.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="69db7ee3-8df3-5630-bdc9-7df6821963f6" name="Standard of The Fell Warrior" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ef68a716-ca23-5e25-9c12-40809f49b4ff" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c160594b-1184-51ed-923b-6488ba9e40de" name="Standard of The Fell Warrior" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">Those who wage war beneath this standard fight as a single being, shifting their battleline without word or signal.
+
+Single use. During the Remaining Moves sub-phase, a unit carrying this standard may perform a free redress the ranks manoeuvre immediately before moving. Once this manoeuvre is complete, the unit moves as normal but cannot turn or perform a quick turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="3ff8f72d-eabd-5e9b-95e0-991b2ef6da21" name="The Banner of the Resolute Dead" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f714e5c5-2376-5624-b838-4d4d55bb0f76" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="c473f7fa-eede-56bc-bca1-6e7761c1f36b" name="The Banner of The Bold" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e302bf29-172e-5ffe-8084-a05d981ec216" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9f56f9d6-5842-59ba-af86-cffcfa67effb" name="The Banner of The Bold" hidden="false" typeId="bb5fb89a-5eb5-5138-af87-f1c6e953cc42" typeName="Magic Item">
+              <characteristics>
+                <characteristic name="Category" typeId="4a76d5ad-8dbe-501c-8a46-2804367e2b8d">banner</characteristic>
+                <characteristic name="Effect" typeId="740945df-ffc0-53b8-9066-93400c97c5d0">Proudly borne aloft by the veterans of many battles, a unit entrusted with this tattered banner is filled with courage.
+
+A unit carrying the Banner of the Bold gains the Veteran special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="4b74233b-4dc8-5a11-9f8a-418b7aa8beea" name="Lores of Magic" hidden="false" collective="false" import="true">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="40e2096d-e976-5908-bc73-2526c183d31c" name="Battle Magic" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="74275155-b8a3-5230-aa79-176970a08b66" name="signature. Hammerhand" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="da2dc120-fc99-505d-a265-c6226644c663" name="Hammerhand" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Battle Mage chants an invocation, their fists become like hammers, falling upon their foes with great and terrible power.
+      <entryLinks>
+        <entryLink id="b0e9925c-ceee-57b6-9487-fc4ad61ec884" name="Battle Magic" hidden="false" collective="false" import="true" targetId="40e2096d-e976-5908-bc73-2526c183d31c" type="selectionEntryGroup"/>
+        <entryLink id="e77a31ac-7469-58bc-971d-ef158de28efd" name="Daemonology" hidden="false" collective="false" import="true" targetId="8466c25f-83a0-51b6-8f64-63254b527a1b" type="selectionEntryGroup"/>
+        <entryLink id="6abfd866-c71b-5737-b1ee-d016f8401f66" name="Dark Magic" hidden="false" collective="false" import="true" targetId="ebba516a-2288-591a-907e-682eef2dd2d3" type="selectionEntryGroup"/>
+        <entryLink id="baff5009-01c4-5823-9af0-1ba53dc8153d" name="Elementalism" hidden="false" collective="false" import="true" targetId="23edc5dc-f8ce-5a1d-a86f-cfffa6e70225" type="selectionEntryGroup"/>
+        <entryLink id="49b02b4f-c2a8-52b1-90d0-526103b0694d" name="High Magic" hidden="false" collective="false" import="true" targetId="16cb835b-8eb0-5046-8f1e-4078d858b3ee" type="selectionEntryGroup"/>
+        <entryLink id="26913415-ff3f-5b9b-a304-1a9dca840064" name="Illusion" hidden="false" collective="false" import="true" targetId="942f4793-4b25-5c52-91ad-de55059d6052" type="selectionEntryGroup"/>
+        <entryLink id="5076d2b2-c3f9-57b4-af9b-39e6c413ac38" name="Necromancy" hidden="false" collective="false" import="true" targetId="b905cd09-f8c9-54cd-a8e3-35581df2d58d" type="selectionEntryGroup"/>
+        <entryLink id="8ae33b02-0d64-5708-a263-1ca88046c845" name="Waaagh Magic" hidden="false" collective="false" import="true" targetId="fea3e3ab-8a02-571b-b71f-9edd6d862d25" type="selectionEntryGroup"/>
+        <entryLink id="205c3978-6544-523d-82ba-7c372086120b" name="Troll Magic" hidden="false" collective="false" import="true" targetId="b9c78a77-16fa-572c-a014-b2618f02ba7b" type="selectionEntryGroup"/>
+        <entryLink id="8b1c0995-11ce-5d4f-8e06-2ad1f6aee947" name="Lore Of Athel Loren" hidden="false" collective="false" import="true" targetId="232a48a7-ac2e-5049-a264-6f31db532bf8" type="selectionEntryGroup"/>
+        <entryLink id="495b801a-4548-53b3-a32f-481b8077893c" name="Lore Of Beasts" hidden="false" collective="false" import="true" targetId="eb907102-fec3-547e-b5bd-c581e079438b" type="selectionEntryGroup"/>
+        <entryLink id="34581ab2-68cf-5aca-a613-5a368317bc7f" name="Lore Of Chaos" hidden="false" collective="false" import="true" targetId="4930814f-77d4-504f-acb0-3186561809db" type="selectionEntryGroup"/>
+        <entryLink id="48e53b76-6ae7-58a0-9204-feeac0dccdcc" name="Lore Of Daemons" hidden="false" collective="false" import="true" targetId="cacf240a-f0f8-5375-b750-e74af95fe880" type="selectionEntryGroup"/>
+        <entryLink id="741f3436-fd2b-5345-a9ce-56dfc995e2b8" name="Lore Of Gork" hidden="false" collective="false" import="true" targetId="6d443eed-0b46-5be1-b54e-89f58128326e" type="selectionEntryGroup"/>
+        <entryLink id="c35d7ff4-b3da-5a14-bb68-e23aa5d35bbe" name="Lore Of Hashut" hidden="false" collective="false" import="true" targetId="d1061df5-1206-5d3e-9edf-945225927988" type="selectionEntryGroup"/>
+        <entryLink id="c9caf0ea-0ed6-540d-b0e3-d21a49bdc371" name="Lore Of Lustria" hidden="false" collective="false" import="true" targetId="ad080ab5-35fc-5ed4-8f08-17f4c4644a48" type="selectionEntryGroup"/>
+        <entryLink id="4afff2a3-f1fb-5542-9bcf-7cc628f5a6c3" name="Lore Of Naggaroth" hidden="false" collective="false" import="true" targetId="7963da92-ec6a-5747-a764-55cfb1f8c014" type="selectionEntryGroup"/>
+        <entryLink id="e7049243-0bf4-55f7-b0a0-e6f86e83d766" name="Lore Of Mork" hidden="false" collective="false" import="true" targetId="37ed0a1c-8451-5f9c-b163-569e0de8f3b5" type="selectionEntryGroup"/>
+        <entryLink id="067223c2-8046-5392-957c-70862a6abac2" name="Lore Of Nehekhara" hidden="false" collective="false" import="true" targetId="93af6eff-4d44-5633-abe0-fc8fafcb8437" type="selectionEntryGroup"/>
+        <entryLink id="7389eff7-c6b8-5355-b971-53e21550953c" name="Lore Of Saphery" hidden="false" collective="false" import="true" targetId="e8cf592e-2082-5968-b347-28e9e8058efa" type="selectionEntryGroup"/>
+        <entryLink id="a76ff077-8864-5456-a648-52d1ac833a3d" name="Lore Of The Great Maw" hidden="false" collective="false" import="true" targetId="ae5e04f0-abf9-5d48-9090-0c7c27469490" type="selectionEntryGroup"/>
+        <entryLink id="683c3ec2-405a-5bb2-aca2-b50f51e15f02" name="Lore Of The Horned Rat" hidden="false" collective="false" import="true" targetId="3ec836d1-473d-55af-9d3a-aae636f9f977" type="selectionEntryGroup"/>
+        <entryLink id="6f0ea322-5ebe-59d7-b4f3-4fa4d6de9ce1" name="Lore Of The Lady" hidden="false" collective="false" import="true" targetId="bd0b5834-236a-5381-8aa5-5d097bb0e2a8" type="selectionEntryGroup"/>
+        <entryLink id="8d6233e2-5825-5fbb-9c62-16e5ad00e08a" name="Lore Of Undeath" hidden="false" collective="false" import="true" targetId="d3bede8c-873d-506b-8dcf-d0fa7b74e856" type="selectionEntryGroup"/>
+        <entryLink id="0a5f96a8-854f-5903-8775-2e5d9688dd6b" name="Lore Of The Wilds" hidden="false" collective="false" import="true" targetId="5594274e-60a3-5ea6-8174-7a1469ced965" type="selectionEntryGroup"/>
+        <entryLink id="6de8f2cd-8e6a-561a-9296-1efacdfa7fab" name="Primal Magic" hidden="false" collective="false" import="true" targetId="38083a45-fa40-5e6e-8ffc-f79ca407cce3" type="selectionEntryGroup"/>
+        <entryLink id="9976bbc5-9596-58f9-bb1f-1696ea0c4ed8" name="Lore Of Yang" hidden="false" collective="false" import="true" targetId="8dafaaf1-8266-55ed-9014-0dcfe28133ed" type="selectionEntryGroup"/>
+        <entryLink id="385d4a08-ac83-596b-85ff-dace11c0d047" name="Lore Of Yin" hidden="false" collective="false" import="true" targetId="203d3d9c-da50-5aa6-a040-9731888fcde8" type="selectionEntryGroup"/>
+        <entryLink id="60c9c1bc-94cb-55df-96a5-049d116f2476" name="Miao Ying" hidden="false" collective="false" import="true" targetId="a7ab39b4-47b5-5b06-8bdd-20841f0c0232" type="selectionEntryGroup"/>
+        <entryLink id="e8512ee3-6ce2-5911-b62d-e16d7033136d" name="Shadowlands" hidden="false" collective="false" import="true" targetId="f169cebb-6cd4-566c-865c-7d868626ec64" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="40e2096d-e976-5908-bc73-2526c183d31c" name="Battle Magic" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="74275155-b8a3-5230-aa79-176970a08b66" name="signature. Hammerhand" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="da2dc120-fc99-505d-a265-c6226644c663" name="Hammerhand" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Battle Mage chants an invocation, their fists become like hammers, falling upon their foes with great and terrible power.
 
 Type
 Assailment
@@ -5249,18 +7423,18 @@ Casting Value
 Range
 Combat
 A single enemy unit the caster is engaged in combat with suffers 2D3 Strength 4 hits, each with an AP of -2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="98c7ac38-e34d-55a7-badf-2df181540068" name="1. Fireball" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="5a1e9124-4d05-5778-9607-22d0ee6b4d57" name="Fireball" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">24"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a snap of the fingers, the Battle Mage summons forth a roiling ball of magical flame and hurls it at a nearby foe.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="98c7ac38-e34d-55a7-badf-2df181540068" name="1. Fireball" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="5a1e9124-4d05-5778-9607-22d0ee6b4d57" name="Fireball" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">24"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a snap of the fingers, the Battle Mage summons forth a roiling ball of magical flame and hurls it at a nearby foe.
 
 Type
 Magic Missile
@@ -5269,18 +7443,18 @@ Casting Value
 Range
 24"
 The target enemy unit suffers 2D6 Strength 4 hits, each with an AP of -. This spell has the Flaming Attacks special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="91abd453-7b52-593a-a028-642fbf5ceddc" name="2. Curse Of Arrow Attraction" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a3d1567e-962a-5e41-a274-7a2123264b95" name="Curse Of Arrow Attraction" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">21"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a cry and a flourish, the Battle Mage curses an enemy, causing missiles to seek them out with almost sentient awareness.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="91abd453-7b52-593a-a028-642fbf5ceddc" name="2. Curse Of Arrow Attraction" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="a3d1567e-962a-5e41-a274-7a2123264b95" name="Curse Of Arrow Attraction" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">21"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a cry and a flourish, the Battle Mage curses an enemy, causing missiles to seek them out with almost sentient awareness.
 
 Type
 Hex
@@ -5289,18 +7463,18 @@ Casting Value
 Range
 21"
 Until your next Start of Turn sub-phase, you may re-roll any rolls To Hit of a natural 1 when shooting at the target enemy unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="9fe8ff96-26f2-5d64-9d9c-de311cdd823c" name="3. Pillar Of Fire" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="880cf84e-5157-51e0-a579-cdbf9a4ba095" name="Pillar Of Fire" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Battle Mage conjures a fireball which quickly grows to become a towering pillar. Loosed from their grasp, it advances towards the enemy.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="9fe8ff96-26f2-5d64-9d9c-de311cdd823c" name="3. Pillar Of Fire" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="880cf84e-5157-51e0-a579-cdbf9a4ba095" name="Pillar Of Fire" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Battle Mage conjures a fireball which quickly grows to become a towering pillar. Loosed from their grasp, it advances towards the enemy.
 
 Type
 Magical Vortex
@@ -5309,18 +7483,18 @@ Casting Value
 Range
 12"
 Remains in Play. Place a small (3") blast template so that its central hole is within 12" of the caster. Whilst in play, the template is treated as difficult terrain. The template scatters D6" during every Start of Turn sub-phase. Any enemy unit that moves through the template, or that the template moves over, suffers D3+3 Strength 3 hits, each with an AP of -2. These hits have the Flaming Attacks special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="08954bb4-e82a-53c5-84cd-c6a765831ce7" name="4. Arcane Urgency" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="3b878cf6-e5e5-5075-abdf-dee51526c895" name="Arcane Urgency" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Battle Mage's allies march, time around them slows, allowing them to cover great distance in the blink of an eye.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="08954bb4-e82a-53c5-84cd-c6a765831ce7" name="4. Arcane Urgency" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3b878cf6-e5e5-5075-abdf-dee51526c895" name="Arcane Urgency" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Battle Mage's allies march, time around them slows, allowing them to cover great distance in the blink of an eye.
 
 Type
 Conveyance
@@ -5329,18 +7503,18 @@ Casting Value
 Range
 15"
 If the target friendly unit is not fleeing and has already moved during this Movement phase, it may immediately move again.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="69fcd61b-a737-5de3-969b-2f05adf28d5a" name="5. Oaken Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="b19aae48-db8e-5e2f-a61c-8d0ae9f99f12" name="Oaken Shield" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Battle Mage summons a mighty spectral oak around themselves and their allies, protecting them from the weapons of their enemies.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="69fcd61b-a737-5de3-969b-2f05adf28d5a" name="5. Oaken Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="b19aae48-db8e-5e2f-a61c-8d0ae9f99f12" name="Oaken Shield" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Battle Mage summons a mighty spectral oak around themselves and their allies, protecting them from the weapons of their enemies.
 
 Type
 Enchantment
@@ -5349,18 +7523,18 @@ Casting Value
 Range
 Self
 Until your next Start of Turn sub-phase, the caster and any unit they have joined gain a 5+ Ward save against any wounds suffered.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="1c6090d1-be68-58ab-8d4c-6f4b370f21a9" name="6. Curse Of Cowardly Flight" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="52353597-808e-5737-9e16-646da81ea18c" name="Curse Of Cowardly Flight" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the war drums beat, the Battle Mage reaches into the minds of the enemy, tapping into their fears and weakening their intestinal fortitude.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="1c6090d1-be68-58ab-8d4c-6f4b370f21a9" name="6. Curse Of Cowardly Flight" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="52353597-808e-5737-9e16-646da81ea18c" name="Curse Of Cowardly Flight" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the war drums beat, the Battle Mage reaches into the minds of the enemy, tapping into their fears and weakening their intestinal fortitude.
 
 Type
 Hex
@@ -5369,22 +7543,22 @@ Casting Value
 Range
 15"
 The target enemy unit must immediately make a Panic test. If the target unit automatically passes any Panic tests it is required to make for any reason, it must still make this test and, should it fail, it will Give Ground.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="8466c25f-83a0-51b6-8f64-63254b527a1b" name="Daemonology" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="5748168a-3061-5c85-b6db-49bcad139e8a" name="signature. The Summoning" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="e0e4ab2b-f49c-59e4-afc2-5c744bf69374" name="The Summoning" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">From the Realm of Chaos, the Daemonologist summons forth daemonic beasts to strike at their foes.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8466c25f-83a0-51b6-8f64-63254b527a1b" name="Daemonology" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="5748168a-3061-5c85-b6db-49bcad139e8a" name="signature. The Summoning" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e0e4ab2b-f49c-59e4-afc2-5c744bf69374" name="The Summoning" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">From the Realm of Chaos, the Daemonologist summons forth daemonic beasts to strike at their foes.
 
 Type
 Magic Missile
@@ -5393,18 +7567,18 @@ Casting Value
 Range
 18"
 The target enemy unit suffers 2D6 Strength 4 hits, each with an AP of -1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="249a6ad9-b2fd-553e-b8ba-9c43333cfee6" name="1. Steed Of Shadows" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="aeb95229-663d-55e0-8a0c-858e282a3615" name="Steed Of Shadows" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Coal-black daemonic steeds materialise from the air, bearing warriors aloft on wings of shadow.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="249a6ad9-b2fd-553e-b8ba-9c43333cfee6" name="1. Steed Of Shadows" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="aeb95229-663d-55e0-8a0c-858e282a3615" name="Steed Of Shadows" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Coal-black daemonic steeds materialise from the air, bearing warriors aloft on wings of shadow.
 
 Type
 Conveyance
@@ -5413,18 +7587,18 @@ Casting Value
 Range
 15"
 This spell can only target friendly models whose troop type is infantry. If the target friendly unit is not fleeing and has not already moved during this Movement phase, it gains the Fly (12) special rule until your next Start of Turn sub-phase.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="67da3f3c-ab05-51c9-9d24-536667ba93ac" name="2. Gathering Darkness" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="8c0d413d-ff6e-587f-8686-5158bb86e1dc" name="Gathering Darkness" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Daemonologist's command, strange forms gather about the foe, their whispered taunts draining the enemy's courage.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="67da3f3c-ab05-51c9-9d24-536667ba93ac" name="2. Gathering Darkness" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8c0d413d-ff6e-587f-8686-5158bb86e1dc" name="Gathering Darkness" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Daemonologist's command, strange forms gather about the foe, their whispered taunts draining the enemy's courage.
 
 Type
 Hex
@@ -5433,18 +7607,18 @@ Casting Value
 Range
 12"
 Until your next Start of Turn sub-phase, the target enemy unit suffers a -2 modifier to its Initiative characteristic (to a minimum of 1), a -2 modifier to its Leadership characteristic (to a minimum of 2) and cannot use their General's Inspiring Presence special rule. This spell may target an enemy unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="1aa23b5f-7035-5f28-92b5-845e53c8792b" name="3. Daemonic Familiars" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="b1926ade-0ada-5d99-8434-9d473e85e5a5" name="Daemonic Familiars" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Daemonologist's many familiars fall upon the foe, slashing and biting with incorporeal claws and teeth.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="1aa23b5f-7035-5f28-92b5-845e53c8792b" name="3. Daemonic Familiars" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="b1926ade-0ada-5d99-8434-9d473e85e5a5" name="Daemonic Familiars" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Daemonologist's many familiars fall upon the foe, slashing and biting with incorporeal claws and teeth.
 
 Type
 Assailment
@@ -5453,18 +7627,18 @@ Casting Value
 Range
 Combat
 A single enemy unit the caster is engaged in combat with suffers 2D6 Strength 2 hits, with no armour save permitted (Ward and Regeneration saves can be attempted as normal).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="ddd23d62-fc2d-5938-a79c-b410432c02b8" name="4. Daemonic Vessel" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="af7533e9-982d-5c3c-9d00-d2707daa9f40" name="Daemonic Vessel" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Daemonologist's bidding, otherworldly entities rush forth to take possession of their allies, filling their bodies with unnatural ferocity.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="ddd23d62-fc2d-5938-a79c-b410432c02b8" name="4. Daemonic Vessel" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="af7533e9-982d-5c3c-9d00-d2707daa9f40" name="Daemonic Vessel" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Daemonologist's bidding, otherworldly entities rush forth to take possession of their allies, filling their bodies with unnatural ferocity.
 
 Type
 Enchantment
@@ -5473,18 +7647,18 @@ Casting Value
 Range
 Self
 Until the end of this turn, the caster, their mount and any unit they have joined, gain a +1 modifier to their Strength and Attacks characteristics (to a maximum of 10), and improve the Armour Piercing characteristic of their weapons by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="aa274204-0580-51a0-9f49-a346d132c1d7" name="5. Vortex Of Chaos" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d1f409f1-7bdd-511e-96d8-d6b7a4571832" name="Vortex Of Chaos" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A swirling tear in reality opens, through which daemonic beasts grasp at those that venture too close.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="aa274204-0580-51a0-9f49-a346d132c1d7" name="5. Vortex Of Chaos" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="d1f409f1-7bdd-511e-96d8-d6b7a4571832" name="Vortex Of Chaos" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A swirling tear in reality opens, through which daemonic beasts grasp at those that venture too close.
 
 Type
 Magical Vortex
@@ -5493,18 +7667,18 @@ Casting Value
 Range
 15"
 Remains in Play. Place a small (3") blast template so that its central hole is within 15" of the caster. Whilst in play, the template is treated as difficult terrain. The template scatters D6" during every Start of Turn sub-phase. Any unit (friend or foe) that moves through the template, or that the template moves over, suffers D6+1 Strength 3 hits, each with an AP of -.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="b1d83eeb-1305-54d4-a98c-9537e93f9cef" name="6. Daemonic Vigour" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="df84e262-9e24-5763-9dfc-eb4ff31791b5" name="Daemonic Vigour" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Daemonologist mutters verses aloud from a proscribed text, their allies fill with a daemonic vitality.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="b1d83eeb-1305-54d4-a98c-9537e93f9cef" name="6. Daemonic Vigour" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="df84e262-9e24-5763-9dfc-eb4ff31791b5" name="Daemonic Vigour" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Daemonologist mutters verses aloud from a proscribed text, their allies fill with a daemonic vitality.
 
 Type
 Enchantment
@@ -5513,22 +7687,22 @@ Casting Value
 Range
 15"
 Until the end of this turn, the target friendly unit gains a +1 modifier to its Movement, Toughness and Initiative characteristics (to a maximum of 10).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ebba516a-2288-591a-907e-682eef2dd2d3" name="Dark Magic" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="08cbfc18-5dc0-5186-8fd8-a3a9915933fc" name="signature. Doombolt" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c19d84f6-0d4d-5420-a049-f29a3ea57ba6" name="Doombolt" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">24"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Dark Mage's bidding, a bolt of black lightning tears from the heavens and stabs at the earth.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ebba516a-2288-591a-907e-682eef2dd2d3" name="Dark Magic" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="08cbfc18-5dc0-5186-8fd8-a3a9915933fc" name="signature. Doombolt" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c19d84f6-0d4d-5420-a049-f29a3ea57ba6" name="Doombolt" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">24"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Dark Mage's bidding, a bolt of black lightning tears from the heavens and stabs at the earth.
 
 Type
 Magic Missile
@@ -5537,18 +7711,18 @@ Casting Value
 Range
 24"
 Place a small (3") blast template so that its central hole is directly over the centre of the target enemy unit. Any enemy model whose base lies underneath the template risks being hit and suffering a single Strength 3 hit with an AP of -2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="26692663-3d74-53c3-9a6e-0d431f1a3ee9" name="1. Word Of Pain" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="57293d86-945a-5b7e-9f39-822cee9ecde8" name="Word Of Pain" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Dark Mage chants incomprehensible syllables, each more torturous than the last.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="26692663-3d74-53c3-9a6e-0d431f1a3ee9" name="1. Word Of Pain" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="57293d86-945a-5b7e-9f39-822cee9ecde8" name="Word Of Pain" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Dark Mage chants incomprehensible syllables, each more torturous than the last.
 
 Type
 Hex
@@ -5557,18 +7731,18 @@ Casting Value
 Range
 18"
 Until your next Start of Turn sub-phase, the target enemy unit suffers a -1 modifier to its Strength and Toughness characteristics (to a minimum of 1). This spell may target an enemy unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="10e51f94-3e5b-51bd-bdb5-6663b66cf804" name="2. Stream Of Corruption" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9caf8989-33bb-56c0-b053-ba5c588105d6" name="Stream Of Corruption" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">From the fingertips of the Dark Mage corrupted magic flows, flaying the flesh of the enemy.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="10e51f94-3e5b-51bd-bdb5-6663b66cf804" name="2. Stream Of Corruption" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9caf8989-33bb-56c0-b053-ba5c588105d6" name="Stream Of Corruption" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">From the fingertips of the Dark Mage corrupted magic flows, flaying the flesh of the enemy.
 
 Type
 Assailment
@@ -5577,18 +7751,18 @@ Casting Value
 Range
 Combat
 Place a flame template so that the narrow end touches the caster's base edge and the broad end is over a unit they are engaged in combat with. Any model (friend or foe) whose base lies underneath the template risks being hit and suffering a single Strength 3 hit with an AP of -1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="3e063eea-dd1c-51e2-b5f5-22d2bbe60b51" name="3. Infernal Gateway" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d0e3168f-6319-5d98-94b0-f8ef7d85415d" name="Infernal Gateway" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Dark Mage reveals a hidden passageway through the Realm of Chaos.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="3e063eea-dd1c-51e2-b5f5-22d2bbe60b51" name="3. Infernal Gateway" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="d0e3168f-6319-5d98-94b0-f8ef7d85415d" name="Infernal Gateway" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Dark Mage reveals a hidden passageway through the Realm of Chaos.
 
 Type
 Conveyance
@@ -5598,18 +7772,18 @@ Range
 12"
 This spell can only target friendly characters, but may target characters engaged in combat. If the target friendly character is not fleeing, you may immediately remove it from the battlefield and replace it anywhere within 12" of its original location, but not within 6" of any enemy models.
 Note that this spell allows a character to leave combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="6d28ece6-05be-5a57-b230-dfc2fb8b9dc4" name="4. Phantasmagoria" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="ad6c54ca-cb8b-50b1-b802-4d4d30591bcf" name="Phantasmagoria" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Dark visions beset the enemy ranks, driving warriors into blind panic or suicidal rage.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="6d28ece6-05be-5a57-b230-dfc2fb8b9dc4" name="4. Phantasmagoria" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="ad6c54ca-cb8b-50b1-b802-4d4d30591bcf" name="Phantasmagoria" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Dark visions beset the enemy ranks, driving warriors into blind panic or suicidal rage.
 
 Type
 Magical Vortex
@@ -5618,18 +7792,18 @@ Casting Value
 Range
 12"
 Remains in Play. Place a small (3") blast template so that its central hole is within 12" of the caster. Whilst in play, the template does not move and is treated as dangerous terrain. Enemy units that end their movement within 12" of the template must immediately make a Panic test. Those that fail will Fall Back in Good Order or flee directly away from the template. Those that pass (or that do not have to make the test) become subject to the Impetuous special rule whilst they remain within 12" of the template.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="e3f904e1-722f-51d9-ad62-c32b75099af1" name="5. Battle Lust" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d12f59b4-7c85-5722-858e-e52ccb149288" name="Battle Lust" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The builds within those near to the Dark Mage, filling them with a terrible lust for bloodshed.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="e3f904e1-722f-51d9-ad62-c32b75099af1" name="5. Battle Lust" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="d12f59b4-7c85-5722-858e-e52ccb149288" name="Battle Lust" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The builds within those near to the Dark Mage, filling them with a terrible lust for bloodshed.
 
 Type
 Enchantment
@@ -5638,18 +7812,18 @@ Casting Value
 Range
 12"
 Until the end of this turn, the target friendly unit gains the Frenzy and Hatred (all enemies) special rules.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="d3b7355e-7eed-5e7e-9382-e28295fd721b" name="6. Soul Eater" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9b709719-4592-538d-9e0e-9497302ce4bc" name="Soul Eater" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Dark Mage reaches out a taloned hand to tear at the very soul of their enemy.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="d3b7355e-7eed-5e7e-9382-e28295fd721b" name="6. Soul Eater" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9b709719-4592-538d-9e0e-9497302ce4bc" name="Soul Eater" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Dark Mage reaches out a taloned hand to tear at the very soul of their enemy.
 
 Type
 Assailment
@@ -5658,22 +7832,22 @@ Casting Value
 Range
 Combat
 A single enemy model the caster is engaged in combat with suffers a single Strength 3 hit with the Multiple Wounds (3) special rule and with no armour save permitted (Ward and Regeneration saves can be attempted as normal).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="23edc5dc-f8ce-5a1d-a86f-cfffa6e70225" name="Elementalism" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="cc38ca85-d387-5512-9ac9-e69b891b8ebf" name="signature. Storm Call" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="90b1f3f2-2673-53f5-83d2-6b549b463bfc" name="Storm Call" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Elementalist channels the fury of a storm towards their foes, causing strong winds and icy rains to batter against them.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="23edc5dc-f8ce-5a1d-a86f-cfffa6e70225" name="Elementalism" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="cc38ca85-d387-5512-9ac9-e69b891b8ebf" name="signature. Storm Call" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="90b1f3f2-2673-53f5-83d2-6b549b463bfc" name="Storm Call" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Elementalist channels the fury of a storm towards their foes, causing strong winds and icy rains to batter against them.
 
 Type
 Hex
@@ -5682,18 +7856,18 @@ Casting Value
 Range
 12"
 Until your next Start of Turn sub-phase, the target enemy unit suffers a -1 modifier to its Movement and Initiative characteristics (to a minimum of 1). If this spell is cast, the effects of any other Hex previously cast on the target unit immediately expire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="8aaf9d65-6dbc-56c0-b4f1-bc4ee25e7afc" name="1. Flaming Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="8790464f-9fb0-560c-b6cd-1cde130bfa71" name="Flaming Sword" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a simple gesture, the Elementalist summons a great, flaming sword with which to strike at their enemies.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="8aaf9d65-6dbc-56c0-b4f1-bc4ee25e7afc" name="1. Flaming Sword" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8790464f-9fb0-560c-b6cd-1cde130bfa71" name="Flaming Sword" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a simple gesture, the Elementalist summons a great, flaming sword with which to strike at their enemies.
 
 Type
 Assailment
@@ -5702,18 +7876,18 @@ Casting Value
 Range
 Combat
 A single enemy unit the caster is engaged in combat with suffers D6+1 Strength 3 hits, each with an AP of -. These hits have the Flaming Attacks special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="6b98c0db-9227-55ba-85bc-563fd336400a" name="2. Plague Of Rust" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="4694e533-e468-5e95-a037-fc8b76152153" name="Plague Of Rust" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">21"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Elementalist utters a curse, the armour of the enemy loses its lustre, corroding and crumbling from their bodies.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="6b98c0db-9227-55ba-85bc-563fd336400a" name="2. Plague Of Rust" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="4694e533-e468-5e95-a037-fc8b76152153" name="Plague Of Rust" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">21"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Elementalist utters a curse, the armour of the enemy loses its lustre, corroding and crumbling from their bodies.
 
 Type
 Hex
@@ -5722,18 +7896,18 @@ Casting Value
 Range
 21"
 Until your next Start of Turn sub-phase, the target enemy unit suffers a -2 modifier to its armour value. This spell may target an enemy unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="f15b5bff-6c1d-5b8f-b450-3751fb679034" name="3. Summon Elemental Spirit" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="0cf8a9c5-abbc-549d-b6d1-f07a80b61ed7" name="Summon Elemental Spirit" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Elementalist summons forth a powerful spirit of earth, wind, water or fire to do their bidding.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="f15b5bff-6c1d-5b8f-b450-3751fb679034" name="3. Summon Elemental Spirit" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="0cf8a9c5-abbc-549d-b6d1-f07a80b61ed7" name="Summon Elemental Spirit" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Elementalist summons forth a powerful spirit of earth, wind, water or fire to do their bidding.
 
 Type
 Magical Vortex
@@ -5742,18 +7916,18 @@ Casting Value
 Range
 15"
 Remains in Play. Place a small (3") blast template so that its central hole is within 15" of the caster. Whilst in play, the template is treated as difficult terrain over which no line of sight can be drawn. The template scatters D6" during every Start of Turn sub-phase. Any enemy unit that moves through the template, or that the template moves over, suffers D3+3 Strength 4 hits, each with an AP of -1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="c538c014-9271-5a0a-a287-bc2f2f02c8d4" name="4. Earthen Ramparts" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9fb0522a-a67e-5ed2-b63f-6988c8d4bd97" name="Earthen Ramparts" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Elementalist's summoning, mighty earthen ramparts rise up about their allies.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="c538c014-9271-5a0a-a287-bc2f2f02c8d4" name="4. Earthen Ramparts" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9fb0522a-a67e-5ed2-b63f-6988c8d4bd97" name="Earthen Ramparts" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Elementalist's summoning, mighty earthen ramparts rise up about their allies.
 
 Type
 Enchantment
@@ -5762,18 +7936,18 @@ Casting Value
 Range
 15"
 Until your next Start of Turn sub-phase, the target friendly unit gains a 5+ Ward save against any wounds suffered and counts as being behind a defended low linear obstacle if charged. However, whilst this spell is in play the target unit cannot march or charge.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="61a95282-84ef-5fe5-9b43-4735890ba6f3" name="5. Wind Blast" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="e24a58c5-ad60-5d16-9fb4-18da621933f7" name="Wind Blast" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A mighty wind rips enemy warriors from their regiments, dashing them against the hard earth.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="61a95282-84ef-5fe5-9b43-4735890ba6f3" name="5. Wind Blast" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e24a58c5-ad60-5d16-9fb4-18da621933f7" name="Wind Blast" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A mighty wind rips enemy warriors from their regiments, dashing them against the hard earth.
 
 Type
 Magic Missile
@@ -5782,18 +7956,18 @@ Casting Value
 Range
 15"
 The target enemy unit suffers D3+3 Strength 5 hits, each with an AP of -1. Once these hits have been resolved, the unit must Give Ground.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="c06f82c0-00bd-5d39-8fcc-930270f9c5ce" name="6. Travel Mystical Pathway" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d6e9a286-604d-5ded-b7aa-49c8cdcc86ef" name="Travel Mystical Pathway" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">9"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Tapping into the power of the Geomantic Web, the Elementalist opens a portal through which their allies can travel.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="c06f82c0-00bd-5d39-8fcc-930270f9c5ce" name="6. Travel Mystical Pathway" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="d6e9a286-604d-5ded-b7aa-49c8cdcc86ef" name="Travel Mystical Pathway" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">9"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Tapping into the power of the Geomantic Web, the Elementalist opens a portal through which their allies can travel.
 
 Type
 Conveyance
@@ -5802,22 +7976,22 @@ Casting Value
 Range
 9"
 If the target friendly unit is not fleeing and has not already moved during this Movement phase, you may immediately remove it from the battlefield and replace it anywhere completely within 12" of its original location, but not within 6" of any enemy models. The target friendly unit cannot move again during this Movement phase.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="16cb835b-8eb0-5046-8f1e-4078d858b3ee" name="High Magic" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="afa78191-c543-51a5-872a-d1962a1d3e28" name="signature. Drain Magic" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="0c951cb8-7f63-50ab-99e3-1d7a3158cdfa" name="Drain Magic" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the High Mage draws the Winds of Magic to themselves, other Wizards find themselves struggling to access their powers.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="16cb835b-8eb0-5046-8f1e-4078d858b3ee" name="High Magic" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="afa78191-c543-51a5-872a-d1962a1d3e28" name="signature. Drain Magic" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="0c951cb8-7f63-50ab-99e3-1d7a3158cdfa" name="Drain Magic" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the High Mage draws the Winds of Magic to themselves, other Wizards find themselves struggling to access their powers.
 
 Type
 Hex
@@ -5826,18 +8000,18 @@ Casting Value
 Range
 Self
 Remains in Play. Whilst this spell is in play, enemy Wizards that are within 24" of the caster's model when attempting to cast a spell must increase that spell's casting value by 2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="81a6feca-723d-5f33-91bd-ca30a73adacb" name="1. Walk Between Worlds" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="e7bb4b03-5aff-54e0-8ff5-30894f806988" name="Walk Between Worlds" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The High Mage causes their allies to drift in and out of reality, enabling them to pass through terrain as if it was not there.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="81a6feca-723d-5f33-91bd-ca30a73adacb" name="1. Walk Between Worlds" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e7bb4b03-5aff-54e0-8ff5-30894f806988" name="Walk Between Worlds" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The High Mage causes their allies to drift in and out of reality, enabling them to pass through terrain as if it was not there.
 
 Type
 Conveyance
@@ -5846,18 +8020,18 @@ Casting Value
 Range
 Self
 Until your next Start of Turn sub-phase, the caster and any unit they have joined gain the Ethereal and Reserve Move special rules.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="e4535a4d-8f92-53ae-a958-66e8217fc326" name="2. Fiery Convocation" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="81a51cca-b69f-57ec-8b87-0f2e10b5050d" name="Fiery Convocation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the High Mage's bidding, a roiling storm of fire erupts within the midst of the enemy line.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="e4535a4d-8f92-53ae-a958-66e8217fc326" name="2. Fiery Convocation" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="81a51cca-b69f-57ec-8b87-0f2e10b5050d" name="Fiery Convocation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the High Mage's bidding, a roiling storm of fire erupts within the midst of the enemy line.
 
 Type
 Magic Missile
@@ -5866,18 +8040,18 @@ Casting Value
 Range
 18"
 Place a large (5") blast template so that its central hole is directly over the centre of the target enemy unit. Once placed, the template will scatter D3+1". Any enemy model whose base lies underneath the template's final position risks being hit and suffering a Strength 4 hit with an AP of -2. These hits have the Flaming Attacks special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="d838b59b-1cd2-5314-91f4-757d08e0aa8e" name="3. Tempest" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="bf02b8c1-d1c5-5cd6-ba68-9fce04cb9e26" name="Tempest" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The High Mage summons forth a tempest of rain and sleet, the centre of which is all but impenetrable.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="d838b59b-1cd2-5314-91f4-757d08e0aa8e" name="3. Tempest" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="bf02b8c1-d1c5-5cd6-ba68-9fce04cb9e26" name="Tempest" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The High Mage summons forth a tempest of rain and sleet, the centre of which is all but impenetrable.
 
 Type
 Magical Vortex
@@ -5886,18 +8060,18 @@ Casting Value
 Range
 12"
 Remains in Play. Place a small (3") blast template so that its central hole is within 12" of the caster. Whilst in play, the template does not move and is treated as dangerous terrain. Whilst within 6" of the template, enemy units treat open ground as difficult terrain and difficult terrain as dangerous terrain.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="e8936a38-3970-57b4-8425-814bd6abf153" name="4. Corporeal Unmaking" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="ca83c612-114e-5f26-9976-dccad7aefea1" name="Corporeal Unmaking" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The physical forms of the High Mage's enemies begin to unravel, turning to dust on the wind.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="e8936a38-3970-57b4-8425-814bd6abf153" name="4. Corporeal Unmaking" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="ca83c612-114e-5f26-9976-dccad7aefea1" name="Corporeal Unmaking" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The physical forms of the High Mage's enemies begin to unravel, turning to dust on the wind.
 
 Type
 Assailment
@@ -5906,18 +8080,18 @@ Casting Value
 Range
 Combat
 A single enemy unit the caster is engaged in combat with suffers D3 Strength 5 hits, with no armour or Regeneration saves permitted (Ward saves can be attempted as normal).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="6ab4eb22-107a-5dfd-8922-989af397a022" name="5. Fury Of Khaine" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="618558d1-0d9b-5dbd-ade0-01d545291021" name="Fury Of Khaine" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The High Mage beseeches Khaine, God of Murder, to bestow his fury on the High Mage's allies.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="6ab4eb22-107a-5dfd-8922-989af397a022" name="5. Fury Of Khaine" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="618558d1-0d9b-5dbd-ade0-01d545291021" name="Fury Of Khaine" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The High Mage beseeches Khaine, God of Murder, to bestow his fury on the High Mage's allies.
 
 Type
 Enchantment
@@ -5926,18 +8100,18 @@ Casting Value
 Range
 12"
 Until the end of this turn, the target friendly unit gains the Extra Attacks (+1) special rule. This spell may target a friendly unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="0785c273-46ca-5f45-b768-fa654cc5d727" name="6. Shield Of Saphery" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="0db5d08b-bfe0-5f3d-8e38-24c9f08bb5ad" name="Shield Of Saphery" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">White light bursts forth from the High Mage's outstretched hands, clinging to armour and arcing overhead to form a protective barrier around their allies.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="0785c273-46ca-5f45-b768-fa654cc5d727" name="6. Shield Of Saphery" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="0db5d08b-bfe0-5f3d-8e38-24c9f08bb5ad" name="Shield Of Saphery" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">White light bursts forth from the High Mage's outstretched hands, clinging to armour and arcing overhead to form a protective barrier around their allies.
 
 Type
 Enchantment
@@ -5946,22 +8120,22 @@ Casting Value
 Range
 18"
 Until the end of this turn, the target friendly unit gains a 5+ Ward save against any wounds suffered. If this spell is cast, the effects of any other Enchantment previously cast on the target unit immediately expire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="942f4793-4b25-5c52-91ad-de55059d6052" name="Illusion" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="f4641353-7765-5942-b26c-8182995f07e9" name="signature. Glittering Robe" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9a9ddc52-2c1b-5389-9efc-2c416dcfac75" name="Glittering Robe" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Shimmering light radiates from the Illusionist's garb, dazzling and confounding the enemy.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="942f4793-4b25-5c52-91ad-de55059d6052" name="Illusion" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="f4641353-7765-5942-b26c-8182995f07e9" name="signature. Glittering Robe" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9a9ddc52-2c1b-5389-9efc-2c416dcfac75" name="Glittering Robe" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Shimmering light radiates from the Illusionist's garb, dazzling and confounding the enemy.
 
 Type
 Enchantment
@@ -5970,18 +8144,18 @@ Casting Value
 Range
 Self
 Until your next Start of Turn sub-phase, enemy units suffer a -1 modifier to any rolls To Hit made against the caster and any unit they have joined. If this spell is cast, the effects of any other Enchantment previously cast on any of the affected models immediately expire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="1099e2dc-662d-545d-8a3a-139c855bb93e" name="1. Mind Razor" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c788d386-6f56-5571-9800-9095ce40d573" name="Mind Razor" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Torturous illusion grips the enemy. Only those with the strongest of wills can resist.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="1099e2dc-662d-545d-8a3a-139c855bb93e" name="1. Mind Razor" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c788d386-6f56-5571-9800-9095ce40d573" name="Mind Razor" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Torturous illusion grips the enemy. Only those with the strongest of wills can resist.
 
 Type
 Magic Missile
@@ -5990,18 +8164,18 @@ Casting Value
 Range
 15"
 The target enemy unit must immediately make a Leadership test. If this test is passed, it suffers D3 Strength 3 hits, each with an AP of -. If, however, this test is failed, it suffers D3+3 Strength 4 hits, each with an AP of -3.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="9d1f588b-20af-5679-90d7-752b26214968" name="2. Shimmering Dragon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a3cfac62-6385-5b5d-b16d-e460650eeaec" name="Shimmering Dragon" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">An incorporeal Dragon materialises over the battlefield, stooping low to bear aloft a mighty champion.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="9d1f588b-20af-5679-90d7-752b26214968" name="2. Shimmering Dragon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="a3cfac62-6385-5b5d-b16d-e460650eeaec" name="Shimmering Dragon" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">An incorporeal Dragon materialises over the battlefield, stooping low to bear aloft a mighty champion.
 
 Type
 Conveyance
@@ -6010,18 +8184,18 @@ Casting Value
 Range
 12"
 This spell can only target friendly characters. If the target friendly character is not fleeing and has not already moved during this Movement phase, it gains the Fly (10) special rule until the end of this turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="53adcb90-0173-52cf-aa1c-2c78570de08e" name="3. Column Of Crystal" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="b12f556f-e2bc-5fbb-8dad-d88fbd1de87c" name="Column Of Crystal" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">9"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Illusionist conjures forth an illusory column of crystal. All that see it believe it to be utterly impenetrable.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="53adcb90-0173-52cf-aa1c-2c78570de08e" name="3. Column Of Crystal" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="b12f556f-e2bc-5fbb-8dad-d88fbd1de87c" name="Column Of Crystal" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">9"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Illusionist conjures forth an illusory column of crystal. All that see it believe it to be utterly impenetrable.
 
 Type
 Magical Vortex
@@ -6030,18 +8204,18 @@ Casting Value
 Range
 9"
 Remains in Play. Place a large (5") blast template so that its central hole is within 9" of the caster. Whilst in play, the template does not move and is treated as impassable terrain over which no line of sight can be drawn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="148d32dc-eb02-515c-91fa-2b0258514f4a" name="4. Confounding Convocation" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="484b1e8f-8831-5ebb-9b73-9a0478f59e4e" name="Confounding Convocation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">9"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The enemy is bombarded by wild and disorienting images and dancing lights that render them all but blind to the world around them.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="148d32dc-eb02-515c-91fa-2b0258514f4a" name="4. Confounding Convocation" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="484b1e8f-8831-5ebb-9b73-9a0478f59e4e" name="Confounding Convocation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">9"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The enemy is bombarded by wild and disorienting images and dancing lights that render them all but blind to the world around them.
 
 Type
 Hex
@@ -6050,18 +8224,18 @@ Casting Value
 Range
 9"
 Remains in Play. Whilst this spell is in play, the target enemy unit becomes subject to the Stupidity special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="28459912-c429-5b04-beb3-0d88aab5456e" name="5. Spectral Doppelganger" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="11a3777c-b107-5b2d-85b8-b26a69a891a4" name="Spectral Doppelganger" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Like the surface of a mirror struck a mighty blow, the Illusionist's image fractures, revealing myriad doppelganger likenesses.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="28459912-c429-5b04-beb3-0d88aab5456e" name="5. Spectral Doppelganger" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="11a3777c-b107-5b2d-85b8-b26a69a891a4" name="Spectral Doppelganger" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Like the surface of a mirror struck a mighty blow, the Illusionist's image fractures, revealing myriad doppelganger likenesses.
 
 Type
 Assailment
@@ -6070,18 +8244,18 @@ Casting Value
 Range
 Combat
 A single enemy unit the caster is engaged in combat with suffers 2D6 hits, resolved using the characteristics and special rules of the caster and of any weapon they carry.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="66cbe3b2-9ce3-5872-bfe4-6e1c7f9600dc" name="6. Miasmic Mirage" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="f3c617b9-daea-5e01-b7c7-4447c0532833" name="Miasmic Mirage" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Around the feet of the enemy, the earth itself shifts and blurs, causing warriors to trip and stumble upon half-imagined obstacles.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="66cbe3b2-9ce3-5872-bfe4-6e1c7f9600dc" name="6. Miasmic Mirage" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="f3c617b9-daea-5e01-b7c7-4447c0532833" name="Miasmic Mirage" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Around the feet of the enemy, the earth itself shifts and blurs, causing warriors to trip and stumble upon half-imagined obstacles.
 
 Type
 Hex
@@ -6090,22 +8264,22 @@ Casting Value
 Range
 15"
 Until your next Start of Turn sub-phase, the target enemy unit suffers a -2 modifier to its Movement characteristic (to a minimum of 1) and cannot march or charge. If this spell is cast, the effects of any other Hex previously cast on the target unit immediately expire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="b905cd09-f8c9-54cd-a8e3-35581df2d58d" name="Necromancy" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="8d7571d4-a5e3-581f-bf5f-bda27a42e900" name="signature. The Dwellers Below" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="b07611c2-213c-56ab-bfce-4a63daf32462" name="The Dwellers Below" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Beneath the enemy the cold dirt parts, revealing spectral hands that reach to grasp at the foe and pull them into the underworld.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b905cd09-f8c9-54cd-a8e3-35581df2d58d" name="Necromancy" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="8d7571d4-a5e3-581f-bf5f-bda27a42e900" name="signature. The Dwellers Below" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="b07611c2-213c-56ab-bfce-4a63daf32462" name="The Dwellers Below" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Beneath the enemy the cold dirt parts, revealing spectral hands that reach to grasp at the foe and pull them into the underworld.
 
 Type
 Assailment
@@ -6114,18 +8288,18 @@ Casting Value
 Range
 Combat
 Place a small (3") blast template so that its central hole is directly over the centre of a unit the caster is engaged in combat with. Once placed, the template will scatter D3+1". Any enemy model whose base lies underneath the template's final position risks being hit and suffering a single Strength 3 hit with an AP of -.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="82ccf31e-9d1e-5d6a-9902-68b82f9fa49c" name="1. Deathly Cabal" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a96d6b7b-91aa-592c-92c4-e4f28ba423b9" name="Deathly Cabal" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">From beyond the veil of death, unquiet spirits gather protectively around the Necromancer, their presence causing the foe to recoil in fear and dread.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="82ccf31e-9d1e-5d6a-9902-68b82f9fa49c" name="1. Deathly Cabal" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="a96d6b7b-91aa-592c-92c4-e4f28ba423b9" name="Deathly Cabal" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">From beyond the veil of death, unquiet spirits gather protectively around the Necromancer, their presence causing the foe to recoil in fear and dread.
 
 Type
 Enchantment
@@ -6134,18 +8308,18 @@ Casting Value
 Range
 Self
 Until your next Start of Turn sub-phase, the caster and any unit they have joined gain a 6+ Ward save against any wounds suffered that were caused by a non-magical enemy attack. In addition, whilst this spell is in play, the affected models gain the Fear special rule. If they already have the Fear special rule, they instead gain the Terror special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="bc3b4080-f7ca-5d2f-8c30-211c2a2d3401" name="2. Unquiet Spirits" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="ed827f92-1f2f-530e-92e5-d6076d4d7af7" name="Unquiet Spirits" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Evil spirits gather around the enemy, their spectral talons creeping beneath armour to tear at flesh.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="bc3b4080-f7ca-5d2f-8c30-211c2a2d3401" name="2. Unquiet Spirits" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="ed827f92-1f2f-530e-92e5-d6076d4d7af7" name="Unquiet Spirits" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Evil spirits gather around the enemy, their spectral talons creeping beneath armour to tear at flesh.
 
 Type
 Magic Missile
@@ -6154,18 +8328,18 @@ Casting Value
 Range
 15"
 The target enemy unit suffers 3D6 Strength 2 hits, with no armour save permitted (Ward and Regeneration saves can be attempted as normal).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="65e264ec-d2d2-50e1-a26f-883fe96be3f0" name="3. Spiritual Vortex" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="16e1c7e4-3216-5de6-b576-e72f64d20335" name="Spiritual Vortex" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Necromancer gestures and dark energy swirls, opening a vortex into the realm of Morr, god of death.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="65e264ec-d2d2-50e1-a26f-883fe96be3f0" name="3. Spiritual Vortex" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="16e1c7e4-3216-5de6-b576-e72f64d20335" name="Spiritual Vortex" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Necromancer gestures and dark energy swirls, opening a vortex into the realm of Morr, god of death.
 
 Type
 Magical Vortex
@@ -6174,18 +8348,18 @@ Casting Value
 Range
 12"
 Remains in Play. Place a large (5") blast template so that its central hole is within 12" of the caster. Whilst in play, the template does not move and is treated as dangerous terrain. Whilst within 8" of one or more Spiritual Vortexes, enemy units suffer a -1 modifier to their Leadership characteristic (to a minimum of 2) and cannot use their General's Inspiring Presence special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="ace0cb53-440d-5027-a89c-702c822e8662" name="4. Curse Of Years" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c7591502-7159-517b-9bdc-b9886ee3ebcd" name="Curse Of Years" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As dead things draw near, they feed hungrily upon the vital energy of the living, ageing them rapidly.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="ace0cb53-440d-5027-a89c-702c822e8662" name="4. Curse Of Years" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c7591502-7159-517b-9bdc-b9886ee3ebcd" name="Curse Of Years" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As dead things draw near, they feed hungrily upon the vital energy of the living, ageing them rapidly.
 
 Type
 Hex
@@ -6194,18 +8368,18 @@ Casting Value
 Range
 15"
 Until your next Start of Turn sub-phase, the target enemy unit suffers a -1 modifier to its Movement, Weapon Skill and Toughness characteristics (to a minimum of 1). If this spell is cast, the effects of any other Hex previously cast on the target unit immediately expire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="6d316dd0-d5e3-5ca1-9aea-0d3ddabceaf9" name="5. Spectral Steed" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="99e5f888-3545-5d4b-bcf6-6f425157d663" name="Spectral Steed" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Necromancer chants words of dark power, a ghostly steed forms from the night air.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="6d316dd0-d5e3-5ca1-9aea-0d3ddabceaf9" name="5. Spectral Steed" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="99e5f888-3545-5d4b-bcf6-6f425157d663" name="Spectral Steed" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Necromancer chants words of dark power, a ghostly steed forms from the night air.
 
 Type
 Conveyance
@@ -6214,18 +8388,18 @@ Casting Value
 Range
 12"
 Remains in Play. This spell can only target friendly characters whose troop type is infantry. Whilst this spell is in play, the target friendly character gains the Ethereal and Fly (10) special rules.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="3026175d-f2ae-553c-8b15-60f14b865adb" name="6. Spirit Leech" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="e83ead35-4b97-58bf-a0a1-66fbe8029f13" name="Spirit Leech" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Chill winds gust and long shadows gather, sapping the enemy's will and sowing seeds of dread.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="3026175d-f2ae-553c-8b15-60f14b865adb" name="6. Spirit Leech" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e83ead35-4b97-58bf-a0a1-66fbe8029f13" name="Spirit Leech" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Chill winds gust and long shadows gather, sapping the enemy's will and sowing seeds of dread.
 
 Type
 Hex
@@ -6234,22 +8408,22 @@ Casting Value
 Range
 18"
 Until the end of this turn, the target enemy unit suffers a -2 modifier to its Leadership characteristic (to a minimum of 2) and cannot use their General's Inspiring Presence special rule. This spell may target an enemy unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="fea3e3ab-8a02-571b-b71f-9edd6d862d25" name="Waaagh Magic" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="a035d00f-9179-521b-ae86-674b0b5c4775" name="signature. Fist Of Gork (Or Mork)" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="afd42dd5-4b33-599f-bddf-71f394d739f2" name="Fist Of Gork (Or Mork)" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">In response to the Shaman's frantic hopping and gesticulating, a great green fist materialises from the air and wallops the foe!
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="fea3e3ab-8a02-571b-b71f-9edd6d862d25" name="Waaagh Magic" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="a035d00f-9179-521b-ae86-674b0b5c4775" name="signature. Fist Of Gork (Or Mork)" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="afd42dd5-4b33-599f-bddf-71f394d739f2" name="Fist Of Gork (Or Mork)" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">In response to the Shaman's frantic hopping and gesticulating, a great green fist materialises from the air and wallops the foe!
 
 Type
 Assailment
@@ -6258,18 +8432,18 @@ Casting Value
 Range
 Combat
 Place a large (5") blast template so that its central hole is directly over the centre of a unit the caster is engaged in combat with. Once placed, the template will scatter D3"+1. Any model (friend or foe) whose base lies underneath the template's final position risks being hit and suffering a single Strength 4 hit with an AP of -1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="79263184-3cdc-5aeb-a8e8-0b8e12edb085" name="1. Vindictive Glare" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c8d123f3-1d61-560b-927a-74826faf0013" name="Vindictive Glare" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">21"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Their brows furrowed and their teeth clenched, the Shaman's glare is so intense that their enemies visibly wither.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="79263184-3cdc-5aeb-a8e8-0b8e12edb085" name="1. Vindictive Glare" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c8d123f3-1d61-560b-927a-74826faf0013" name="Vindictive Glare" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">21"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Their brows furrowed and their teeth clenched, the Shaman's glare is so intense that their enemies visibly wither.
 
 Type
 Magic Missile
@@ -6278,18 +8452,18 @@ Casting Value
 Range
 21"
 The target enemy unit suffers a single Strength 7 hit with the Multiple Wounds (D3) special rule and with no armour save permitted (Ward and Regeneration saves can be attempted as normal). This spell may target an enemy unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="35109ed0-4a4d-5f62-ac82-1d6e5f85ba0c" name="2. Hand Of Mork (Or Gork)" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c3cbf5c4-be8f-52bb-ab47-8b429d54b671" name="Hand Of Mork (Or Gork)" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A huge green hand appears from above and, with great care, flicks a hero across the battlefield.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="35109ed0-4a4d-5f62-ac82-1d6e5f85ba0c" name="2. Hand Of Mork (Or Gork)" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c3cbf5c4-be8f-52bb-ab47-8b429d54b671" name="Hand Of Mork (Or Gork)" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A huge green hand appears from above and, with great care, flicks a hero across the battlefield.
 
 Type
 Conveyance
@@ -6299,18 +8473,18 @@ Range
 18"
 This spell can only target friendly characters, but may target characters engaged in combat. You may immediately remove the target friendly character from the battlefield and replace it anywhere within 2D6" of its original location, but not within 3" of any enemy models. However, if a double 1 is rolled, the character lands badly and loses a single Wound.
 Note that this spell allows a character to leave combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="3c6cde9f-de23-5cc5-9945-00760a087fe4" name="3. Bad Moon Rizin'" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="83ed0aa7-cc04-56b5-b315-56386441ef3f" name="Bad Moon Rizin'" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman summons a great pale moon above the battlefield. Trembling under its baleful gaze, the enemy can barely lift their weapons!
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="3c6cde9f-de23-5cc5-9945-00760a087fe4" name="3. Bad Moon Rizin'" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="83ed0aa7-cc04-56b5-b315-56386441ef3f" name="Bad Moon Rizin'" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman summons a great pale moon above the battlefield. Trembling under its baleful gaze, the enemy can barely lift their weapons!
 
 Type
 Hex
@@ -6319,18 +8493,18 @@ Casting Value
 Range
 15"
 Until the end of this turn, the target enemy unit suffers a -D3 modifier to its Weapon Skill and Initiative characteristics (to a minimum of 1).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="ed136d2c-7ccf-5238-8172-4062c2cc515a" name="4. Evil Sun Shinin'" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="3a125463-6445-5641-9e0d-c5060189ded1" name="Evil Sun Shinin'" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The sun is out and there's an enemy army over there – it's a great day for a battle! 'Ave at it Boyz!
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="ed136d2c-7ccf-5238-8172-4062c2cc515a" name="4. Evil Sun Shinin'" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3a125463-6445-5641-9e0d-c5060189ded1" name="Evil Sun Shinin'" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The sun is out and there's an enemy army over there – it's a great day for a battle! 'Ave at it Boyz!
 
 Type
 Enchantment
@@ -6339,18 +8513,18 @@ Casting Value
 Range
 Self
 Until your next Start of Turn sub-phase, friendly units that are within the caster's Command range may re-roll any rolls To Hit of a natural 1, and improve the Armour Piercing characteristic of their weapons by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="03cd4381-b905-521d-89c3-ef3e31bb61b7" name="5. 'Ere We Go!" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9024701d-9d56-5423-babe-35487d620648" name="'Ere We Go!" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman begins a simple chant which is quickly and enthusiastically taken up by their friends.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="03cd4381-b905-521d-89c3-ef3e31bb61b7" name="5. 'Ere We Go!" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9024701d-9d56-5423-babe-35487d620648" name="'Ere We Go!" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman begins a simple chant which is quickly and enthusiastically taken up by their friends.
 
 Type
 Enchantment
@@ -6359,18 +8533,18 @@ Casting Value
 Range
 Self
 Any friendly unit that is within the caster's Command range during the Declare Charges &amp; Charge Reactions sub-phase of this turn increases its maximum possible charge range by 3" and, when it makes a Charge roll, may apply a +D3 modifier to the result.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="c7a89e37-70aa-5aca-b745-63c4d3fe18a5" name="6. Foot Of Gork (Or Mork)" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="64b0a842-7280-520f-9235-932430a3c1b0" name="Foot Of Gork (Or Mork)" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">There's a massive green foot on the battlefield and it seems to be moving!
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="c7a89e37-70aa-5aca-b745-63c4d3fe18a5" name="6. Foot Of Gork (Or Mork)" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="64b0a842-7280-520f-9235-932430a3c1b0" name="Foot Of Gork (Or Mork)" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">There's a massive green foot on the battlefield and it seems to be moving!
 
 Type
 Magical Vortex
@@ -6379,22 +8553,22 @@ Casting Value
 Range
 15"
 Remains in Play. Place a large (5") blast template so that its central hole is within 15" of the caster. Whilst in play, the template is treated as difficult terrain. The template scatters 2D6" during every Start of Turn sub-phase. Any unit (friend or foe) that moves through the template, or that the template moves over, suffers D3+3 Strength 5 hits, each with an AP of -1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="b9c78a77-16fa-572c-a014-b2618f02ba7b" name="Troll Magic" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="d4b30ab4-e193-5294-ae34-d23784b8529e" name="signature. Big Smartz" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a4ff78f1-7661-56bc-bd1d-39f9b58886c0" name="Big Smartz" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Gesturing lazily with a crooked staff, the caster enhances and sharpens the minds of those nearby, giving them a clearer look upon the world.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b9c78a77-16fa-572c-a014-b2618f02ba7b" name="Troll Magic" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="d4b30ab4-e193-5294-ae34-d23784b8529e" name="signature. Big Smartz" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="a4ff78f1-7661-56bc-bd1d-39f9b58886c0" name="Big Smartz" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Gesturing lazily with a crooked staff, the caster enhances and sharpens the minds of those nearby, giving them a clearer look upon the world.
 
 Type
 Enchantment
@@ -6403,18 +8577,18 @@ Casting Value
 Range
 Self
 Remains in Play. Whilst this spell is in play, friendly units within the Command range of this model may re-roll any failed Stupidity tests. Additionally, if a friendly unit within the Command range of this model when this spell is cast failed its Stupidity test during the Start of Turn sub-phase of the same turn, it may immediately make this test again.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="4e518458-bb3f-509d-af4a-e46fc28f1888" name="1. Acidic Bile" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="17a1476b-c4ee-5bb6-957f-ac678f359840" name="Acidic Bile" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">10"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Spitting a guttural incantation, the caster launches a ball of sickly green and yellow Troll vomit toward the enemy, scorching flesh and dissolving armour.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="4e518458-bb3f-509d-af4a-e46fc28f1888" name="1. Acidic Bile" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="17a1476b-c4ee-5bb6-957f-ac678f359840" name="Acidic Bile" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">10"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Spitting a guttural incantation, the caster launches a ball of sickly green and yellow Troll vomit toward the enemy, scorching flesh and dissolving armour.
 
 Type
 Magic Missile
@@ -6423,18 +8597,18 @@ Casting Value
 Range
 18"
 Place a small (3") blast template so that its central hole is directly over the centre of the target enemy unit. Once placed, the template will scatter D3+1". Any enemy model whose base lies underneath the template's final position risks being hit and suffering a Strength 3 hit with an AP of -2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="0111f97f-b0fb-58cd-b361-034340d5b100" name="2. Troll Brainz" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="bde2f8c0-9b45-5082-a879-3f194feee6cd" name="Troll Brainz" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Under the beguiling influence of this crude magic, even the most experienced warriors can quickly find themselves hopelessly confused and at a loss for what to do.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="0111f97f-b0fb-58cd-b361-034340d5b100" name="2. Troll Brainz" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="bde2f8c0-9b45-5082-a879-3f194feee6cd" name="Troll Brainz" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Under the beguiling influence of this crude magic, even the most experienced warriors can quickly find themselves hopelessly confused and at a loss for what to do.
 
 Type
 Hex
@@ -6443,18 +8617,18 @@ Casting Value
 Range
 15"
 Remains in Play. Whilst this spell is in play, the target enemy unit becomes subject to the Stupidity special rule and reduces their Leadership characteristic by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="8a26d345-ddbe-56b0-84d1-35ea8396fffb" name="3. Ravenous Recourse" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="8a6d8130-6e89-50f6-b59d-c8877cb17973" name="Ravenous Recourse" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Through arcane means or by simply being reminded how hungry they are, the assembled Trolls race forward with a sudden burst of vigour.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="8a26d345-ddbe-56b0-84d1-35ea8396fffb" name="3. Ravenous Recourse" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8a6d8130-6e89-50f6-b59d-c8877cb17973" name="Ravenous Recourse" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Through arcane means or by simply being reminded how hungry they are, the assembled Trolls race forward with a sudden burst of vigour.
 
 Type
 Conveyance
@@ -6463,18 +8637,18 @@ Casting Value
 Range
 Self
 Until the end of this turn, all friendly units that have the Stupidity special rule and are within 12" of the caster gain a +2 modifier to their Movement characteristic.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="101704d6-017c-51ec-be36-ecb0d0494c5e" name="4. Foetid Whirlpool" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="855cf0a6-7bdf-5874-bfea-ebf64f8779a7" name="Foetid Whirlpool" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A deluge of foul swamp water and unmentionable waste is spun into a swirling tornado and unleashed onto the battlefield.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="101704d6-017c-51ec-be36-ecb0d0494c5e" name="4. Foetid Whirlpool" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="855cf0a6-7bdf-5874-bfea-ebf64f8779a7" name="Foetid Whirlpool" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A deluge of foul swamp water and unmentionable waste is spun into a swirling tornado and unleashed onto the battlefield.
 
 Type
 Magical Vortex
@@ -6483,18 +8657,18 @@ Casting Value
 Range
 18"
 Remains in Play. Place a small (3") blast template so that its central hole is within 18" of the caster. Whilst in play, the template is treated as difficult terrain. The template scatters D6" during every  Start of Turn sub-phase. Any enemy unit that moves through the template, or that the template moves over, suffers D3+3 Strength 4 hits, each with an AP of -3.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="a10803c4-3583-5512-bfd7-4c71ca52e34e" name="5. Torrent Of Filth" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="1fb73e26-2a3a-54ef-8547-efa38041c1d8" name="Torrent Of Filth" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With an almighty belch, the caster heaves a stream of burning bile across their foes as the battlelines clash.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="a10803c4-3583-5512-bfd7-4c71ca52e34e" name="5. Torrent Of Filth" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="1fb73e26-2a3a-54ef-8547-efa38041c1d8" name="Torrent Of Filth" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With an almighty belch, the caster heaves a stream of burning bile across their foes as the battlelines clash.
 
 Type
 Assailment
@@ -6503,18 +8677,18 @@ Casting Value
 Range
 Combat
 Place a flame template so that the narrow end touches the caster's base edge and the broad end is over a unit they are engaged in combat with. Any model (friend or foe) whose base lies underneath the template risks being hit and suffering a single Strength 3 hit with an AP of -2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="ac6e07ec-839e-5ab4-8085-33e4e0b4f5a4" name="6. Rapid Regeneration" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="6ddfc187-0dd7-5b36-a12e-c7e513963347" name="Rapid Regeneration" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Drawing on the regenerative properties of theTrolls, the caster channels that enhanced healing towards those in harm's way.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="ac6e07ec-839e-5ab4-8085-33e4e0b4f5a4" name="6. Rapid Regeneration" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="6ddfc187-0dd7-5b36-a12e-c7e513963347" name="Rapid Regeneration" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Drawing on the regenerative properties of theTrolls, the caster channels that enhanced healing towards those in harm's way.
 
 Type
 Enchantment
@@ -6523,22 +8697,22 @@ Casting Value
 Range
 12"
 Until the end of your next Start of Turn sub-phase, the target friendly unit gains the Flammable and Regeneration (5+) special rules.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="232a48a7-ac2e-5049-a264-6f31db532bf8" name="Lore Of Athel Loren" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="bfaece41-5a0b-5b9f-90f2-5b409056cbe5" name="signature. Tree Singing" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="66b3429f-73bb-5a9d-a9e5-766392f1d7a9" name="Tree Singing" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The melodious song of the Wizard rouses the forest spirits, awakening them from their deep slumber. In moments, fresh growth bursts from the fertile earth, reaching rapidly towards the heavens above.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="232a48a7-ac2e-5049-a264-6f31db532bf8" name="Lore Of Athel Loren" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="bfaece41-5a0b-5b9f-90f2-5b409056cbe5" name="signature. Tree Singing" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="66b3429f-73bb-5a9d-a9e5-766392f1d7a9" name="Tree Singing" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The melodious song of the Wizard rouses the forest spirits, awakening them from their deep slumber. In moments, fresh growth bursts from the fertile earth, reaching rapidly towards the heavens above.
 
 Type
 Magical Vortex
@@ -6547,18 +8721,18 @@ Casting Value
 Range
 15"
 Remains in Play. If this spell is cast with a casting result of 7 or more, place a small (3") blast template so that its central hole is within 15" of the caster. If this spell is cast with a casting result of 9 or more, place a large (5") blast template so that its central hole is within 15" of the caster. Whilst in play, the template does not move and is treated as a woodland terrain feature. Enemy units treat these woods as dangerous terrain.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="6a839995-5964-5060-a1ba-a28cfe88ee10" name="signature. Forest Walker" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="b257a6d7-138f-563c-9570-7f4f703164ef" name="Forest Walker" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">24"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Wizard's bidding a hidden gateway into the Eternal Realms reveals itself. Beyond this lies a series of vaulted chambers, each leading to a similar portal; some nearby, other many leagues away.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="6a839995-5964-5060-a1ba-a28cfe88ee10" name="signature. Forest Walker" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="b257a6d7-138f-563c-9570-7f4f703164ef" name="Forest Walker" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">24"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">At the Wizard's bidding a hidden gateway into the Eternal Realms reveals itself. Beyond this lies a series of vaulted chambers, each leading to a similar portal; some nearby, other many leagues away.
 
 Type
 Conveyance
@@ -6567,18 +8741,18 @@ Casting Value
 Range
 24"
 This spell can only target a friendly Wood Elf character that is completely within a woodland terrain feature. If the target is not fleeing, you may immediately remove it from the battlefield and replace it so that it is completely within a different wood anywhere on the battlefield, but not within 6" of any enemy models. The target cannot move again during this Movement phase.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="53c7e7e8-082a-5fce-b309-be52c09ebd00" name="signature. Flock Of Doom Wood Elves" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c4be5703-1acb-5b21-a127-44899ab494e7" name="Flock Of Doom Wood Elves" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a mighty bellow, the Wizard summons forth a great flock of hawks and shrikes to strike at their enemies and drive them from their forest realm.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="53c7e7e8-082a-5fce-b309-be52c09ebd00" name="signature. Flock Of Doom Wood Elves" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c4be5703-1acb-5b21-a127-44899ab494e7" name="Flock Of Doom Wood Elves" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a mighty bellow, the Wizard summons forth a great flock of hawks and shrikes to strike at their enemies and drive them from their forest realm.
 
 Type
 Magic Missile
@@ -6587,22 +8761,22 @@ Casting Value
 Range
 18"
 Place a small (3") blast template so that its central hole is directly over the centre of the target enemy unit. Any enemy model whose base lies underneath the template risks being hit and suffering a single Strength 3 hit with an AP of -1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="eb907102-fec3-547e-b5bd-c581e079438b" name="Lore Of Beasts" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="a772f5fa-f98c-5281-af4d-8911c92419bd" name="signature. Viletide" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="34906b8d-0a94-51c1-aad1-2688c4f05afe" name="Viletide" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman calls to the creeping things that nest in the decaying undergrowth, creating a vile wave of spiders, centipedes and slugbeetles that swarm over the foe.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="eb907102-fec3-547e-b5bd-c581e079438b" name="Lore Of Beasts" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="a772f5fa-f98c-5281-af4d-8911c92419bd" name="signature. Viletide" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="34906b8d-0a94-51c1-aad1-2688c4f05afe" name="Viletide" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman calls to the creeping things that nest in the decaying undergrowth, creating a vile wave of spiders, centipedes and slugbeetles that swarm over the foe.
 
 Type
 Magic Missile
@@ -6611,18 +8785,18 @@ Casting Value
 Range
 15"
 The target enemy unit suffers 5D6 Strength 1 hits, each with an AP of -2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="51ef8be7-0681-5ad0-b120-798ce720f049" name="signature. Devolve" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="55ac4f96-62dd-55bd-b248-8d4e16eb9c23" name="Devolve" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Delving into their enemies' minds, the Shaman magnifies the savage and animalistic parts of their psyche until they are no more than growling beasts.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="51ef8be7-0681-5ad0-b120-798ce720f049" name="signature. Devolve" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="55ac4f96-62dd-55bd-b248-8d4e16eb9c23" name="Devolve" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Delving into their enemies' minds, the Shaman magnifies the savage and animalistic parts of their psyche until they are no more than growling beasts.
 
 Type
 Magic Missile
@@ -6631,18 +8805,18 @@ Casting Value
 Range
 15"
 The target enemy unit must immediately make a Leadership test. If this test is failed, it loses a number of Wounds equal to the amount by which it failed the test.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="0b273042-3bb6-5f53-9bd8-ed31d6b6ee78" name="signature. Mantle Of Ghorok" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="33e1b75a-e6db-5fa8-9e1e-ed3ccce50c99" name="Mantle Of Ghorok" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Ghorok was a legendary Minotaur, ferocious as a storm. When possessed by his spirit-mantle, a Shaman becomes a terror on the battlefield, though to summon his rage is not without risk.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="0b273042-3bb6-5f53-9bd8-ed31d6b6ee78" name="signature. Mantle Of Ghorok" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="33e1b75a-e6db-5fa8-9e1e-ed3ccce50c99" name="Mantle Of Ghorok" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Ghorok was a legendary Minotaur, ferocious as a storm. When possessed by his spirit-mantle, a Shaman becomes a terror on the battlefield, though to summon his rage is not without risk.
 
 Type
 Enchantment
@@ -6651,22 +8825,22 @@ Casting Value
 Range
 Self
 Until the end of this turn, the caster gains a +D6 modifier to their Strength and Attacks characteristics (to a maximum of 10). However, if a 6 is rolled, this modifier is lost and the caster instead loses a single Wound.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="4930814f-77d4-504f-acb0-3186561809db" name="Lore Of Chaos" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="5fc506fb-07aa-58de-aa32-7f8c1f1c28cc" name="signature. Winds Of Chaos" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="8c24d0c4-46ba-5872-a121-d9cb866e8f35" name="Winds Of Chaos" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">21"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A cold and vicious gale blows from the Northern Wastes, carrying with it the laughter of Dark Gods.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4930814f-77d4-504f-acb0-3186561809db" name="Lore Of Chaos" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="5fc506fb-07aa-58de-aa32-7f8c1f1c28cc" name="signature. Winds Of Chaos" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8c24d0c4-46ba-5872-a121-d9cb866e8f35" name="Winds Of Chaos" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">21"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A cold and vicious gale blows from the Northern Wastes, carrying with it the laughter of Dark Gods.
 
 Type
 Hex
@@ -6675,18 +8849,18 @@ Casting Value
 Range
 21"
 Mark of Chaos Undivided only. If this spell is cast with a casting result of 7 or more, the target enemy unit suffers a -1 modifier to its Movement characteristic (to a minimum of 1). If this spell is cast with a casting result of 9 or more, the target enemy unit suffers a -2 modifier to its Movement characteristic (to a minimum of 1). This spell lasts until your next Start of Turn sub-phase.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="5d59ee7d-b747-5372-95e4-6a177c717f00" name="signature. Acquiescence" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="408baaa3-077b-5bba-9d3f-deb88a5607ad" name="Acquiescence" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">6</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The enemy is humbled by the beauty of Slaanesh, letting their weapons fall limply to their sides.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="5d59ee7d-b747-5372-95e4-6a177c717f00" name="signature. Acquiescence" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="408baaa3-077b-5bba-9d3f-deb88a5607ad" name="Acquiescence" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">6</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The enemy is humbled by the beauty of Slaanesh, letting their weapons fall limply to their sides.
 
 Type
 Hex
@@ -6695,18 +8869,18 @@ Casting Value
 Range
 12"
 Mark of Slaanesh only. Until the end of the Combat phase, the target enemy unit becomes subject to the Strike Last special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="17ecfc07-ba9b-5b1d-beea-d573d1e6afdd" name="signature. Fleshy Abundance" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="6d0c161b-4445-5973-a94f-354da74cf81d" name="Fleshy Abundance" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Great wobbling mounds of fat spill out from beneath the armour of the Sorcerer and their comrades.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="17ecfc07-ba9b-5b1d-beea-d573d1e6afdd" name="signature. Fleshy Abundance" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="6d0c161b-4445-5973-a94f-354da74cf81d" name="Fleshy Abundance" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Great wobbling mounds of fat spill out from beneath the armour of the Sorcerer and their comrades.
 
 Type
 Enchantment
@@ -6715,18 +8889,18 @@ Casting Value
 Range
 Self
 Mark of Nurgle only. Remains in Play. Whilst this spell is in play, the caster and any unit they have joined gain a +1 modifier to their Toughness characteristic (to a maximum of 7).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="cf6a9348-289b-5d2b-82a9-e115bce434bb" name="signature. Blue Fire" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="030ec1a7-1cfb-5184-bd64-588e61846cd5" name="Blue Fire" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Sorcerer's hands draw strange runes in the air, their enemies are consumed by blue flames.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="cf6a9348-289b-5d2b-82a9-e115bce434bb" name="signature. Blue Fire" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="030ec1a7-1cfb-5184-bd64-588e61846cd5" name="Blue Fire" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Sorcerer's hands draw strange runes in the air, their enemies are consumed by blue flames.
 
 Type
 Magic Missile
@@ -6735,22 +8909,22 @@ Casting Value
 Range
 18"
 Mark of Tzeentch only. The target enemy unit suffers D6+3 Strength 4 hits, each with an AP of -2 and with the Flaming Attacks special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="cacf240a-f0f8-5375-b750-e74af95fe880" name="Lore Of Daemons" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="3dd87190-c120-56c3-9856-759c815eb282" name="signature. Plague Wind" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c25da5b7-bebd-594e-aff8-ceb00808b85d" name="Plague Wind" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A debilitating cloud of noxious air forms, swirling around the battlefield and infecting all it touches.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="cacf240a-f0f8-5375-b750-e74af95fe880" name="Lore Of Daemons" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="3dd87190-c120-56c3-9856-759c815eb282" name="signature. Plague Wind" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c25da5b7-bebd-594e-aff8-ceb00808b85d" name="Plague Wind" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">A debilitating cloud of noxious air forms, swirling around the battlefield and infecting all it touches.
 
 Type
 Magical Vortex
@@ -6759,18 +8933,18 @@ Casting Value
 Range
 12"
 Daemons of Nurgle only. Remains in Play. Place a small (3") blast template so that its central hole is within 12" of the caster. Whilst in play, the template is treated as dangerous terrain. The template moves D6" in a random direction during every Start of Turn sub-phase. Any unit (friend or foe, but not including Daemons of Nurgle) the moving template touches or moves over suffers a -1 modifier to its Toughness characteristic for the remainder of the turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="0bab0436-7e01-513f-83f9-3c9bc8e0c5e0" name="signature. Cacophonic Hymn" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a804a3cd-2d40-5121-8160-c1fbde715960" name="Cacophonic Hymn" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Daemon's unnatural song peels away the enchantments that protect its enemies and its perverse melody boggles their wits.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="0bab0436-7e01-513f-83f9-3c9bc8e0c5e0" name="signature. Cacophonic Hymn" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="a804a3cd-2d40-5121-8160-c1fbde715960" name="Cacophonic Hymn" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Daemon's unnatural song peels away the enchantments that protect its enemies and its perverse melody boggles their wits.
 
 Type
 Hex
@@ -6779,18 +8953,18 @@ Casting Value
 Range
 12"
 Daemons of Slaanesh only. Remains in Play. If this spell is cast, the effects of any enchantment spell previously cast on the target unit immediately expire. In addition, whilst this spell is in play, the target unit becomes subject to the Stupidity special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="cde915bb-b64e-5fa0-8ab0-0e9a82a65165" name="signature. Pink Fire" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="77b29da0-cae8-55a8-9c1f-bc6825956013" name="Pink Fire" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the cackling Daemon prances and gestures, pink flames rise from the earth to envelope its enemies.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="cde915bb-b64e-5fa0-8ab0-0e9a82a65165" name="signature. Pink Fire" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="77b29da0-cae8-55a8-9c1f-bc6825956013" name="Pink Fire" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the cackling Daemon prances and gestures, pink flames rise from the earth to envelope its enemies.
 
 Type
 Magic Missile
@@ -6799,18 +8973,18 @@ Casting Value
 Range
 18"
 Daemons of Tzeentch only. The target enemy unit suffers D3+3 Strength 3 hits, each with an AP of - and with the Flaming Attacks special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="e453c78a-91f1-527c-baa5-c1a89adc2a49" name="signature. Gift Of Mutation" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c78be8a7-c335-509f-8ead-728f42061a24" name="Gift Of Mutation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Daemon cackles maniacally as the warping magic of Tzeentch flows through its enemies, sending waves of mutation through their minds and bodies.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="e453c78a-91f1-527c-baa5-c1a89adc2a49" name="signature. Gift Of Mutation" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c78be8a7-c335-509f-8ead-728f42061a24" name="Gift Of Mutation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Daemon cackles maniacally as the warping magic of Tzeentch flows through its enemies, sending waves of mutation through their minds and bodies.
 
 Type
 Hex
@@ -6822,22 +8996,22 @@ Daemons of Tzeentch only. If this spell is cast with a casting result of 8 or mo
 • Weapon Skill
 • Strength
 • Toughness</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="6d443eed-0b46-5be1-b54e-89f58128326e" name="Lore Of Gork" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="a0aace09-86cc-56c5-83ed-e479aea7a8dd" name="signature. Brain Bursta" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="4ad0ba12-21ff-50d9-abe2-f428c2440f6e" name="Brain Bursta" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Channelling the violence of their peers, the Shaman projects it against their enemies in a brain-bursting wave.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="6d443eed-0b46-5be1-b54e-89f58128326e" name="Lore Of Gork" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="a0aace09-86cc-56c5-83ed-e479aea7a8dd" name="signature. Brain Bursta" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="4ad0ba12-21ff-50d9-abe2-f428c2440f6e" name="Brain Bursta" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Channelling the violence of their peers, the Shaman projects it against their enemies in a brain-bursting wave.
 
 Type
 Assailment
@@ -6846,18 +9020,18 @@ Casting Value
 Range
 Combat
 A single enemy model the caster is engaged in combat with suffers a single Strength 6 hit with the Multiple Wounds (D3) special rule and with no armour or Regeneration saves permitted (Ward saves can be attempted as normal).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="04448bda-7ec2-5b00-b424-ff9c25cb787a" name="signature. Gaze Of Gork" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="dfc89311-9db4-5e2d-9f4e-707af7eaf04d" name="Gaze Of Gork" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">5D6"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Gork gives the Shaman the ability to project beams of coruscating energy from their eyes, burning massive holes through everything they look at.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="04448bda-7ec2-5b00-b424-ff9c25cb787a" name="signature. Gaze Of Gork" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="dfc89311-9db4-5e2d-9f4e-707af7eaf04d" name="Gaze Of Gork" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">5D6"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Gork gives the Shaman the ability to project beams of coruscating energy from their eyes, burning massive holes through everything they look at.
 
 Type
 Magic Missile
@@ -6866,22 +9040,22 @@ Casting Value
 Range
 5D6"
 Draw a straight line, 5D6" in length, from the caster’s base edge. Any model (friend or foe) whose base falls under this line suffers a Strength 5 hit, with an AP of -3.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d1061df5-1206-5d3e-9edf-945225927988" name="Lore Of Hashut" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="edc5446c-c294-545e-b931-6897c47dbcfd" name="signature. Curse Of Hashut" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="cd571966-a178-514c-84af-c1f27f81f50b" name="Curse Of Hashut" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Channelling the malediction that inflicts their own twisted body, the sorcerer turns the dark curse of Hashut upon their enemies, causing their bones to petrify and their flesh to grow grey and brittle, before crumbling to dust.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d1061df5-1206-5d3e-9edf-945225927988" name="Lore Of Hashut" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="edc5446c-c294-545e-b931-6897c47dbcfd" name="signature. Curse Of Hashut" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="cd571966-a178-514c-84af-c1f27f81f50b" name="Curse Of Hashut" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Channelling the malediction that inflicts their own twisted body, the sorcerer turns the dark curse of Hashut upon their enemies, causing their bones to petrify and their flesh to grow grey and brittle, before crumbling to dust.
 
 Type
 Magic Missile
@@ -6891,18 +9065,18 @@ Range
 18"
 This spell can only target enemy characters. However, it may target any enemy character that is within range and that the caster can draw a line of sight to, regardless of the usual rules for targeting characters, and may even target an enemy character that has joined a unit or that is engaged in combat.
 The target enemy character must immediately make a Toughness test. If this test is passed, it suffers D3 Strength 2 hits, each with an AP of -. If, however, this test is failed, it suffers D3+2 Strength 5 hits, with no armour or Regeneration saves permitted (Ward saves can be attempted as normal).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="8505e6a4-f7f5-570e-8965-2bbc5682ead7" name="signature. Storm Of Ash" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="df366eeb-3380-558c-a46f-091355079bc6" name="Storm Of Ash" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The sorcerer summons forth a hellish storm of choking hot ash, scalding and blinding anything and anyone unfortunate enough to be caught in its path.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="8505e6a4-f7f5-570e-8965-2bbc5682ead7" name="signature. Storm Of Ash" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="df366eeb-3380-558c-a46f-091355079bc6" name="Storm Of Ash" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The sorcerer summons forth a hellish storm of choking hot ash, scalding and blinding anything and anyone unfortunate enough to be caught in its path.
 
 Type
 Hex
@@ -6911,18 +9085,18 @@ Casting Value
 Range
 Self
 Until your next Start of Turn sub-phase, all enemy units suffer a -1 modifier to any rolls To Hit made whilst within 9" of the caster's model (rolls of a natural 6 are unaffected).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="54049263-53f2-56b0-bc24-05a56a019ee5" name="signature. Flames Of Hashut" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="e4b87b07-b689-5b8a-97ac-b055d45214b8" name="Flames Of Hashut" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The fiery breath of Hashut erupts around the sorcerer, engulfing their body and scorching their foes.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="54049263-53f2-56b0-bc24-05a56a019ee5" name="signature. Flames Of Hashut" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e4b87b07-b689-5b8a-97ac-b055d45214b8" name="Flames Of Hashut" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The fiery breath of Hashut erupts around the sorcerer, engulfing their body and scorching their foes.
 
 Type
 Assailment
@@ -6931,22 +9105,22 @@ Casting Value
 Range
 Combat
 A single enemy unit the caster is engaged in combat with suffers D3+1 Strength 4 hits, each with an AP of -1. These hits have the Flaming Attacks special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ad080ab5-35fc-5ed4-8f08-17f4c4644a48" name="Lore Of Lustria" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="ce90b476-ed4f-5cda-8307-277e63f9fc3b" name="signature. Apotheosis" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="dbaf514e-1fe3-5d3d-a5cb-f58ac054ad9d" name="Apotheosis" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">24"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Waves of pure magic infuse the caster's ally, healing their wounds and giving them a palpable aura of power and dread.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ad080ab5-35fc-5ed4-8f08-17f4c4644a48" name="Lore Of Lustria" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="ce90b476-ed4f-5cda-8307-277e63f9fc3b" name="signature. Apotheosis" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="dbaf514e-1fe3-5d3d-a5cb-f58ac054ad9d" name="Apotheosis" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">24"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Waves of pure magic infuse the caster's ally, healing their wounds and giving them a palpable aura of power and dread.
 
 Type
 Enchantment
@@ -6956,18 +9130,18 @@ Range
 24"
 This spell can only target friendly characters whose troop type is infantry or cavalry, but may target characters engaged in combat. If this spell is cast with a casting result of 10 or more, the target friendly model immediately regains D3 lost Wounds. If this spell is cast with a casting result of 12 or more, the target friendly model immediately regains D3+1 lost Wounds.
 In addition, the target friendly character gains the Fear special rule. If they already have the Fear special rule, they instead gain the Terror special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="d2d54db0-1a15-5b09-81e6-04ed54b292e5" name="signature. Monsoon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="3b292c1f-8e33-546c-b777-a3e3e96d135a" name="Monsoon" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Without warning, an eight-winded storm breaks about the foe. Torrential rain drenches weapons and armour, loosening bowstrings and soaking black powder.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="d2d54db0-1a15-5b09-81e6-04ed54b292e5" name="signature. Monsoon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3b292c1f-8e33-546c-b777-a3e3e96d135a" name="Monsoon" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Without warning, an eight-winded storm breaks about the foe. Torrential rain drenches weapons and armour, loosening bowstrings and soaking black powder.
 
 Type
 Magical Vortex
@@ -6977,22 +9151,22 @@ Range
 15"
 Remains in Play. Place a large (5") blast template so that its central hole is within 15" of the caster. Whilst in play, the template is treated as dangerous terrain over which no line of sight can be drawn. The template moves D6" in a random direction during every Start of Turn sub-phase. Any enemy unit the moving template touches or moves over becomes 'drenched' for the remainder of the game.
 A drenched unit suffers a -1 To Hit modifier during the Shooting phase. A drenched model whose troop type is 'war machine' must roll a D6 before shooting. On a roll of 1, the model fails to shoot this turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7963da92-ec6a-5747-a764-55cfb1f8c014" name="Lore Of Naggaroth" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="18043620-409a-5264-bd71-5d39fdf529b1" name="signature. Cursing Word" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="47bd966b-74c3-50f2-8410-81620b2adcdd" name="Cursing Word" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Sorceress utters a string of forbidden words and curses, the bodies of her enemies bend and buckle, wracked with waves of agony.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7963da92-ec6a-5747-a764-55cfb1f8c014" name="Lore Of Naggaroth" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="18043620-409a-5264-bd71-5d39fdf529b1" name="signature. Cursing Word" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="47bd966b-74c3-50f2-8410-81620b2adcdd" name="Cursing Word" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Sorceress utters a string of forbidden words and curses, the bodies of her enemies bend and buckle, wracked with waves of agony.
 
 Type
 Hex
@@ -7001,18 +9175,18 @@ Casting Value
 Range
 12"
 Remains in Play. Whilst this spell is in play, the target enemy unit suffers a -1 modifier to either its Weapon skill characteristic, or its Ballistic Skill characteristic (chosen by the casting Wizard’s controlling player, to minimum of 1). If this spell is cast, the effects of any other Hex previously cast on the target unit immediately expire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="2313e758-81ed-5a0e-9903-7e76a4f1a103" name="signature. Black Horror" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="bef88155-8b04-560c-ab76-bb319eadbce3" name="Black Horror" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Sorceress tears the veil between reality and the æther, and a black cloud of roiling energy sweeps across the battlefield, trailing slimy tentacles that drag unfortunate victims to an unknown fate.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="2313e758-81ed-5a0e-9903-7e76a4f1a103" name="signature. Black Horror" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="bef88155-8b04-560c-ab76-bb319eadbce3" name="Black Horror" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Sorceress tears the veil between reality and the æther, and a black cloud of roiling energy sweeps across the battlefield, trailing slimy tentacles that drag unfortunate victims to an unknown fate.
 
 Type
 Magical Vortex
@@ -7021,22 +9195,22 @@ Casting Value
 Range
 18"
 Remains in Play. Place a large (5") blast template so that its central hole is within 18" of the caster. Whilst in play, the template is treated as dangerous terrain. The template moves 2D6" in a random direction during every Start of Turn sub-phase. Any enemy unit the moving template touches or moves over must immediately make D6 Strength tests. For each test that is failed, the unit loses a single Wound.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="37ed0a1c-8451-5f9c-b163-569e0de8f3b5" name="Lore Of Mork" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="679840cc-cbd4-567b-a8d3-b48c83373139" name="signature. Mork’S Curse" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d04ea68f-6d8e-53bb-b2b2-e62526d86af2" name="Mork’S Curse" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman points a bony finger at the enemy and utters a curse. Almost immediately, buckles begin to break and rivets pop, causing armour plates to slip.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="37ed0a1c-8451-5f9c-b163-569e0de8f3b5" name="Lore Of Mork" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="679840cc-cbd4-567b-a8d3-b48c83373139" name="signature. Mork’S Curse" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="d04ea68f-6d8e-53bb-b2b2-e62526d86af2" name="Mork’S Curse" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman points a bony finger at the enemy and utters a curse. Almost immediately, buckles begin to break and rivets pop, causing armour plates to slip.
 
 Type
 Hex
@@ -7045,18 +9219,18 @@ Casting Value
 Range
 18"
 Remains in Play. Whilst this spell is in play, the target enemy unit must re-roll any Armour Save roll of a natural 6.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="59260f1d-0cfe-5f02-907b-634260b51828" name="signature. Itchy Nuisance" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="ef1ba2f2-736d-5b96-8a86-2c968090a586" name="Itchy Nuisance" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman begins vigorously scratching and cackling maniacally, their antics causing their enemies to feel uncomfortably hot and itchy.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="59260f1d-0cfe-5f02-907b-634260b51828" name="signature. Itchy Nuisance" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="ef1ba2f2-736d-5b96-8a86-2c968090a586" name="Itchy Nuisance" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Shaman begins vigorously scratching and cackling maniacally, their antics causing their enemies to feel uncomfortably hot and itchy.
 
 Type
 Hex
@@ -7065,22 +9239,22 @@ Casting Value
 Range
 15"
 Until your next Start of Turn sub-phase, the target enemy unit suffers a -D3 modifier to its Toughness and Initiative characteristics (to a minimum of 1).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="93af6eff-4d44-5633-abe0-fc8fafcb8437" name="Lore Of Nehekhara" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="1fd43576-c98e-5c6a-ba0a-c1d78a89ae40" name="signature. Djaf'S Incantation Of Cursed Blades" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="83ddda13-fd8d-526f-a4ee-b3a84c231e8f" name="Djaf'S Incantation Of Cursed Blades" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Liche Priest utters this ancient mantra, the weapons of the Nehekharan warriors gathered about them become imbued with the essence of Djaf, the jackal-headed god of the dead, who hungers for the souls of the living above all things.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="93af6eff-4d44-5633-abe0-fc8fafcb8437" name="Lore Of Nehekhara" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="1fd43576-c98e-5c6a-ba0a-c1d78a89ae40" name="signature. Djaf'S Incantation Of Cursed Blades" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="83ddda13-fd8d-526f-a4ee-b3a84c231e8f" name="Djaf'S Incantation Of Cursed Blades" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Liche Priest utters this ancient mantra, the weapons of the Nehekharan warriors gathered about them become imbued with the essence of Djaf, the jackal-headed god of the dead, who hungers for the souls of the living above all things.
 
 Type
 Enchantment
@@ -7089,18 +9263,18 @@ Casting Value
 Range
 Self
 Until your next Start of Turn sub-phase, any friendly unit that has the Nehekharan Undead special rule and that is within the caster's Command range may re-roll any rolls To Hit of a natural 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="1a836ab3-9382-5dcb-969d-d42a3b4ab5e1" name="signature. Khsar'S Incantation Of The Desert Wind" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="14accc4b-ffe2-512a-ac85-2e2a977e3052" name="Khsar'S Incantation Of The Desert Wind" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">6</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Harnessing the power of Khsar, god of the desert winds, the Liche Priest summons forth a sandstorm that engulfs the undying warriors of Nehekhara and carries them across the battlefield.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="1a836ab3-9382-5dcb-969d-d42a3b4ab5e1" name="signature. Khsar'S Incantation Of The Desert Wind" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="14accc4b-ffe2-512a-ac85-2e2a977e3052" name="Khsar'S Incantation Of The Desert Wind" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">6</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Harnessing the power of Khsar, god of the desert winds, the Liche Priest summons forth a sandstorm that engulfs the undying warriors of Nehekhara and carries them across the battlefield.
 
 Type
 Enchantment
@@ -7109,18 +9283,18 @@ Casting Value
 Range
 Self
 If this spell is cast with a casting result of 6 or more, a single friendly unit that has the Nehekharan Undead special rule and is within the caster's Command range gains the Reserve Move special rule. If this spell is cast with a casting result of 10 or more, every friendly unit that has the Nehekharan Undead special rule and is within the caster's Command range gains the Reserve Move special rule. This spell lasts until the end of this turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="70492b95-f1d6-53cc-9448-51d9d5f38255" name="signature. Usekhp'S Incantation Of Desiccation" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="cc920089-b677-5fa7-a8d1-4666f22b5fe9" name="Usekhp'S Incantation Of Desiccation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Liche Priest intones the curse of desiccation every syllable strips the moisture from their victims' bodies, sapping their strength and vitality.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="70492b95-f1d6-53cc-9448-51d9d5f38255" name="signature. Usekhp'S Incantation Of Desiccation" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="cc920089-b677-5fa7-a8d1-4666f22b5fe9" name="Usekhp'S Incantation Of Desiccation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Liche Priest intones the curse of desiccation every syllable strips the moisture from their victims' bodies, sapping their strength and vitality.
 
 Type
 Hex
@@ -7129,22 +9303,22 @@ Casting Value
 Range
 15"
 Until the end of this turn, the target enemy unit suffers a -1 modifier to its Strength and Toughness characteristics (to a minimum of 1). If this spell is cast, the effects of any other Hex previously cast on the target unit immediately expire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="e8cf592e-2082-5968-b347-28e9e8058efa" name="Lore Of Saphery" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="75246d16-0ff5-5197-9c1a-cebcf928d667" name="signature. Hand Of Khaine" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="7f770b62-4483-546c-af81-748a6329357d" name="Hand Of Khaine" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a simple gesture, white light bursts forth from the Mage's outstretched hand, banishing the life force of the foe.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e8cf592e-2082-5968-b347-28e9e8058efa" name="Lore Of Saphery" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="75246d16-0ff5-5197-9c1a-cebcf928d667" name="signature. Hand Of Khaine" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="7f770b62-4483-546c-af81-748a6329357d" name="Hand Of Khaine" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a simple gesture, white light bursts forth from the Mage's outstretched hand, banishing the life force of the foe.
 
 Type
 Assailment
@@ -7153,18 +9327,18 @@ Casting Value
 Range
 Combat
 A single enemy model the caster is engaged in combat with suffers a single Strength 4 hit with no armour save permitted (Ward and Regeneration saves can be attempted as normal).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="163ae233-8c63-5c67-8613-b936e23e93c8" name="signature. Courage Of Aenarion" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="e7a77fd9-22f5-58c1-93e6-4b530237e992" name="Courage Of Aenarion" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The High Elf Mage draws upon the Winds of Magic to conjure glorious images of Aenarion in the minds of their allies. So inspired, already brave warriors are filled with the unbreakable courage of the first Phoenix King.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="163ae233-8c63-5c67-8613-b936e23e93c8" name="signature. Courage Of Aenarion" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e7a77fd9-22f5-58c1-93e6-4b530237e992" name="Courage Of Aenarion" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The High Elf Mage draws upon the Winds of Magic to conjure glorious images of Aenarion in the minds of their allies. So inspired, already brave warriors are filled with the unbreakable courage of the first Phoenix King.
 
 Type
 Enchantment
@@ -7173,18 +9347,18 @@ Casting Value
 Range
 15"
 Remains in Play. Whilst this spell is in play, the target friendly unit gains the Unbreakable special rule. If this spell is cast, the effects of any other Enchantment previously cast on the target unit immediately expire. This spell may target a friendly unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="935458c6-8cf7-53c7-8f53-86ebcee9e970" name="signature. Vaul'S Unmaking" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="38f835d7-de54-5345-84bd-71ff983b4fe6" name="Vaul'S Unmaking" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">11</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Glowing swords grow dim, blood-warm chalices cool and enchanted scrolls crumble into dust, their magical energies drained as the Mage turns the fury of Vaul's forge upon the magical trappings of the enemy.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="935458c6-8cf7-53c7-8f53-86ebcee9e970" name="signature. Vaul'S Unmaking" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="38f835d7-de54-5345-84bd-71ff983b4fe6" name="Vaul'S Unmaking" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">11</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Glowing swords grow dim, blood-warm chalices cool and enchanted scrolls crumble into dust, their magical energies drained as the Mage turns the fury of Vaul's forge upon the magical trappings of the enemy.
 
 Type
 Hex
@@ -7194,22 +9368,22 @@ Range
 12"
 This spell can only target enemy characters. However, it may target any enemy character that is within range and that the caster can draw a line of sight to, regardless of the usual rules for targeting characters, and may even target an enemy character that has joined a unit or that is engaged in combat.
 The casting player chooses a single magic item carried by the target. This magic item is immediately 'unmade', rendering it completely useless. The chosen magic item cannot be used for the remainder of the game.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ae5e04f0-abf9-5d48-9090-0c7c27469490" name="Lore Of The Great Maw" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="bd9dd729-0830-57d9-9483-668afa1f1452" name="signature. Toothcracker" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="fdfc8fd1-0a0a-5d32-b067-87e0bc012b95" name="Toothcracker" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Consuming a chunk of granite, the Butcher bestows the rock's resilience upon their brethren.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ae5e04f0-abf9-5d48-9090-0c7c27469490" name="Lore Of The Great Maw" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="bd9dd729-0830-57d9-9483-668afa1f1452" name="signature. Toothcracker" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="fdfc8fd1-0a0a-5d32-b067-87e0bc012b95" name="Toothcracker" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Consuming a chunk of granite, the Butcher bestows the rock's resilience upon their brethren.
 
 Type
 Enchantment
@@ -7218,18 +9392,18 @@ Casting Value
 Range
 12"
 If this spell is cast with a casting result of 7 or more, the target friendly unit gains a +1 modifier to its Toughness characteristic (to a maximum of 10). If this spell is cast with a casting result of 10 or more, the target friendly unit gains a +2 modifier to its Toughness characteristic (to a maximum of 10). This spell lasts until the end of this turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="bd26f2ce-10ff-5812-a073-595cbed17249" name="signature. Trollguts" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c79c3767-082d-5673-b996-a9aa5b8b1ef6" name="Trollguts" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Downing the repulsive innards of a Troll, the Butcher grants the beast's healing ability onto their companions.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="bd26f2ce-10ff-5812-a073-595cbed17249" name="signature. Trollguts" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c79c3767-082d-5673-b996-a9aa5b8b1ef6" name="Trollguts" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Downing the repulsive innards of a Troll, the Butcher grants the beast's healing ability onto their companions.
 
 Type
 Enchantment
@@ -7238,22 +9412,22 @@ Casting Value
 Range
 15"
 If this spell is cast with a casting result of 8 or more, the target friendly unit gains the Regeneration (6+) special rule. If this spell is cast with a casting result of 11 or more, the target friendly unit gains the Regeneration (5+) special rule. This spell lasts until your next Start of Turn sub-phase.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="3ec836d1-473d-55af-9d3a-aae636f9f977" name="Lore Of The Horned Rat" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="50e109e0-4386-5a3f-9814-8b3ea5207f9d" name="signature. Skitterleap" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="873e1e2f-0e54-568a-b308-ece6577c6788" name="Skitterleap" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a puff of smoke and a loud pop of inrushing air, the Skaven Wizard disappears, only to reappear elsewhere on the battlefield.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3ec836d1-473d-55af-9d3a-aae636f9f977" name="Lore Of The Horned Rat" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="50e109e0-4386-5a3f-9814-8b3ea5207f9d" name="signature. Skitterleap" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="873e1e2f-0e54-568a-b308-ece6577c6788" name="Skitterleap" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a puff of smoke and a loud pop of inrushing air, the Skaven Wizard disappears, only to reappear elsewhere on the battlefield.
 
 Type
 Conveyance
@@ -7263,18 +9437,18 @@ Range
 18"
 This spell can only target friendly characters whose Troop Type is infantry, but may target characters engaged in combat. You may immediately remove the target friendly character from the battlefield and replace it anywhere completely within 24" of its original location, but not within 6" of any enemy models. The target cannot move again during this Movement phase.
 Note that this spell allows a character to leave combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="f0ad4c6a-5e2d-5671-b3f9-e9a4033125eb" name="signature. Warp Lightning" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="59c98fda-4b33-5fed-9d69-cabd3544d364" name="Warp Lightning" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Skaven Wizard points a fleshy paw, from which bolts of greenish-black lightning arc outwards.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="f0ad4c6a-5e2d-5671-b3f9-e9a4033125eb" name="signature. Warp Lightning" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="59c98fda-4b33-5fed-9d69-cabd3544d364" name="Warp Lightning" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Skaven Wizard points a fleshy paw, from which bolts of greenish-black lightning arc outwards.
 
 Type
 Magic Missile
@@ -7283,18 +9457,18 @@ Casting Value
 Range
 18"
 The target enemy unit suffers D3+1 Strength 5 hits, each with an AP of -3.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="8c35e1fa-d7a5-5010-af4f-c0ffbe1f0719" name="signature. Cloud Of Corruption" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="cdab7adf-0f27-5486-9cd8-ed61d11164a0" name="Cloud Of Corruption" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">9"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a flourish of their palsied paws, the Skaven Wizard summons forth a stinking cloud of foul contagion.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="8c35e1fa-d7a5-5010-af4f-c0ffbe1f0719" name="signature. Cloud Of Corruption" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="cdab7adf-0f27-5486-9cd8-ed61d11164a0" name="Cloud Of Corruption" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">9"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a flourish of their palsied paws, the Skaven Wizard summons forth a stinking cloud of foul contagion.
 
 Type
 Magical Vortex
@@ -7303,22 +9477,22 @@ Casting Value
 Range
 9"
 Remains in Play. Place a small (3") blast template so that its central hole is within 9" of the caster. Whilst in play, the template is treated as dangerous terrain over which no line of sight can be drawn. Whilst within 3" of one or more of these templates, enemy units suffer a -1 modifier to their Toughness characteristic (to a minimum of one).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="bd0b5834-236a-5381-8aa5-5d097bb0e2a8" name="Lore Of The Lady" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="5130c951-6947-52a0-b5f1-ec6a1a4ad655" name="signature. The Lady'S Gift" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="40a6ee23-6412-5b7d-9aed-7069958896f7" name="The Lady'S Gift" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Damsel prays solemnly to the Lady of the Lake, silvery light emanates from her most ardent followers, knitting their wounds and gilding their armour.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="bd0b5834-236a-5381-8aa5-5d097bb0e2a8" name="Lore Of The Lady" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="5130c951-6947-52a0-b5f1-ec6a1a4ad655" name="signature. The Lady'S Gift" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="40a6ee23-6412-5b7d-9aed-7069958896f7" name="The Lady'S Gift" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Damsel prays solemnly to the Lady of the Lake, silvery light emanates from her most ardent followers, knitting their wounds and gilding their armour.
 
 Type
 Enchantment
@@ -7327,18 +9501,18 @@ Casting Value
 Range
 12"
 Remains in Play. If this spell is cast with a casting result of 7 or more, the target friendly unit gains the Regeneration (6+) special rule. If this spell is cast with a casting result of 10 or more, the target friendly unit gains the Regeneration (5+) special rule. This spell may target a friendly unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="7f61a6a2-bf6e-5f1d-aced-18fb1c0eea03" name="signature. Burning Gaze" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="92bc13d6-3cb9-5385-b4ba-d4ce8f65123c" name="Burning Gaze" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">5D6"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Beams of cleansing white light flow from the Damsel's eyes, searing all traces of evil from her sight.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="7f61a6a2-bf6e-5f1d-aced-18fb1c0eea03" name="signature. Burning Gaze" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="92bc13d6-3cb9-5385-b4ba-d4ce8f65123c" name="Burning Gaze" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">5D6"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Beams of cleansing white light flow from the Damsel's eyes, searing all traces of evil from her sight.
 
 Type
 Magic Missile
@@ -7347,18 +9521,18 @@ Casting Value
 Range
 5D6"
 Draw a straight line, 5D6" in length, from the caster's base edge. Any enemy model whose base falls under this line suffers a single Strength 4 hit with no armour save permitted (Ward and Regeneration saves can be attempted as normal).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="daba7c20-f46a-5eef-a942-f85acf530c41" name="signature. The Lady'S Wrath" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c8652082-ef40-5b80-bba0-ac19d719e1c6" name="The Lady'S Wrath" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Enraged to see the lands of fair Bretonnia invaded by enemies, the Damsel invokes the wrath of the Lady of the Lake, strengthening the sword arms of her companions.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="daba7c20-f46a-5eef-a942-f85acf530c41" name="signature. The Lady'S Wrath" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c8652082-ef40-5b80-bba0-ac19d719e1c6" name="The Lady'S Wrath" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Enraged to see the lands of fair Bretonnia invaded by enemies, the Damsel invokes the wrath of the Lady of the Lake, strengthening the sword arms of her companions.
 
 Type
 Enchantment
@@ -7367,22 +9541,22 @@ Casting Value
 Range
 Self
 Remains in Play. Whilst this spell is in play, the caster, their mount and any unit they have joined gain a +1 modifier to their Strength characteristic (to a maximum of 10), and improve the Armour Piercing characteristic of their weapons by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d3bede8c-873d-506b-8dcf-d0fa7b74e856" name="Lore Of Undeath" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="6e1b1148-89e1-5d3e-9e76-a657c4600a41" name="signature. Vanhal'S Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="5dabe4b0-881a-5e32-a594-278643148282" name="Vanhal'S Danse Macabre" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Filled with magical energy, the Undead jerk forwards on the attack with tireless and unnatural speed.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d3bede8c-873d-506b-8dcf-d0fa7b74e856" name="Lore Of Undeath" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="6e1b1148-89e1-5d3e-9e76-a657c4600a41" name="signature. Vanhal'S Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="5dabe4b0-881a-5e32-a594-278643148282" name="Vanhal'S Danse Macabre" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Filled with magical energy, the Undead jerk forwards on the attack with tireless and unnatural speed.
 
 Type
 Enchantment
@@ -7394,18 +9568,18 @@ If this spell is cast with a casting result of 8 or more, the target friendly un
 • Movement
 • Weapon Skill
 • Initiative</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="af6b5768-7260-53e5-b9bf-9b939e6f8fc1" name="signature. Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="0c2dbc1e-7b17-5894-9aad-3698a402cd6e" name="Hellish Vigour" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The caster invigorates their ghastly warriors, who advance upon the foe with uncanny vigour.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="af6b5768-7260-53e5-b9bf-9b939e6f8fc1" name="signature. Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="0c2dbc1e-7b17-5894-9aad-3698a402cd6e" name="Hellish Vigour" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The caster invigorates their ghastly warriors, who advance upon the foe with uncanny vigour.
 
 Type
 Enchantment
@@ -7414,18 +9588,18 @@ Casting Value
 Range
 Self
 If this spell is cast with a casting result of 7 or more, a single friendly unit that has the Necromantic Undead special rule and is within the caster's Command range gains the Reserve Move special rule. If this spell is cast with a casting result of 10 or more, every friendly unit that has the Necromantic Undead special rule and is within the caster's Command range gains the Reserve Move special rule. This spell lasts until the end of this turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="c247d763-06e1-5e82-8a5a-515b62a701ec" name="signature. Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="64fb37d1-4916-596e-99ca-290140ffd790" name="Raise Dead" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">One skilled in the dark arts of Necromancy can awaken mortal remains to reinforce the Undead legions under their control.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="c247d763-06e1-5e82-8a5a-515b62a701ec" name="signature. Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="64fb37d1-4916-596e-99ca-290140ffd790" name="Raise Dead" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">One skilled in the dark arts of Necromancy can awaken mortal remains to reinforce the Undead legions under their control.
 
 Type
 Enchantment
@@ -7440,23 +9614,23 @@ Unit Size: 2D3
 Equipment: Hand weapons
 Special Rules: Necromantic Undead, Regeneration (6+), Skirmishers, The Newly Dead
 Note that Risen Zombies are not worth any Victory Points.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="5594274e-60a3-5ea6-8174-7a1469ced965" name="Lore Of The Wilds" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="3cf72737-6d31-5981-b941-3fbe5cefc468" name="signature. Swirling-Mists" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="5a1e5c75-361d-585a-9a04-9c32b844e0f7" name="1. Fury Of Athel Loren" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="8698376f-b4f4-50d4-89ca-f77649f355dc" name="Fury Of Athel Loren" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The caster summons forth writhing vines and briars from the ground to slash and strangle those who seek to harm Athel Loren and its inhabitants.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="5594274e-60a3-5ea6-8174-7a1469ced965" name="Lore Of The Wilds" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="3cf72737-6d31-5981-b941-3fbe5cefc468" name="signature. Swirling-Mists" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="5a1e5c75-361d-585a-9a04-9c32b844e0f7" name="1. Fury Of Athel Loren" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8698376f-b4f4-50d4-89ca-f77649f355dc" name="Fury Of Athel Loren" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The caster summons forth writhing vines and briars from the ground to slash and strangle those who seek to harm Athel Loren and its inhabitants.
 
 Type
 Magic Missile
@@ -7465,18 +9639,18 @@ Casting Value
 Range
 18"
 The target enemy unit suffers D3+1 Strength 6 hits, each with an AP of -2 and the Multiple Wounds (2) special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="07701135-61ab-5f65-ba24-b2c41a3c2e08" name="2. Ariel'S Blessing" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9afbed64-0bb4-5152-a368-16b80c7d3b60" name="Ariel'S Blessing" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">10"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Channelling the power of the Mage Queen herself, the caster surrounds their allies in a healing golden light.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="07701135-61ab-5f65-ba24-b2c41a3c2e08" name="2. Ariel'S Blessing" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9afbed64-0bb4-5152-a368-16b80c7d3b60" name="Ariel'S Blessing" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">10"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Channelling the power of the Mage Queen herself, the caster surrounds their allies in a healing golden light.
 
 Type
 Enchantment
@@ -7485,18 +9659,18 @@ Casting Value
 Range
 10"
 Until your next Start of Turn sub-phase, the target friendly unit gains the Regeneration (5+) special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="7a93bf78-721f-563e-89ef-68a6f7f8200b" name="3. Spiteful Torrent" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="7bf1648f-7984-543b-885d-829763309839" name="Spiteful Torrent" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Swarms of Spites and forest insects erupt from the casters' staff, racing across the battlefield as a writhing mass that bites and stings all within reach.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="7a93bf78-721f-563e-89ef-68a6f7f8200b" name="3. Spiteful Torrent" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="7bf1648f-7984-543b-885d-829763309839" name="Spiteful Torrent" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Swarms of Spites and forest insects erupt from the casters' staff, racing across the battlefield as a writhing mass that bites and stings all within reach.
 
 Type
 Magical Vortex
@@ -7505,18 +9679,18 @@ Casting Value
 Range
 15"
 Remains in Play. Place a small (3") blast template so that its central hole is within 15" of the caster. Whilst in play, the template is treated as difficult terrain. The template scatters D6" during every Start of Turn sub-phase. Any enemy unit that moves through the template, or that the template moves over, suffers 3D6 Strength 2 hits, each with an AP of -1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="c3d39a76-7b2c-567b-9ef8-78b9443c28b1" name="4. Durthu'S Wrath" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9501373e-4332-5fc1-89c7-db5f514a61fe" name="Durthu'S Wrath" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Having witnessed untold destruction within his homeland, Durthu's rage echoes through Athel Loren and can be drawn upon by those who act in harmony with the forest.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="c3d39a76-7b2c-567b-9ef8-78b9443c28b1" name="4. Durthu'S Wrath" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9501373e-4332-5fc1-89c7-db5f514a61fe" name="Durthu'S Wrath" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Having witnessed untold destruction within his homeland, Durthu's rage echoes through Athel Loren and can be drawn upon by those who act in harmony with the forest.
 
 Type
 Assailment
@@ -7525,18 +9699,18 @@ Casting Value
 Range
 Combat
 Each model in the fighting rank of a unit that the caster is engaged with must immediately make an Initiative test. Each model that fails this test suffers D3 Strength 4 hits, with no armour save permitted (Ward and Regeneration saves can be attempted as normal).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="8a797c5b-9bb6-5ed7-ab24-2a32d4326099" name="5. Hidden Pathways" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c5c49b78-9208-57fe-95a3-1632c1cbcc69" name="Hidden Pathways" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The forests of Athel Loren can be compelled to hurry the passage of those who act with its best interests at heart.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="8a797c5b-9bb6-5ed7-ab24-2a32d4326099" name="5. Hidden Pathways" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c5c49b78-9208-57fe-95a3-1632c1cbcc69" name="Hidden Pathways" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The forests of Athel Loren can be compelled to hurry the passage of those who act with its best interests at heart.
 
 Type
 Conveyance
@@ -7545,18 +9719,18 @@ Casting Value
 Range
 12"
 Until your next Start of Turn sub-phase, the target friendly unit gains the Reserve Move special rule and may perform a Quick Turn, even if it would not normally be able to do so.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="5d676d57-b736-57c3-8b5d-25d25e1e9ec0" name="6. Sapping Blight" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="16488f6b-eff2-5239-a095-8f2eac3eb3d7" name="Sapping Blight" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As roots draw water from the earth, so too can the mages of Athel Loren sap the lifeforce from their foes.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="5d676d57-b736-57c3-8b5d-25d25e1e9ec0" name="6. Sapping Blight" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="16488f6b-eff2-5239-a095-8f2eac3eb3d7" name="Sapping Blight" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As roots draw water from the earth, so too can the mages of Athel Loren sap the lifeforce from their foes.
 
 Type
 Hex
@@ -7565,22 +9739,22 @@ Casting Value
 Range
 12"
 Until your next Start of Turn sub-phase, the target enemy unit suffers a -D3 modifier to its Strength characteristic (to a minimum of 1). This spell may target an enemy unit engaged in combat. If this spell is cast, the effects of any other Hex previously cast on the target unit immediately expire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="38083a45-fa40-5e6e-8ffc-f79ca407cce3" name="Primal Magic" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="33208627-b5fa-5e6b-8d05-7f680049d643" name="signature. Primordial Gloom" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="fca93e5f-0a2e-511b-9c65-38cfcc1a4c14" name="Primordial Gloom" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Bray-Shaman bellows praise to the gods, the sky above darkens and the soil underfoot swarms with unclean creatures.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="38083a45-fa40-5e6e-8ffc-f79ca407cce3" name="Primal Magic" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="33208627-b5fa-5e6b-8d05-7f680049d643" name="signature. Primordial Gloom" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="fca93e5f-0a2e-511b-9c65-38cfcc1a4c14" name="Primordial Gloom" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">As the Bray-Shaman bellows praise to the gods, the sky above darkens and the soil underfoot swarms with unclean creatures.
 
 Type
 Magical Vortex
@@ -7589,18 +9763,18 @@ Casting Value
 Range
 12"
 Remains in Play. Place a small (3") blast template so that its central hole is within 12" of the caster. Whilst in play, the template does not move and is treated as dangerous terrain. Whilst within 6" of the template, enemy units suffer a -1 modifier to their Leadership characteristic (to a minimum of 2) and treat open ground as difficult terrain.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="0f5a933f-0a47-58d9-89fe-3410a00aaf50" name="1. Call Of The Wild" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="42b118d4-f66d-5799-9e59-66202b99c30e" name="Call Of The Wild" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Filled with primal energy, the Children of Chaos move across the battlefield with unwholesome vigour.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="0f5a933f-0a47-58d9-89fe-3410a00aaf50" name="1. Call Of The Wild" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="42b118d4-f66d-5799-9e59-66202b99c30e" name="Call Of The Wild" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">1</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Filled with primal energy, the Children of Chaos move across the battlefield with unwholesome vigour.
 
 Type
 Conveyance
@@ -7609,18 +9783,18 @@ Casting Value
 Range
 12"
 This spell can only target friendly models whose troop type is infantry or cavalry. Until the end of this turn, the target friendly unit gains the Reserve Move special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="2e0aa173-f75c-5e3e-8742-34a4354c1fb0" name="2. In The Gloaming Wildwood" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="3f06d3c8-837c-52ae-8114-fb2628fc5939" name="In The Gloaming Wildwood" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The words of half-forgotten folk tales fill the enemy's minds, instilling them with a childlike fear of the dark forests.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="2e0aa173-f75c-5e3e-8742-34a4354c1fb0" name="2. In The Gloaming Wildwood" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3f06d3c8-837c-52ae-8114-fb2628fc5939" name="In The Gloaming Wildwood" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">2</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The words of half-forgotten folk tales fill the enemy's minds, instilling them with a childlike fear of the dark forests.
 
 Type
 Hex
@@ -7629,18 +9803,18 @@ Casting Value
 Range
 15"
 Remains in Play. Whilst this spell is in play, the target enemy unit Fears all models in the caster's army (not including allies or mercenaries). Models in the caster's army that already have the Fear special rule cause Terror in the target unit instead. If this spell is cast, the effects of any other Hex previously cast on the target unit immediately expire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="5f78bb35-75b4-5969-84f3-2404973fa763" name="3. Flock Of Doom Beastmen" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="548fc2b4-8ad9-5e14-8f6c-e11c724e76bb" name="Flock Of Doom Beastmen" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Summoned by the Bray-Shaman's cries, a flock of carrion birds descends upon the foe, striking at eyes and tearing through flesh.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="5f78bb35-75b4-5969-84f3-2404973fa763" name="3. Flock Of Doom Beastmen" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="548fc2b4-8ad9-5e14-8f6c-e11c724e76bb" name="Flock Of Doom Beastmen" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">3</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Summoned by the Bray-Shaman's cries, a flock of carrion birds descends upon the foe, striking at eyes and tearing through flesh.
 
 Type
 Assailment
@@ -7649,18 +9823,18 @@ Casting Value
 Range
 Combat
 Place a small (3") blast template so that its central hole is directly over the centre of a unit the caster is engaged in combat with. Once placed, the template will scatter D3+1". Any enemy model whose base lies underneath the template's final position risks being hit and suffering a single Strength 3 hit with an AP of -. These hits have the Multiple Wounds (2) special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="395be805-0341-5b89-8717-867cd16a36f3" name="4. Fury Of The Beast" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="47bec2f2-9037-5a80-926e-23afc8c50586" name="Fury Of The Beast" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Driven by the Bray-Shaman's invocations, the Children of Chaos flow like a tide of violence over the enemy.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="395be805-0341-5b89-8717-867cd16a36f3" name="4. Fury Of The Beast" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="47bec2f2-9037-5a80-926e-23afc8c50586" name="Fury Of The Beast" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">4</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Driven by the Bray-Shaman's invocations, the Children of Chaos flow like a tide of violence over the enemy.
 
 Type
 Enchantment
@@ -7669,18 +9843,18 @@ Casting Value
 Range
 Self
 Until the end of this turn, the caster and any unit they have joined gains the Fight in Extra Rank special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="1ed8a47e-291b-5b73-af86-e51c3fd3e10d" name="5. Strangleroot" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="3724a746-ecad-5e03-be5b-21e2f04fc5a5" name="Strangleroot" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">4D6"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Bray-Shaman gestures towards the foe, summoning twisted and blackened roots to grasp and strangle its enemies.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="1ed8a47e-291b-5b73-af86-e51c3fd3e10d" name="5. Strangleroot" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3724a746-ecad-5e03-be5b-21e2f04fc5a5" name="Strangleroot" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">5</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">8</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">4D6"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Bray-Shaman gestures towards the foe, summoning twisted and blackened roots to grasp and strangle its enemies.
 
 Type
 Magic Missile
@@ -7689,18 +9863,18 @@ Casting Value
 Range
 4D6"
 Draw a straight line, 4D6" in length, from the caster's base edge. Any enemy model whose base falls under this line suffers D3 Strength 3 hits, each with an AP of -2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="4159c59e-f8d8-5598-81da-cb7c8a2a6e5c" name="6. 'Neath The Shaden Wodespan" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="55603d76-7edd-5100-93f6-1bae5a013e1e" name="'Neath The Shaden Wodespan" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Spectral forests loom above the battlefield, spreading creeping shadows that fill the enemy with dread.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="4159c59e-f8d8-5598-81da-cb7c8a2a6e5c" name="6. 'Neath The Shaden Wodespan" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="55603d76-7edd-5100-93f6-1bae5a013e1e" name="'Neath The Shaden Wodespan" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">6</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Spectral forests loom above the battlefield, spreading creeping shadows that fill the enemy with dread.
 
 Type
 Magical Vortex
@@ -7709,22 +9883,22 @@ Casting Value
 Range
 15"
 Remains in Play. Place a large (5") blast template so that its central hole is within 15" of the caster. Whilst in play, the template does not move and is treated as dangerous terrain over which no line of sight can be drawn. Whilst within 6" of the template, enemy units suffer a -2 modifier to their Ballistic Skill characteristic (to a minimum of 1). Any enemy unit that ends its movement within 3" of the template must immediately make a Panic test. If this test is failed, the unit will flee directly away from the nearest enemy unit which is not itself fleeing.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="8dafaaf1-8266-55ed-9014-0dcfe28133ed" name="Lore Of Yang" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="c207b4a7-cb69-5594-a0a1-9ffcb833906c" name="signature. Constellation Of The Dragon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="94cfd8e8-2182-502a-be1f-1e6b5abf6cbd" name="Constellation Of The Dragon" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Blazing starlight leaps from the Wizard's fingertips, dancing and forming a simulacrum of the constellation of the Dragon Emperor above the battlefield.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8dafaaf1-8266-55ed-9014-0dcfe28133ed" name="Lore Of Yang" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="c207b4a7-cb69-5594-a0a1-9ffcb833906c" name="signature. Constellation Of The Dragon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="94cfd8e8-2182-502a-be1f-1e6b5abf6cbd" name="Constellation Of The Dragon" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">18"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Blazing starlight leaps from the Wizard's fingertips, dancing and forming a simulacrum of the constellation of the Dragon Emperor above the battlefield.
 
 Type
 Magic Missile
@@ -7733,18 +9907,18 @@ Casting Value
 Range
 18"
 If this spell is cast with a casting result of 7 or more, the target enemy unit suffers D6+1 Strength 4 hits, each with an AP of -. If this spell is cast with a casting result of 11 or more, the target enemy unit suffers 2D6+2 Strength 4 hits, each with an AP of -1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="e3c5e683-866c-50cc-96d1-fd21deaccfbe" name="signature. Great Bastion" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a297da6d-3156-59de-9503-8fc400aae70d" name="Great Bastion" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a word of power from the Wizard, the earth cracks and buckles as it is transformed into ramparts upon which gleaming battlements burn with celestial flame.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="e3c5e683-866c-50cc-96d1-fd21deaccfbe" name="signature. Great Bastion" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="a297da6d-3156-59de-9503-8fc400aae70d" name="Great Bastion" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">12"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">With a word of power from the Wizard, the earth cracks and buckles as it is transformed into ramparts upon which gleaming battlements burn with celestial flame.
 
 Type
 Enchantment
@@ -7753,18 +9927,18 @@ Casting Value
 Range
 12"
 Remains in Play. The target friendly unit gains a 6+ Ward save against any wounds suffered. In addition, every model within the front rank of an enemy unit that ends its charge move in base contact with the target unit whilst this spell is in play must make a Dangerous Terrain test. Any Wounds lost are counted as 'unsaved wounds inflicted' when calculating the combat result. However, whilst this spell is in play the target unit cannot march or charge. This spell may target a friendly unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="bdd8b610-ed18-5722-93f6-38783ce244e4" name="signature. Might Of Heaven &amp; Earth" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="77e523b9-9a2b-5626-aaef-028f78b0c3c7" name="Might Of Heaven &amp; Earth" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Calling upon the elemental energies of earth and heaven, the Wizard and those around them become imbued with the pure power of the Yang.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="bdd8b610-ed18-5722-93f6-38783ce244e4" name="signature. Might Of Heaven &amp; Earth" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="77e523b9-9a2b-5626-aaef-028f78b0c3c7" name="Might Of Heaven &amp; Earth" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Self</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Calling upon the elemental energies of earth and heaven, the Wizard and those around them become imbued with the pure power of the Yang.
 
 Type
 Enchantment
@@ -7773,22 +9947,22 @@ Casting Value
 Range
 Self
 If this spell is cast with a casting result of 9 or more, the caster, their mount and any unit they have joined, gain a +1 modifier to their Weapon Skill and Strength characteristics (to a maximum of 10), and gain the Flaming Attacks special rule. If this spell is cast with a casting result of 12 or more, all friendly units that are within the caster's Command range when this spell is cast gain a + 1 modifier to their Weapon Skill and Strength characteristics (to a maximum of 10), and gain the Flaming Attacks special rule. This spell lasts until the end of this turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="203d3d9c-da50-5aa6-a040-9731888fcde8" name="Lore Of Yin" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="38806b00-7961-5ae5-bc13-0cc7164516c6" name="signature. Spirits Of Wind &amp; Shadow" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="f35d829f-06cb-505d-a299-d8e9aba9485b" name="Spirits Of Wind &amp; Shadow" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Elemental spirits descend upon the foe, enveloping them in a whirlwind of flickering shapes and ghostly gales.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="203d3d9c-da50-5aa6-a040-9731888fcde8" name="Lore Of Yin" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="38806b00-7961-5ae5-bc13-0cc7164516c6" name="signature. Spirits Of Wind &amp; Shadow" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="f35d829f-06cb-505d-a299-d8e9aba9485b" name="Spirits Of Wind &amp; Shadow" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">10</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">Elemental spirits descend upon the foe, enveloping them in a whirlwind of flickering shapes and ghostly gales.
 As they try to advance, those afflicted find themselves waylaid by the grasping talons of unseen spirits and buffeted by spectral winds.
 
 Type
@@ -7798,18 +9972,18 @@ Casting Value
 Range
 15"
 Until your next Start of Turn sub-phase, the target enemy unit becomes subject to the Random Movement (D6) special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="b6d9cd9d-ad6d-5250-81d0-1e75b12a76cd" name="signature. Accursed Mirror" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="6e48e45f-a5b7-5167-b81e-c7d6ccab8d81" name="Accursed Mirror" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Wizard creates a magical barrier of shifting darkness and howling wind around the enemy. This barrier snatches the enemy's missiles from the air and swallows the tips of their spears, instantly turning the lethal power of these weapons back upon their bearers.
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="b6d9cd9d-ad6d-5250-81d0-1e75b12a76cd" name="signature. Accursed Mirror" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="6e48e45f-a5b7-5167-b81e-c7d6ccab8d81" name="Accursed Mirror" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">9</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">15"</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">The Wizard creates a magical barrier of shifting darkness and howling wind around the enemy. This barrier snatches the enemy's missiles from the air and swallows the tips of their spears, instantly turning the lethal power of these weapons back upon their bearers.
 
 Type
 Hex
@@ -7818,18 +9992,18 @@ Casting Value
 Range
 15"
 Until your next Start of Turn sub-phase, any rolls To Hit of a natural 1 made by the target enemy unit during either the Shooting phase or the Combat phase result in a Strength 3 hit with an AP of -1 which must be resolved against the target enemy unit. This spell may target an enemy unit engaged in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="420aee39-7893-5b7b-ac4f-7f1d637885b4" name="signature. Ancestral Warriors" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="e5668417-720d-5bfe-92ca-abe4d9cfd0de" name="Ancestral Warriors" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
-                    <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
-                    <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
-                    <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">TK
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="420aee39-7893-5b7b-ac4f-7f1d637885b4" name="signature. Ancestral Warriors" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e5668417-720d-5bfe-92ca-abe4d9cfd0de" name="Ancestral Warriors" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
+              <characteristics>
+                <characteristic name="Type" typeId="42d28460-f325-554b-ba07-4737a0c60937">Signature Spell</characteristic>
+                <characteristic name="CV" typeId="daba4950-98bf-5eac-b6a0-1b7f2d16806d">7</characteristic>
+                <characteristic name="Range" typeId="b08dbfe7-07f5-5084-8386-cdb4e9eca37d">Combat</characteristic>
+                <characteristic name="Effect" typeId="889950e5-f7e3-5d59-a921-7dbbe5457145">TK
 
 Type
 Assailment
@@ -7838,29 +10012,27 @@ Casting Value
 Range
 Combat
 If this spell is cast with a casting result of 7 or more, a single enemy unit the caster is engaged in combat with suffers 2D3 Strength 2 hits, each with an AP of -. If this spell is cast with a casting result of 11 or more, the target enemy unit suffers 2D6 Strength 4 hits, each with an AP of -1. This spell has the Armour Bane (2) special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="a7ab39b4-47b5-5b06-8bdd-20841f0c0232" name="Miao Ying" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="5a649392-847e-52c3-911f-51d39db4adbc" name="signature. The Storm Dragons Fury" hidden="false" collective="false" import="true" type="upgrade"/>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="f169cebb-6cd4-566c-865c-7d868626ec64" name="Shadowlands" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="f697fd85-f23b-56d6-8f15-e4d5c1b82b28" name="signature. Maelstrom-Of-Chaos" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="520b4a3a-b0bf-5e13-8045-413327c01f97" name="1. Blackened-Bolts" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="e18e399c-3fe7-57de-b7bc-2991ca599b59" name="2. Veil-Of-Gloom" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="fc72aeb6-e443-5fc5-9886-f8705c1e1ab1" name="3. Vortex-Of-Darkness" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="9edaaf18-eddd-58a6-862a-dfd58c2ccddc" name="4. Shadowed-Assailants" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="f84938d8-b820-5a8d-b37d-3c7eeb139a1f" name="5. Crawling-Mists" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="75d86309-0164-5664-9d68-2129a1de0844" name="6. Chains-Of-Darkness" hidden="false" collective="false" import="true" type="upgrade"/>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a7ab39b4-47b5-5b06-8bdd-20841f0c0232" name="Miao Ying" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="5a649392-847e-52c3-911f-51d39db4adbc" name="signature. The Storm Dragons Fury" hidden="false" collective="false" import="true" type="upgrade"/>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f169cebb-6cd4-566c-865c-7d868626ec64" name="Shadowlands" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="f697fd85-f23b-56d6-8f15-e4d5c1b82b28" name="signature. Maelstrom-Of-Chaos" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="520b4a3a-b0bf-5e13-8045-413327c01f97" name="1. Blackened-Bolts" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="e18e399c-3fe7-57de-b7bc-2991ca599b59" name="2. Veil-Of-Gloom" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="fc72aeb6-e443-5fc5-9886-f8705c1e1ab1" name="3. Vortex-Of-Darkness" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="9edaaf18-eddd-58a6-862a-dfd58c2ccddc" name="4. Shadowed-Assailants" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="f84938d8-b820-5a8d-b37d-3c7eeb139a1f" name="5. Crawling-Mists" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="75d86309-0164-5664-9d68-2129a1de0844" name="6. Chains-Of-Darkness" hidden="false" collective="false" import="true" type="upgrade"/>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </gameSystem>
