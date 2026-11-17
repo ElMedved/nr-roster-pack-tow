@@ -7407,7 +7407,7 @@ A unit carrying the Banner of the Bold gains the Veteran special rule.</characte
     </selectionEntryGroup>
     <selectionEntryGroup id="40e2096d-e976-5908-bc73-2526c183d31c" name="Battle Magic" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="74275155-b8a3-5230-aa79-176970a08b66" name="signature. Hammerhand" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="74275155-b8a3-5230-aa79-176970a08b66" name="Signature: Hammerhand" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="da2dc120-fc99-505d-a265-c6226644c663" name="Hammerhand" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -7551,7 +7551,7 @@ The target enemy unit must immediately make a Panic test. If the target unit aut
     </selectionEntryGroup>
     <selectionEntryGroup id="8466c25f-83a0-51b6-8f64-63254b527a1b" name="Daemonology" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="5748168a-3061-5c85-b6db-49bcad139e8a" name="signature. The Summoning" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5748168a-3061-5c85-b6db-49bcad139e8a" name="Signature: The Summoning" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="e0e4ab2b-f49c-59e4-afc2-5c744bf69374" name="The Summoning" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -7695,7 +7695,7 @@ Until the end of this turn, the target friendly unit gains a +1 modifier to its 
     </selectionEntryGroup>
     <selectionEntryGroup id="ebba516a-2288-591a-907e-682eef2dd2d3" name="Dark Magic" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="08cbfc18-5dc0-5186-8fd8-a3a9915933fc" name="signature. Doombolt" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="08cbfc18-5dc0-5186-8fd8-a3a9915933fc" name="Signature: Doombolt" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="c19d84f6-0d4d-5420-a049-f29a3ea57ba6" name="Doombolt" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -7840,7 +7840,7 @@ A single enemy model the caster is engaged in combat with suffers a single Stren
     </selectionEntryGroup>
     <selectionEntryGroup id="23edc5dc-f8ce-5a1d-a86f-cfffa6e70225" name="Elementalism" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="cc38ca85-d387-5512-9ac9-e69b891b8ebf" name="signature. Storm Call" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="cc38ca85-d387-5512-9ac9-e69b891b8ebf" name="Signature: Storm Call" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="90b1f3f2-2673-53f5-83d2-6b549b463bfc" name="Storm Call" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -7984,7 +7984,7 @@ If the target friendly unit is not fleeing and has not already moved during this
     </selectionEntryGroup>
     <selectionEntryGroup id="16cb835b-8eb0-5046-8f1e-4078d858b3ee" name="High Magic" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="afa78191-c543-51a5-872a-d1962a1d3e28" name="signature. Drain Magic" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="afa78191-c543-51a5-872a-d1962a1d3e28" name="Signature: Drain Magic" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="0c951cb8-7f63-50ab-99e3-1d7a3158cdfa" name="Drain Magic" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8128,7 +8128,7 @@ Until the end of this turn, the target friendly unit gains a 5+ Ward save agains
     </selectionEntryGroup>
     <selectionEntryGroup id="942f4793-4b25-5c52-91ad-de55059d6052" name="Illusion" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="f4641353-7765-5942-b26c-8182995f07e9" name="signature. Glittering Robe" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f4641353-7765-5942-b26c-8182995f07e9" name="Signature: Glittering Robe" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="9a9ddc52-2c1b-5389-9efc-2c416dcfac75" name="Glittering Robe" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8272,7 +8272,7 @@ Until your next Start of Turn sub-phase, the target enemy unit suffers a -2 modi
     </selectionEntryGroup>
     <selectionEntryGroup id="b905cd09-f8c9-54cd-a8e3-35581df2d58d" name="Necromancy" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="8d7571d4-a5e3-581f-bf5f-bda27a42e900" name="signature. The Dwellers Below" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8d7571d4-a5e3-581f-bf5f-bda27a42e900" name="Signature: The Dwellers Below" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="b07611c2-213c-56ab-bfce-4a63daf32462" name="The Dwellers Below" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8416,7 +8416,7 @@ Until the end of this turn, the target enemy unit suffers a -2 modifier to its L
     </selectionEntryGroup>
     <selectionEntryGroup id="fea3e3ab-8a02-571b-b71f-9edd6d862d25" name="Waaagh Magic" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="a035d00f-9179-521b-ae86-674b0b5c4775" name="signature. Fist Of Gork (Or Mork)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a035d00f-9179-521b-ae86-674b0b5c4775" name="Signature: Fist Of Gork (Or Mork)" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="afd42dd5-4b33-599f-bddf-71f394d739f2" name="Fist Of Gork (Or Mork)" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8561,7 +8561,7 @@ Remains in Play. Place a large (5") blast template so that its central hole is w
     </selectionEntryGroup>
     <selectionEntryGroup id="b9c78a77-16fa-572c-a014-b2618f02ba7b" name="Troll Magic" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="d4b30ab4-e193-5294-ae34-d23784b8529e" name="signature. Big Smartz" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d4b30ab4-e193-5294-ae34-d23784b8529e" name="Signature: Big Smartz" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="a4ff78f1-7661-56bc-bd1d-39f9b58886c0" name="Big Smartz" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8705,7 +8705,7 @@ Until the end of your next Start of Turn sub-phase, the target friendly unit gai
     </selectionEntryGroup>
     <selectionEntryGroup id="232a48a7-ac2e-5049-a264-6f31db532bf8" name="Lore Of Athel Loren" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="bfaece41-5a0b-5b9f-90f2-5b409056cbe5" name="signature. Tree Singing" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bfaece41-5a0b-5b9f-90f2-5b409056cbe5" name="Signature: Tree Singing" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="66b3429f-73bb-5a9d-a9e5-766392f1d7a9" name="Tree Singing" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8725,7 +8725,7 @@ Remains in Play. If this spell is cast with a casting result of 7 or more, place
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="6a839995-5964-5060-a1ba-a28cfe88ee10" name="signature. Forest Walker" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6a839995-5964-5060-a1ba-a28cfe88ee10" name="Signature: Forest Walker" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="b257a6d7-138f-563c-9570-7f4f703164ef" name="Forest Walker" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8745,7 +8745,7 @@ This spell can only target a friendly Wood Elf character that is completely with
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="53c7e7e8-082a-5fce-b309-be52c09ebd00" name="signature. Flock Of Doom Wood Elves" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="53c7e7e8-082a-5fce-b309-be52c09ebd00" name="Signature: Flock Of Doom Wood Elves" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="c4be5703-1acb-5b21-a127-44899ab494e7" name="Flock Of Doom Wood Elves" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8769,7 +8769,7 @@ Place a small (3") blast template so that its central hole is directly over the 
     </selectionEntryGroup>
     <selectionEntryGroup id="eb907102-fec3-547e-b5bd-c581e079438b" name="Lore Of Beasts" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="a772f5fa-f98c-5281-af4d-8911c92419bd" name="signature. Viletide" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a772f5fa-f98c-5281-af4d-8911c92419bd" name="Signature: Viletide" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="34906b8d-0a94-51c1-aad1-2688c4f05afe" name="Viletide" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8789,7 +8789,7 @@ The target enemy unit suffers 5D6 Strength 1 hits, each with an AP of -2.</chara
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="51ef8be7-0681-5ad0-b120-798ce720f049" name="signature. Devolve" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="51ef8be7-0681-5ad0-b120-798ce720f049" name="Signature: Devolve" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="55ac4f96-62dd-55bd-b248-8d4e16eb9c23" name="Devolve" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8809,7 +8809,7 @@ The target enemy unit must immediately make a Leadership test. If this test is f
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="0b273042-3bb6-5f53-9bd8-ed31d6b6ee78" name="signature. Mantle Of Ghorok" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0b273042-3bb6-5f53-9bd8-ed31d6b6ee78" name="Signature: Mantle Of Ghorok" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="33e1b75a-e6db-5fa8-9e1e-ed3ccce50c99" name="Mantle Of Ghorok" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8833,7 +8833,7 @@ Until the end of this turn, the caster gains a +D6 modifier to their Strength an
     </selectionEntryGroup>
     <selectionEntryGroup id="4930814f-77d4-504f-acb0-3186561809db" name="Lore Of Chaos" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="5fc506fb-07aa-58de-aa32-7f8c1f1c28cc" name="signature. Winds Of Chaos" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5fc506fb-07aa-58de-aa32-7f8c1f1c28cc" name="Signature: Winds Of Chaos" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="8c24d0c4-46ba-5872-a121-d9cb866e8f35" name="Winds Of Chaos" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8853,7 +8853,7 @@ Mark of Chaos Undivided only. If this spell is cast with a casting result of 7 o
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="5d59ee7d-b747-5372-95e4-6a177c717f00" name="signature. Acquiescence" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5d59ee7d-b747-5372-95e4-6a177c717f00" name="Signature: Acquiescence" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="408baaa3-077b-5bba-9d3f-deb88a5607ad" name="Acquiescence" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8873,7 +8873,7 @@ Mark of Slaanesh only. Until the end of the Combat phase, the target enemy unit 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="17ecfc07-ba9b-5b1d-beea-d573d1e6afdd" name="signature. Fleshy Abundance" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="17ecfc07-ba9b-5b1d-beea-d573d1e6afdd" name="Signature: Fleshy Abundance" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="6d0c161b-4445-5973-a94f-354da74cf81d" name="Fleshy Abundance" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8893,7 +8893,7 @@ Mark of Nurgle only. Remains in Play. Whilst this spell is in play, the caster a
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="cf6a9348-289b-5d2b-82a9-e115bce434bb" name="signature. Blue Fire" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="cf6a9348-289b-5d2b-82a9-e115bce434bb" name="Signature: Blue Fire" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="030ec1a7-1cfb-5184-bd64-588e61846cd5" name="Blue Fire" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8917,7 +8917,7 @@ Mark of Tzeentch only. The target enemy unit suffers D6+3 Strength 4 hits, each 
     </selectionEntryGroup>
     <selectionEntryGroup id="cacf240a-f0f8-5375-b750-e74af95fe880" name="Lore Of Daemons" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="3dd87190-c120-56c3-9856-759c815eb282" name="signature. Plague Wind" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3dd87190-c120-56c3-9856-759c815eb282" name="Signature: Plague Wind" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="c25da5b7-bebd-594e-aff8-ceb00808b85d" name="Plague Wind" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8937,7 +8937,7 @@ Daemons of Nurgle only. Remains in Play. Place a small (3") blast template so th
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="0bab0436-7e01-513f-83f9-3c9bc8e0c5e0" name="signature. Cacophonic Hymn" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0bab0436-7e01-513f-83f9-3c9bc8e0c5e0" name="Signature: Cacophonic Hymn" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="a804a3cd-2d40-5121-8160-c1fbde715960" name="Cacophonic Hymn" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8957,7 +8957,7 @@ Daemons of Slaanesh only. Remains in Play. If this spell is cast, the effects of
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="cde915bb-b64e-5fa0-8ab0-0e9a82a65165" name="signature. Pink Fire" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="cde915bb-b64e-5fa0-8ab0-0e9a82a65165" name="Signature: Pink Fire" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="77b29da0-cae8-55a8-9c1f-bc6825956013" name="Pink Fire" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -8977,7 +8977,7 @@ Daemons of Tzeentch only. The target enemy unit suffers D3+3 Strength 3 hits, ea
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="e453c78a-91f1-527c-baa5-c1a89adc2a49" name="signature. Gift Of Mutation" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e453c78a-91f1-527c-baa5-c1a89adc2a49" name="Signature: Gift Of Mutation" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="c78be8a7-c335-509f-8ead-728f42061a24" name="Gift Of Mutation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9004,7 +9004,7 @@ Daemons of Tzeentch only. If this spell is cast with a casting result of 8 or mo
     </selectionEntryGroup>
     <selectionEntryGroup id="6d443eed-0b46-5be1-b54e-89f58128326e" name="Lore Of Gork" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="a0aace09-86cc-56c5-83ed-e479aea7a8dd" name="signature. Brain Bursta" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a0aace09-86cc-56c5-83ed-e479aea7a8dd" name="Signature: Brain Bursta" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="4ad0ba12-21ff-50d9-abe2-f428c2440f6e" name="Brain Bursta" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9024,7 +9024,7 @@ A single enemy model the caster is engaged in combat with suffers a single Stren
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="04448bda-7ec2-5b00-b424-ff9c25cb787a" name="signature. Gaze Of Gork" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="04448bda-7ec2-5b00-b424-ff9c25cb787a" name="Signature: Gaze Of Gork" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="dfc89311-9db4-5e2d-9f4e-707af7eaf04d" name="Gaze Of Gork" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9048,7 +9048,7 @@ Draw a straight line, 5D6" in length, from the caster’s base edge. Any model (
     </selectionEntryGroup>
     <selectionEntryGroup id="d1061df5-1206-5d3e-9edf-945225927988" name="Lore Of Hashut" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="edc5446c-c294-545e-b931-6897c47dbcfd" name="signature. Curse Of Hashut" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="edc5446c-c294-545e-b931-6897c47dbcfd" name="Signature: Curse Of Hashut" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="cd571966-a178-514c-84af-c1f27f81f50b" name="Curse Of Hashut" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9069,7 +9069,7 @@ The target enemy character must immediately make a Toughness test. If this test 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="8505e6a4-f7f5-570e-8965-2bbc5682ead7" name="signature. Storm Of Ash" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8505e6a4-f7f5-570e-8965-2bbc5682ead7" name="Signature: Storm Of Ash" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="df366eeb-3380-558c-a46f-091355079bc6" name="Storm Of Ash" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9089,7 +9089,7 @@ Until your next Start of Turn sub-phase, all enemy units suffer a -1 modifier to
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="54049263-53f2-56b0-bc24-05a56a019ee5" name="signature. Flames Of Hashut" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="54049263-53f2-56b0-bc24-05a56a019ee5" name="Signature: Flames Of Hashut" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="e4b87b07-b689-5b8a-97ac-b055d45214b8" name="Flames Of Hashut" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9113,7 +9113,7 @@ A single enemy unit the caster is engaged in combat with suffers D3+1 Strength 4
     </selectionEntryGroup>
     <selectionEntryGroup id="ad080ab5-35fc-5ed4-8f08-17f4c4644a48" name="Lore Of Lustria" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="ce90b476-ed4f-5cda-8307-277e63f9fc3b" name="signature. Apotheosis" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ce90b476-ed4f-5cda-8307-277e63f9fc3b" name="Signature: Apotheosis" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="dbaf514e-1fe3-5d3d-a5cb-f58ac054ad9d" name="Apotheosis" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9134,7 +9134,7 @@ In addition, the target friendly character gains the Fear special rule. If they 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="d2d54db0-1a15-5b09-81e6-04ed54b292e5" name="signature. Monsoon" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d2d54db0-1a15-5b09-81e6-04ed54b292e5" name="Signature: Monsoon" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="3b292c1f-8e33-546c-b777-a3e3e96d135a" name="Monsoon" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9159,7 +9159,7 @@ A drenched unit suffers a -1 To Hit modifier during the Shooting phase. A drench
     </selectionEntryGroup>
     <selectionEntryGroup id="7963da92-ec6a-5747-a764-55cfb1f8c014" name="Lore Of Naggaroth" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="18043620-409a-5264-bd71-5d39fdf529b1" name="signature. Cursing Word" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="18043620-409a-5264-bd71-5d39fdf529b1" name="Signature: Cursing Word" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="47bd966b-74c3-50f2-8410-81620b2adcdd" name="Cursing Word" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9179,7 +9179,7 @@ Remains in Play. Whilst this spell is in play, the target enemy unit suffers a -
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="2313e758-81ed-5a0e-9903-7e76a4f1a103" name="signature. Black Horror" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2313e758-81ed-5a0e-9903-7e76a4f1a103" name="Signature: Black Horror" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="bef88155-8b04-560c-ab76-bb319eadbce3" name="Black Horror" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9203,7 +9203,7 @@ Remains in Play. Place a large (5") blast template so that its central hole is w
     </selectionEntryGroup>
     <selectionEntryGroup id="37ed0a1c-8451-5f9c-b163-569e0de8f3b5" name="Lore Of Mork" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="679840cc-cbd4-567b-a8d3-b48c83373139" name="signature. Mork’S Curse" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="679840cc-cbd4-567b-a8d3-b48c83373139" name="Signature: Mork’S Curse" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="d04ea68f-6d8e-53bb-b2b2-e62526d86af2" name="Mork’S Curse" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9223,7 +9223,7 @@ Remains in Play. Whilst this spell is in play, the target enemy unit must re-rol
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="59260f1d-0cfe-5f02-907b-634260b51828" name="signature. Itchy Nuisance" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="59260f1d-0cfe-5f02-907b-634260b51828" name="Signature: Itchy Nuisance" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="ef1ba2f2-736d-5b96-8a86-2c968090a586" name="Itchy Nuisance" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9247,7 +9247,7 @@ Until your next Start of Turn sub-phase, the target enemy unit suffers a -D3 mod
     </selectionEntryGroup>
     <selectionEntryGroup id="93af6eff-4d44-5633-abe0-fc8fafcb8437" name="Lore Of Nehekhara" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="1fd43576-c98e-5c6a-ba0a-c1d78a89ae40" name="signature. Djaf'S Incantation Of Cursed Blades" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1fd43576-c98e-5c6a-ba0a-c1d78a89ae40" name="Signature: Djaf'S Incantation Of Cursed Blades" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="83ddda13-fd8d-526f-a4ee-b3a84c231e8f" name="Djaf'S Incantation Of Cursed Blades" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9267,7 +9267,7 @@ Until your next Start of Turn sub-phase, any friendly unit that has the Nehekhar
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="1a836ab3-9382-5dcb-969d-d42a3b4ab5e1" name="signature. Khsar'S Incantation Of The Desert Wind" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1a836ab3-9382-5dcb-969d-d42a3b4ab5e1" name="Signature: Khsar'S Incantation Of The Desert Wind" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="14accc4b-ffe2-512a-ac85-2e2a977e3052" name="Khsar'S Incantation Of The Desert Wind" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9287,7 +9287,7 @@ If this spell is cast with a casting result of 6 or more, a single friendly unit
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="70492b95-f1d6-53cc-9448-51d9d5f38255" name="signature. Usekhp'S Incantation Of Desiccation" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="70492b95-f1d6-53cc-9448-51d9d5f38255" name="Signature: Usekhp'S Incantation Of Desiccation" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="cc920089-b677-5fa7-a8d1-4666f22b5fe9" name="Usekhp'S Incantation Of Desiccation" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9311,7 +9311,7 @@ Until the end of this turn, the target enemy unit suffers a -1 modifier to its S
     </selectionEntryGroup>
     <selectionEntryGroup id="e8cf592e-2082-5968-b347-28e9e8058efa" name="Lore Of Saphery" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="75246d16-0ff5-5197-9c1a-cebcf928d667" name="signature. Hand Of Khaine" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="75246d16-0ff5-5197-9c1a-cebcf928d667" name="Signature: Hand Of Khaine" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="7f770b62-4483-546c-af81-748a6329357d" name="Hand Of Khaine" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9331,7 +9331,7 @@ A single enemy model the caster is engaged in combat with suffers a single Stren
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="163ae233-8c63-5c67-8613-b936e23e93c8" name="signature. Courage Of Aenarion" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="163ae233-8c63-5c67-8613-b936e23e93c8" name="Signature: Courage Of Aenarion" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="e7a77fd9-22f5-58c1-93e6-4b530237e992" name="Courage Of Aenarion" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9351,7 +9351,7 @@ Remains in Play. Whilst this spell is in play, the target friendly unit gains th
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="935458c6-8cf7-53c7-8f53-86ebcee9e970" name="signature. Vaul'S Unmaking" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="935458c6-8cf7-53c7-8f53-86ebcee9e970" name="Signature: Vaul'S Unmaking" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="38f835d7-de54-5345-84bd-71ff983b4fe6" name="Vaul'S Unmaking" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9376,7 +9376,7 @@ The casting player chooses a single magic item carried by the target. This magic
     </selectionEntryGroup>
     <selectionEntryGroup id="ae5e04f0-abf9-5d48-9090-0c7c27469490" name="Lore Of The Great Maw" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="bd9dd729-0830-57d9-9483-668afa1f1452" name="signature. Toothcracker" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bd9dd729-0830-57d9-9483-668afa1f1452" name="Signature: Toothcracker" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="fdfc8fd1-0a0a-5d32-b067-87e0bc012b95" name="Toothcracker" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9396,7 +9396,7 @@ If this spell is cast with a casting result of 7 or more, the target friendly un
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="bd26f2ce-10ff-5812-a073-595cbed17249" name="signature. Trollguts" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bd26f2ce-10ff-5812-a073-595cbed17249" name="Signature: Trollguts" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="c79c3767-082d-5673-b996-a9aa5b8b1ef6" name="Trollguts" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9420,7 +9420,7 @@ If this spell is cast with a casting result of 8 or more, the target friendly un
     </selectionEntryGroup>
     <selectionEntryGroup id="3ec836d1-473d-55af-9d3a-aae636f9f977" name="Lore Of The Horned Rat" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="50e109e0-4386-5a3f-9814-8b3ea5207f9d" name="signature. Skitterleap" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="50e109e0-4386-5a3f-9814-8b3ea5207f9d" name="Signature: Skitterleap" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="873e1e2f-0e54-568a-b308-ece6577c6788" name="Skitterleap" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9441,7 +9441,7 @@ Note that this spell allows a character to leave combat.</characteristic>
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="f0ad4c6a-5e2d-5671-b3f9-e9a4033125eb" name="signature. Warp Lightning" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f0ad4c6a-5e2d-5671-b3f9-e9a4033125eb" name="Signature: Warp Lightning" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="59c98fda-4b33-5fed-9d69-cabd3544d364" name="Warp Lightning" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9461,7 +9461,7 @@ The target enemy unit suffers D3+1 Strength 5 hits, each with an AP of -3.</char
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="8c35e1fa-d7a5-5010-af4f-c0ffbe1f0719" name="signature. Cloud Of Corruption" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8c35e1fa-d7a5-5010-af4f-c0ffbe1f0719" name="Signature: Cloud Of Corruption" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="cdab7adf-0f27-5486-9cd8-ed61d11164a0" name="Cloud Of Corruption" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9485,7 +9485,7 @@ Remains in Play. Place a small (3") blast template so that its central hole is w
     </selectionEntryGroup>
     <selectionEntryGroup id="bd0b5834-236a-5381-8aa5-5d097bb0e2a8" name="Lore Of The Lady" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="5130c951-6947-52a0-b5f1-ec6a1a4ad655" name="signature. The Lady'S Gift" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5130c951-6947-52a0-b5f1-ec6a1a4ad655" name="Signature: The Lady'S Gift" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="40a6ee23-6412-5b7d-9aed-7069958896f7" name="The Lady'S Gift" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9505,7 +9505,7 @@ Remains in Play. If this spell is cast with a casting result of 7 or more, the t
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="7f61a6a2-bf6e-5f1d-aced-18fb1c0eea03" name="signature. Burning Gaze" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7f61a6a2-bf6e-5f1d-aced-18fb1c0eea03" name="Signature: Burning Gaze" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="92bc13d6-3cb9-5385-b4ba-d4ce8f65123c" name="Burning Gaze" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9525,7 +9525,7 @@ Draw a straight line, 5D6" in length, from the caster's base edge. Any enemy mod
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="daba7c20-f46a-5eef-a942-f85acf530c41" name="signature. The Lady'S Wrath" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="daba7c20-f46a-5eef-a942-f85acf530c41" name="Signature: The Lady'S Wrath" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="c8652082-ef40-5b80-bba0-ac19d719e1c6" name="The Lady'S Wrath" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9549,7 +9549,7 @@ Remains in Play. Whilst this spell is in play, the caster, their mount and any u
     </selectionEntryGroup>
     <selectionEntryGroup id="d3bede8c-873d-506b-8dcf-d0fa7b74e856" name="Lore Of Undeath" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="6e1b1148-89e1-5d3e-9e76-a657c4600a41" name="signature. Vanhal'S Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6e1b1148-89e1-5d3e-9e76-a657c4600a41" name="Signature: Vanhal'S Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="5dabe4b0-881a-5e32-a594-278643148282" name="Vanhal'S Danse Macabre" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9572,7 +9572,7 @@ If this spell is cast with a casting result of 8 or more, the target friendly un
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="af6b5768-7260-53e5-b9bf-9b939e6f8fc1" name="signature. Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="af6b5768-7260-53e5-b9bf-9b939e6f8fc1" name="Signature: Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="0c2dbc1e-7b17-5894-9aad-3698a402cd6e" name="Hellish Vigour" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9592,7 +9592,7 @@ If this spell is cast with a casting result of 7 or more, a single friendly unit
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="c247d763-06e1-5e82-8a5a-515b62a701ec" name="signature. Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c247d763-06e1-5e82-8a5a-515b62a701ec" name="Signature: Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="64fb37d1-4916-596e-99ca-290140ffd790" name="Raise Dead" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9622,7 +9622,7 @@ Note that Risen Zombies are not worth any Victory Points.</characteristic>
     </selectionEntryGroup>
     <selectionEntryGroup id="5594274e-60a3-5ea6-8174-7a1469ced965" name="Lore Of The Wilds" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="3cf72737-6d31-5981-b941-3fbe5cefc468" name="signature. Swirling-Mists" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="3cf72737-6d31-5981-b941-3fbe5cefc468" name="Signature: Swirling-Mists" hidden="false" collective="false" import="true" type="upgrade"/>
         <selectionEntry id="5a1e5c75-361d-585a-9a04-9c32b844e0f7" name="1. Fury Of Athel Loren" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="8698376f-b4f4-50d4-89ca-f77649f355dc" name="Fury Of Athel Loren" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
@@ -9747,7 +9747,7 @@ Until your next Start of Turn sub-phase, the target enemy unit suffers a -D3 mod
     </selectionEntryGroup>
     <selectionEntryGroup id="38083a45-fa40-5e6e-8ffc-f79ca407cce3" name="Primal Magic" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="33208627-b5fa-5e6b-8d05-7f680049d643" name="signature. Primordial Gloom" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="33208627-b5fa-5e6b-8d05-7f680049d643" name="Signature: Primordial Gloom" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="fca93e5f-0a2e-511b-9c65-38cfcc1a4c14" name="Primordial Gloom" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9891,7 +9891,7 @@ Remains in Play. Place a large (5") blast template so that its central hole is w
     </selectionEntryGroup>
     <selectionEntryGroup id="8dafaaf1-8266-55ed-9014-0dcfe28133ed" name="Lore Of Yang" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="c207b4a7-cb69-5594-a0a1-9ffcb833906c" name="signature. Constellation Of The Dragon" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c207b4a7-cb69-5594-a0a1-9ffcb833906c" name="Signature: Constellation Of The Dragon" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="94cfd8e8-2182-502a-be1f-1e6b5abf6cbd" name="Constellation Of The Dragon" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9911,7 +9911,7 @@ If this spell is cast with a casting result of 7 or more, the target enemy unit 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="e3c5e683-866c-50cc-96d1-fd21deaccfbe" name="signature. Great Bastion" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e3c5e683-866c-50cc-96d1-fd21deaccfbe" name="Signature: Great Bastion" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="a297da6d-3156-59de-9503-8fc400aae70d" name="Great Bastion" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9931,7 +9931,7 @@ Remains in Play. The target friendly unit gains a 6+ Ward save against any wound
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="bdd8b610-ed18-5722-93f6-38783ce244e4" name="signature. Might Of Heaven &amp; Earth" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bdd8b610-ed18-5722-93f6-38783ce244e4" name="Signature: Might Of Heaven &amp; Earth" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="77e523b9-9a2b-5626-aaef-028f78b0c3c7" name="Might Of Heaven &amp; Earth" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9955,7 +9955,7 @@ If this spell is cast with a casting result of 9 or more, the caster, their moun
     </selectionEntryGroup>
     <selectionEntryGroup id="203d3d9c-da50-5aa6-a040-9731888fcde8" name="Lore Of Yin" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="38806b00-7961-5ae5-bc13-0cc7164516c6" name="signature. Spirits Of Wind &amp; Shadow" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="38806b00-7961-5ae5-bc13-0cc7164516c6" name="Signature: Spirits Of Wind &amp; Shadow" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="f35d829f-06cb-505d-a299-d8e9aba9485b" name="Spirits Of Wind &amp; Shadow" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9976,7 +9976,7 @@ Until your next Start of Turn sub-phase, the target enemy unit becomes subject t
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="b6d9cd9d-ad6d-5250-81d0-1e75b12a76cd" name="signature. Accursed Mirror" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b6d9cd9d-ad6d-5250-81d0-1e75b12a76cd" name="Signature: Accursed Mirror" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="6e48e45f-a5b7-5167-b81e-c7d6ccab8d81" name="Accursed Mirror" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -9996,7 +9996,7 @@ Until your next Start of Turn sub-phase, any rolls To Hit of a natural 1 made by
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="420aee39-7893-5b7b-ac4f-7f1d637885b4" name="signature. Ancestral Warriors" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="420aee39-7893-5b7b-ac4f-7f1d637885b4" name="Signature: Ancestral Warriors" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="e5668417-720d-5bfe-92ca-abe4d9cfd0de" name="Ancestral Warriors" hidden="false" typeId="4c3e0463-e5ed-5d1e-adf2-f395f1cfc01b" typeName="Spell">
               <characteristics>
@@ -10020,12 +10020,12 @@ If this spell is cast with a casting result of 7 or more, a single enemy unit th
     </selectionEntryGroup>
     <selectionEntryGroup id="a7ab39b4-47b5-5b06-8bdd-20841f0c0232" name="Miao Ying" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="5a649392-847e-52c3-911f-51d39db4adbc" name="signature. The Storm Dragons Fury" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="5a649392-847e-52c3-911f-51d39db4adbc" name="Signature: The Storm Dragons Fury" hidden="false" collective="false" import="true" type="upgrade"/>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="f169cebb-6cd4-566c-865c-7d868626ec64" name="Shadowlands" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="f697fd85-f23b-56d6-8f15-e4d5c1b82b28" name="signature. Maelstrom-Of-Chaos" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="f697fd85-f23b-56d6-8f15-e4d5c1b82b28" name="Signature: Maelstrom-Of-Chaos" hidden="false" collective="false" import="true" type="upgrade"/>
         <selectionEntry id="520b4a3a-b0bf-5e13-8045-413327c01f97" name="1. Blackened-Bolts" hidden="false" collective="false" import="true" type="upgrade"/>
         <selectionEntry id="e18e399c-3fe7-57de-b7bc-2991ca599b59" name="2. Veil-Of-Gloom" hidden="false" collective="false" import="true" type="upgrade"/>
         <selectionEntry id="fc72aeb6-e443-5fc5-9886-f8705c1e1ab1" name="3. Vortex-Of-Darkness" hidden="false" collective="false" import="true" type="upgrade"/>
